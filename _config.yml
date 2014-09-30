@@ -1,0 +1,24 @@
+name: CAF Developer Blog
+description:  The C++ Actor Framework
+
+sass:
+  sass_dir: assets/css/_sass
+  style: :compressed
+
+# url: http://actor-framework.github.io
+
+owner:
+    name: C++ Actor Framework
+    twitter: actor_framework
+    github: actor-framework
+    disqus_shortname: CAF
+
+ga_id: #
+ga_username: #
+
+permalink: /:year/:month/:title/
+timezone: Germany/Berlin
+
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "tables", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
