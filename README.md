@@ -1,4 +1,1 @@
-actor-framework.github.io
-=========================
-
-Our developer blog!
+We are moving our developer blog from [here](http://libcppa.blogspot.de/) to github pages.

@@ -1,24 +1,35 @@
-name: CAF Developer Blog
-description:  The C++ Actor Framework
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
 
-sass:
-  sass_dir: assets/css/_sass
-  style: :compressed
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
 
-# url: http://actor-framework.github.io
+# Setup
+title:            CAF
+tagline:          'An Open Source Implementation of the actor model in C++'
+description:      'The developer blog of the <a href="http://actor-framework.org/" target="_blank">C++ Actor Framework</a>: An Open Source Implementation of the actor model in C++'
+url:              'http://actor-framework.org/'
+baseurl:          /
 
+# owner information
 owner:
-    name: C++ Actor Framework
-    twitter: actor_framework
-    github: actor-framework
-    disqus_shortname: CAF
+  name:           C++ Actor Framework
+  twitter:        actor_framework
+  github:         actor-framework
 
-ga_id: #
-ga_username: #
+# post per page
+paginate:         3
 
-permalink: /:year/:month/:title/
-timezone: Germany/Berlin
+# Custom vars
+version:           0.11.0
 
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "tables", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+# repository
+github:
+  repo:           https://github.com/actor-framework
+
+# google analytics
+google_analytics:
+  id: #
+  username: #
