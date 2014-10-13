@@ -1,13 +1,11 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
-
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
+root: /
+permalink: /:year-:month/:title/
+markdown: rdiscount
+highlighter: null
+paginate: 5
 
 # Setup
-title:            CAF
+title:            CAF Developer Blog
 tagline:          'An Open Source Implementation of the actor model in C++'
 description:      'The developer blog of the <a href="http://actor-framework.org/" target="_blank">C++ Actor Framework</a>.'
 url:              'http://actor-framework.org/'
