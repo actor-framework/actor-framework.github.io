@@ -32,11 +32,10 @@ h3 {
 .page-container {
   max-width: 1000px;
   margin: 0 auto;
-  background-color: #f7f7f7;
 }
 .page-heading {
   border-top: 2px solid #bbb;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   position: relative;
   z-index: 9999;
 }
@@ -49,7 +48,7 @@ h3 {
 }
 .page-brand h1 a {
   color: #111;
-  font-size: 28px;
+  font-size: 36px;
   font-weight: bold;
   font-family: Consolas, Monaco, 'Courier New', Courier, 'Andale Mono', 'DejaVu Sans Mono', monospace !important;
   line-height: 32px;
@@ -61,7 +60,7 @@ h3 {
   margin: 1em 0 1.25em;
 }
 .page-navbar {
-  margin: 0 auto 6px;
+  margin: 0 auto 0px;
   overflow: hidden;
   background: #000;
 }
@@ -91,8 +90,9 @@ h3 {
   background: #fff;
 }
 .page-article {
-  margin: 0 7.5%;
+  padding: 20px 7.5% 0px;
   width: auto;
+  background-color: #f7f7f7;
 }
 .page-header {
   padding-bottom: 10px;
