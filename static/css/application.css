@@ -21,7 +21,7 @@ pre {
   overflow: auto;
 }
 ::selection {
-  background: #c3e99e;
+  background: #eee;
   text-shadow: none;
 }
 h1,
