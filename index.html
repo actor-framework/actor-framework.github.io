@@ -4,14 +4,18 @@ title: CAF
 ---
 
 {% for post in paginator.posts %}
+{% assign author = site.authors[post.author] %}
 <div class="page-content">
   <div class="post-heading">
    <a href="{{ post.url }}">{{ post.title }}</a>
   </div>
   <div class="post-meta">
+     <span>
+      <a href="https://github.com/{{ author.github }}">{{ author.display_name }}</a>
+    </span>
+    <span><i class="fa fa-ellipsis-v"></i></span>
     <span>
-      Published:
-      <a href="{{ post.url }}">{{ post.date | date_to_long_string }}</a>
+      <a href="{{ page.url }}">{{ post.date | date_to_long_string }}</a>
     </span>
     <span><i class="fa fa-ellipsis-v"></i></span>
     <span>
@@ -20,7 +24,7 @@ title: CAF
       <a href="/tags.html#{{ tag }}-ref">{{ tag }}</a>
       {% endfor %}
     <span>
-  </div>
+ </div>
   <div class="post-entry">
     <!-- {{  post.content || split:'<!--more-->' | first }} -->
     {{ post.content }}

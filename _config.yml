@@ -31,3 +31,9 @@ github:
 google_analytics:
   id: #
   username: #
+
+authors:
+  dominik:
+    display_name: Dominik Charousset
+    email: dominik.charousset@haw-hamburg.de
+    github: Neverlord

@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "We have moved our Developer Blog!"
-tags:   Blog
+author: dominik
+tags: Blog GitHub
 ---
 
 Welcome to our new Developer Blog!
