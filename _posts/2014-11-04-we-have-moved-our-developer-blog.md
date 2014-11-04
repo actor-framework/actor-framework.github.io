@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "We have moved our developer blog!"
+title:  "We have moved our Developer Blog!"
 tags:   Blog
 ---
 
