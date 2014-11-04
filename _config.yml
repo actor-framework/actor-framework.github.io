@@ -29,8 +29,8 @@ github:
 
 # google analytics
 google_analytics:
-  id: #
-  username: #
+  id: UA-56404861-1
+  username: auto
 
 authors:
   dominik:
