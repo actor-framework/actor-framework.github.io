@@ -11,6 +11,9 @@ description:      'An Open Source implementation of the actor model in C++'
 url:              'http://blog.actor-framework.org/'
 baseurl:          /
 
+# ignore files not belonging to blog
+exclude: [README.md, template.md]
+
 # owner information
 owner:
   name:           C++ Actor Framework
