@@ -7,7 +7,7 @@ This repository contains the sources for CAF's Dev Blog.
 Jekyll Setup for Local Testing
 ==============================
 
-You will need to install ruby, nodjs, rdiscount, and jekyll:
+You will need to install ruby, nodejs, rdiscount, and jekyll:
 
 ```
 $PKG_MGR install ruby nodejs
@@ -27,7 +27,7 @@ Create a New Blog Post
 To add a new blog post, you will need to create a new file with current date
 and post title as file name (all lowercase and using `-` instead of
 whitespaces). The new file must contain a Jekyll header followed by Markdown
-formatted text.  To get the boilerplate code out of the way, you can use the
+formatted text. To get the boilerplate code out of the way, you can use the
 file `template.md`:
 
 ```
