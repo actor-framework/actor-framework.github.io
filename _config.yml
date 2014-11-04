@@ -8,7 +8,7 @@ paginate: 5
 title:            'C++ Actor Framework &mdash; Dev Blog'
 tagline:          'The developer blog of the <a href="http://actor-framework.org/" target="_blank">C++ Actor Framework</a>.'
 description:      'An Open Source implementation of the actor model in C++'
-url:              'http://actor-framework.org/'
+url:              'http://blog.actor-framework.org/'
 baseurl:          /
 
 # owner information
