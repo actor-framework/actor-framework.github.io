@@ -34,7 +34,6 @@ h3 {
   margin: 0 auto;
 }
 .page-heading {
-  border-top: 2px solid #bbb;
   padding-bottom: 0px;
   position: relative;
   z-index: 9999;
@@ -44,7 +43,7 @@ h3 {
   display: block;
 }
 .page-brand h1 {
-  padding: 1.05em 0 0;
+  padding: 0.5em 0 0;
 }
 .page-brand h1 a {
   color: #111;
