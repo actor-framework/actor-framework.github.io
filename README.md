@@ -7,7 +7,7 @@ This repository contains the sources for CAF's Dev Blog.
 Yekyll Setup for Local Testing
 ==============================
 
-You will need to install ruby, nodjs, rdiscount, and yekyllcourse:
+You will need to install ruby, nodjs, rdiscount, and yekyll:
 
 ```
 $PKG_MGR install ruby nodejs
