@@ -67,6 +67,9 @@ h3 {
 .page-navbar .page-navbar-container {
   margin: 0 75px;
 }
+.page-navbar .page-navbar-container .navbar-toggle {
+  margin: 3px -60px 3px 0;
+}
 .page-navbar .page-navbar-container .page-nav {
   margin-left: -25px;
   font-size: 13px;
