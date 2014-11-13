@@ -59,29 +59,26 @@ h3 {
   margin: 1em 0 1.25em;
 }
 .page-navbar {
-  margin: 0 auto 0px;
-  overflow: hidden;
   background: #000;
+  border-radius: 0;
+  border: none;
+  margin-bottom: 0; 
 }
 .page-navbar .page-navbar-container {
-  margin: 0 7.5%;
+  margin: 0 75px;
+}
+.page-navbar .page-navbar-container .navbar-toggle {
+  margin: 3px -60px 3px 0;
 }
 .page-navbar .page-navbar-container .page-nav {
+  margin-left: -25px;
   font-size: 13px;
-  list-style: none;
-  margin: 0 0 0 -10px;
   padding-left: 0;
-}
-.page-navbar .page-navbar-container .page-nav li {
-  float: left;
-  position: relative;
 }
 .page-navbar .page-navbar-container .page-nav a {
   color: #eee;
-  display: block;
   line-height: 3.5em;
   padding: 0 1.25em;
-  text-decoration: none;
 }
 .page-navbar .page-navbar-container .page-nav a:hover,
 .page-navbar .page-navbar-container .page-nav a:focus {
