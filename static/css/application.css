@@ -1,7 +1,6 @@
 /*
  * application.less
- * by @hushaw
- * http://hushaw.github.io
+ * based on http://hushaw.github.io
  */
 body {
   font-family: "PT Serif", Georgia, "Microsoft YaHei", Arial, sans-serif;
@@ -24,10 +23,19 @@ pre {
   background: #eee;
   text-shadow: none;
 }
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 18px;
+}
 h1,
 h2,
 h3 {
-  font-family: Georgia, "Times New Roman", Times, "Kai", "Kaiti SC", "KaiTi", "BiauKai", "楷体", "楷体_GB2312", serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .page-container {
   max-width: 1000px;
@@ -97,24 +105,25 @@ h3 {
 }
 .page-header h2 {
   font-weight: 500;
-  font-family: Georgia, "Times New Roman", Times, "Kai", "Kaiti SC", "KaiTi", "BiauKai", "楷体", "楷体_GB2312", serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .page-content {
   border-bottom: 1px dashed #aaa;
   margin: 0 0 1.5em;
   padding: 0 0 1.5em;
   position: relative;
+  text-align: justify;
 }
 .page-content .post-heading {
   color: #222;
   text-decoration: none;
   clear: both;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: normal;
   line-height: 1.15em;
   padding-bottom: .5em;
   padding-top: 12px;
-  font-family: Georgia, "Times New Roman", Times, "Kai", "Kaiti SC", "KaiTi", "BiauKai", "楷体", "楷体_GB2312", serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .page-content .post-heading a {
   color: #222;
@@ -137,7 +146,7 @@ h3 {
 }
 .page-content .post-entry {
   padding: 1.5em 0 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 .page-content .post-entry blockquote p {
   font-size: 15px;
@@ -168,7 +177,7 @@ h3 {
 }
 .page-list h3 {
   color: #428bca;
-  font-family: Georgia, "Times New Roman", Times, "Kai", "Kaiti SC", "KaiTi", "BiauKai", "楷体", "楷体_GB2312", serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .page-list ul {
   font-size: 15px;
@@ -245,6 +254,14 @@ h3 {
 }
 .page-pagination {
   text-align: center;
+}
+.centered-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 3px #888888;
 }
 .page-pagination .pagination li a {
   font-size: 14px;
