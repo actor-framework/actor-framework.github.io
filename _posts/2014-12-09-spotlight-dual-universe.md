@@ -12,7 +12,9 @@ president of Novaquark, the company behind the game.
 
 # Background: Dual Universe
 
-[<img class="centered-image" src="{{ site.url }}/static/img/dualuniverse.jpg" width="640" height="360" alt="Official Dual Universe Artwort">]({{ site.url }}/static/img/dualuniverse.jpg)
+<a href="{{ site.url }}/static/img/dualuniverse.jpg" data-lightbox="image-1">
+  <img class="centered-image" src="{{ site.url }}/static/img/dualuniverse.jpg" alt="Official Dual Universe Artwort">
+</a>
 
 Dual Universe is a science fiction, multi-planet world where "players are free
 to invent their collective destiny: civilizations will rise and fall,
@@ -52,7 +54,7 @@ what is called "emergent gameplay": the players are going to create their
 world, their stories, and their destiny. Unlike other MMOs, we don't create
 tons of content like cities or quests, but we give the players a sandbox to
 create their own. This is making the project more feasible as we are more a
-tech company than a content company. 
+tech company than a content company.
 
 As for the origin of the project: it's a very old gamer dream, something I've
 been thinking about for at least 6 or 7 years now. Dual Universe is a
@@ -97,7 +99,7 @@ productive?  Did you have a long evaluation phase?
 __Jean-Christophe__: CAF was very easy to use, with well documented examples. I
 think my familiarity with the actor model was probably helping, I suppose the
 particular way of doing things might be more difficult to grasp if you are
-totally new to this approach. 
+totally new to this approach.
 
 __CAF Team__: What technologies do you use beside CAF and what are your
 experiences in integrating CAF with other tools and frameworks?
@@ -117,7 +119,7 @@ experience (and expectation) regarding performance?
 __Jean-Christophe__: As I said, the novelty we try to bring to the market is
 the idea of a continuous single-shard universe. This means that we must be able
 to balance the computing load dynamically, whereas current MMO games balance it
-statically, depending on the player position in the game. 
+statically, depending on the player position in the game.
 
 CAF allows us to avoid dealing with low-level synchronization issues (data
 races, deadlocks, costly synchronization primitives) while enabling the logical
@@ -143,7 +145,7 @@ __CAF Team__: Final question: if you were to decide what the next feature of
 CAF would be, what would you have in mind?
 
 __Jean-Christophe__: I can think of a few, some of which are probably a bit
-below the scope of CAF! 
+below the scope of CAF!
 
 - `atom()`s with more than 10 characters!
 - when `announce()`ing a custom type, `std::container<type>` should be announced
