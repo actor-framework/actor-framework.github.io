@@ -9,16 +9,17 @@ body {
 li.L4 {
   list-style-type: none;
 }
+/*
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #eee;
-  box-shadow: 4px 4px 4px #888;
+  background-color: white;
   padding: 4px;
   overflow: auto;
 }
+*/
 ::selection {
   background: #eee;
   text-shadow: none;
