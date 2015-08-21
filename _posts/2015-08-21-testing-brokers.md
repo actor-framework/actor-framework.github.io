@@ -5,8 +5,6 @@ author: dominik
 tags: Testing Brokers
 ---
 
-# Testing Actors
-
 A major benefit of actors is that they are very easy to test. No complex
 mocking, no simulation, simply sending and receiving messages. With brokers
 (actors doing IO) this is a bit different. Sending messages still works, of
@@ -26,7 +24,7 @@ brokers into a fake environment where we are in charge of everything.
 Before we talk about how to take control of IO, we first need to understand how
 the machinery behind brokers works.
 
-![brokers](static/img/broker.png)
+![brokers]({{ site.url }}/static/img/broker.png)
 
 The UML diagram above shows the relations a brokers has with IO-related classes
 in CAF. The `middleman` is a singleton in CAF that provides access to various
@@ -59,10 +57,10 @@ generates a `new_connection_msg` for the broker.
 
 ## Multiplexer
 
-The multiplexer is an IO loop and a factory for scribes and doorman. If you
-want to change which networking API CAF is using, this is the only class you
-need to rewrite. It has no member functions in the UML diagram for brevity, but
-here are the important ones we need to know:
+The multiplexer is an IO loop and a factory for scribes and doormen. If you
+want to change which networking API CAF is using, this is the (abstract) class
+you need to implement. It has no member functions in the UML diagram for
+brevity, but here are the important ones we need to know:
 
 ```cpp
 class multiplexer {
@@ -105,7 +103,7 @@ communication) and assign this scribe to the given broker. The function
 `assign_tcp_doorman` does the same thing for doormen. If you have ever used
 ASIO, `run`, `dispatch`, and `post` will remind you of ASIO's `io_service`. And
 you are right. In fact, CAF's `asio_multiplexer` is simply implemented using an
-`io_service`. The function `run` is called in thread crated by the `middleman`
+`io_service`. The function `run` is called in a thread crated by the `middleman`
 on startup. Whenever a broker receives a message from other actors, it calls
 `post` to schedule handling the message for later by creating a `runnable` for
 this task.
@@ -166,20 +164,24 @@ public:
 The `test_multiplexer` has several member function that "fake" network events
 and allow you to manipulate the buffers of scribes directly. In particular,
 `virtual_send` allows you to fake incoming data on a `connection_handle`. This
-will cause the scribe to generate one or more `new_data_msg` (depending on the
-configured receive policy). Those messages are handled by the broker
-immediately.
+will cause the scribe to generate one or more `new_data_msg` messages
+(depending on the configured receive policy). Those messages are handled by the
+broker immediately.
 
-To install a "fake multiplexer", one needs to call
-`set_middleman(new network::test_multiplexer)` in `main`, *before* calling
-any IO-related function in CAF. To show this multiplexer in action, we first
+To simulate a remote connection, one needs to create a pending connection using
+`add_pending_connect` and cause the corresponding doorman to accept it via
+`accept_connection`.
+
+Using the test multiplexer requires calling `set_middleman(new
+network::test_multiplexer)` in `main`, *before* calling any IO-related function
+in CAF. Before showing the test multiplexer in action, we first implement
 implement a broker we want to test.
 
 # Example Application
 
 The application we are going to test is a simplistic HTTP server. We do not
 want to bother with actually parsing HTTP, so we always only consider the first
-line of a HTTP get and check if it is equal to `"GET / HTTP/1.1"`. If we
+line of a HTTP header and check if it is equal to `"GET / HTTP/1.1"`. If we
 receive anything else, we will send a 404 as response.
 
 However, we are going to deal with chunked input and we (pedantically) require
@@ -349,11 +351,25 @@ Our HTTP worker receives chunks of 128 bytes. Once it detected the end of the
 HTTP header (a blank line), it looks at the first line to see if it is equal to
 `http_valid_get`. If so, it sends the OK message, otherwise it sends the 404.
 
-# Testing the HTTP Broker
-
-Without further ado, here is our unit test for the example application.
+A minimal application using our brokers that always tries to open port 8080 is
+a three-liner:
 
 ```cpp
+int main() {
+  spawn_io_server(server, 8080);
+  await_all_actors_done();
+  shutdown();
+}
+```
+
+# Testing the HTTP Broker
+
+Without further ado, here is our complete unit test for the example
+application.
+
+```cpp
+namespace {
+
 class fixture {
 public:
   fixture() {
@@ -435,3 +451,19 @@ CAF_TEST(invalid_response) {
 
 CAF_TEST_FIXTURE_SCOPE_END()
 ```
+
+The constructor of our fixture spawns the server that we are going to test.
+Since we need an actual pointer to the broker, we need to use `actor_cast` to
+get a pointer and downcast it afterwards. Using the pointer, we can setup a
+connection using the test multiplexer. These steps will create a
+`new_connection_msg` for the server that spawns a `http_worker` in response.
+
+With the `mock` member function, we create a simple API that allows us to
+correlate inputs and outputs. The `mock` function is a simple wrapper around
+`virtual_send` and `expect` compares what output a broker has written in its
+`output_buffer` with the output we expect.
+
+The test uses the unit test framework from CAF. Using a different test
+framework, e.g., Boost.Test, is straightforward.  The complete source code can
+be found [at
+GitHub](https://github.com/actor-framework/actor-framework/blob/4a97de85c8d01f5de0f3ba314fb836f220f8de27/libcaf_io/test/http_broker.cpp).
