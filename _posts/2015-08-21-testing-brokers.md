@@ -157,6 +157,9 @@ public:
   /// Returns `true` if a `runnable` was available, `false` otherwise.
   bool try_exec_runnable();
 
+  /// Executes all pending `runnable` objects.
+  void flush_runnables();
+
   // ...
 };
 ```
@@ -390,9 +393,10 @@ public:
 
   ~fixture() {
     anon_send_exit(aut_, exit_reason::kill);
-    // run the exit message explicitly, since we do not invoke any "IO"
-    // from this point on that would trigger the exit message implicitly
-    mpx_->exec_runnable();
+    // run the exit message and other pending messages explicitly,
+    // since we do not invoke any "IO" from this point on that would
+    // trigger those messages implicitly
+    mpx_->flush_runnables();
     await_all_actors_done();
     shutdown();
   }
