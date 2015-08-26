@@ -629,11 +629,10 @@ samp {
 }
 code {
   font-size: 90%;
-  /*padding: 2px 4px;
-  color: #c7254e;
-  background-color: #f9f2f4;*/
   white-space: nowrap;
-  border-radius: 4px;
+}
+code:not(.cpp) {
+  font-weight: bold;
 }
 pre {
   display: block;
