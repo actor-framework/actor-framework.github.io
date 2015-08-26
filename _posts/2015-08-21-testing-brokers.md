@@ -2,7 +2,7 @@
 layout: post
 title:  "Testing Brokers"
 author: dominik
-tags: Testing Brokers
+tags: Tutorial Testing Broker
 ---
 
 A major benefit of actors is that they are very easy to test. No complex
