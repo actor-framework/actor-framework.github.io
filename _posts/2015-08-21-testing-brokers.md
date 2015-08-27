@@ -6,29 +6,30 @@ tags: Tutorial Testing Broker
 ---
 
 A major benefit of actors is that they are very easy to test. No complex
-mocking, no simulation, simply sending and receiving messages. With brokers
-(actors doing IO) this is a bit different. Sending messages still works, of
-course, but usually the important part to test is the IO itself. Does your
-actor parse its input correctly? Does it close connections appropriately?  This
-cannot be easily tested with message passing alone.
+mocking, no simulation, simply sending and receiving messages. Unfortunately
+this does not apply to *brokers*, a special type of actors performing I/O.
+Sending messages still works, of course, but testing brokers involves the I/O
+part as opposed to sending messages. Does your actor parse its input correctly?
+Does it close connections appropriately? This blog post describes how CAF
+supports unit testing of the I/O aspect outside the message passing realm.
 
-The most important aspect in unit testing is reproducibility. When writing a
+A key concern of unit testing is reproducibility. When writing a
 test, you want to make sure to be in charge of each step individually. This is
-generally not the case when doing IO, since this involves components of the
-operating system, e.g., sockets and the TCP stack. Fortunately, brokers in CAF
-do never talk to any component of the OS directly. This means we can trick
-brokers into a fake environment where we are in charge of everything.
+generally not the case when performing I/O operations, since this involves
+components of the operating system, e.g., sockets and the TCP stack.
+Fortunately, brokers in CAF never talk to the OS directly, which allows us to
+trick them into a fake environment.
 
 # Brokers
 
-Before we talk about how to take control of IO, we first need to understand how
+Before we talk about how to take control of I/O, we first need to understand how
 the machinery behind brokers works.
 
 ![brokers]({{ site.url }}/static/img/broker.png)
 
-The UML diagram above shows the relations a brokers has with IO-related classes
+The UML diagram above shows the relations a brokers has with I/O-related classes
 in CAF. The `middleman` is a singleton in CAF that provides access to various
-IO-related functionality. The three classes that are responsible for doing IO
+I/O-related functionality. The three classes that are responsible for doing I/O
 are `multiplexer`, `scribe`, and `doorman`.
 
 ## Scribes
@@ -57,7 +58,7 @@ generates a `new_connection_msg` for the broker.
 
 ## Multiplexer
 
-The multiplexer is an IO loop and a factory for scribes and doormen. If you
+The multiplexer is an I/O loop and a factory for scribes and doormen. If you
 want to change which networking API CAF is using, this is the (abstract) class
 you need to implement. It has no member functions in the UML diagram for
 brevity, but here are the important ones we need to know:
@@ -108,9 +109,9 @@ on startup. Whenever a broker receives a message from other actors, it calls
 `post` to schedule handling the message for later by creating a `runnable` for
 this task.
 
-# Faking IO
+# Faking I/O
 
-For testing brokers without actually doing IO, CAF has a `multiplexer`
+For testing brokers without actually doing I/O, CAF has a `multiplexer`
 implementation that is solely meant for testing:
 
 ```cpp
@@ -176,7 +177,7 @@ To simulate a remote connection, one needs to create a pending connection using
 `accept_connection`.
 
 Using the test multiplexer requires calling `set_middleman(new
-network::test_multiplexer)` in `main`, *before* calling any IO-related function
+network::test_multiplexer)` in `main`, *before* calling any I/O-related function
 in CAF. Before showing the test multiplexer in action, we first implement
 implement a broker we want to test.
 
@@ -394,7 +395,7 @@ public:
   ~fixture() {
     anon_send_exit(aut_, exit_reason::kill);
     // run the exit message and other pending messages explicitly,
-    // since we do not invoke any "IO" from this point on that would
+    // since we do not invoke any "I/O" from this point on that would
     // trigger those messages implicitly
     mpx_->flush_runnables();
     await_all_actors_done();
