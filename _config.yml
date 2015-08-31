@@ -1,42 +1,47 @@
+# Paths
 root: /
 permalink: /:year-:month/:title/
-markdown: rdiscount
-highlighter: pygments
-paginate: 5
 
-# Setup
-title:            'C++ Actor Framework &mdash; Dev Blog'
-tagline:          'The developer blog of the <a href="http://actor-framework.org/" target="_blank">C++ Actor Framework</a>.'
-description:      'An Open Source implementation of the actor model in C++'
-url:              'http://blog.actor-framework.org/'
-baseurl:          /
-
-# ignore files not belonging to blog
-exclude: [README.md, template.md]
-
-# owner information
-owner:
-  name:           C++ Actor Framework
-  twitter:        actor_framework
-  github:         actor-framework
-
-# post per page
-paginate:         3
-
-# Custom vars
-version:           0.11.0
-
-# repository
-github:
-  repo:           https://github.com/actor-framework
-
-# google analytics
-google_analytics:
-  id: UA-56404861-1
-  username: auto
-
+# List of all authors; add your name here before posting!
 authors:
   dominik:
     display_name: Dominik Charousset
     email: dominik.charousset@haw-hamburg.de
     github: Neverlord
+
+# Conversion
+markdown: rdiscount
+highlighter: pygments
+
+# Meta information & web address
+title:            'C++ Actor Framework &mdash; Dev Blog'
+tagline:          'The developer blog of the <a href="http://actor-framework.org/" target="_blank">C++ Actor Framework</a>.'
+description:      'An Open Source implementation of the actor model in C++'
+url:              'http://blog.actor-framework.org/'
+baseurl:          /
+owner:
+  name:           C++ Actor Framework
+  twitter:        actor_framework
+  github:         actor-framework
+
+# File blacklist
+exclude: [README.md, template.md]
+
+# Post per page
+paginate:         3
+
+# Do not publish posts with a future date
+future: false
+
+# Custom vars
+version:           0.14.0
+
+# Repository
+github:
+  repo:           https://github.com/actor-framework
+
+# Google analytics
+google_analytics:
+  id: UA-56404861-1
+  username: auto
+
