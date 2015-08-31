@@ -112,7 +112,8 @@ this task.
 # Faking I/O
 
 For testing brokers without actually doing I/O, CAF has a `multiplexer`
-implementation that is solely meant for testing:
+implementation that is solely meant for testing (since
+[0.14.1](https://github.com/actor-framework/actor-framework/releases/tag/0.14.1)):
 
 ```cpp
 class test_multiplexer : public multiplexer {
@@ -471,4 +472,4 @@ correlate inputs and outputs. The `mock` function is a simple wrapper around
 The test uses the unit test framework from CAF. Using a different test
 framework, e.g., Boost.Test, is straightforward.  The complete source code can
 be found [at
-GitHub](https://github.com/actor-framework/actor-framework/blob/4a97de85c8d01f5de0f3ba314fb836f220f8de27/libcaf_io/test/http_broker.cpp).
+GitHub](https://github.com/actor-framework/actor-framework/blob/1aeaaf81ec81b0a2f6d2310a6fed43ef99d1f9a0/libcaf_io/test/http_broker.cpp).
