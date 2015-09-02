@@ -47,17 +47,27 @@ What is your secret?
 
 __Bro Team__: ...
 
-__CAF Team__: Bro is a very sensitive piece of software, as network
-operators around the world rely on it. Changing a key component like the
-communication system is not something that you do without having a good
-reason. What was your motivation to start developing a new communication
-backend from scratch?
+__CAF Team__: Bro is a security-critical software and network operators around
+the world rely on it. Changing a key component like the communication system is
+not something that you do without having a good reason. What was your
+motivation to start developing a new communication backend from scratch?
 
 __Bro Team__: ...
 
-__CAF Team__: After settings goals for the new systems, when did you decide
-that CAF was the right tool to achieve those? Did you try other frameworks
-before?
+__CAF Team__: What goals did you set for the new communication system? What do
+you want to achieve with the system in the long run?
+
+__Bro Team__: ...
+
+__CAF Team__: Many challenges in software development arise in the
+implementation step and are not obvious in the initial design phase. What were
+the core issues and challenges you faced when implementing Broker and how did
+CAF contribute to your solution?
+
+__Bro Team__: ...
+
+__CAF Team__: Did you consider other frameworks? If yes, what convinced you to
+use CAF instead?
 
 __Bro Team__: ...
 
@@ -86,9 +96,9 @@ __Bro Team__: ...
 __CAF Team__: Thank you very much for this interview and we wish you all the
 great success for the next 15 years of Bro!
 
-Special thanks go to Matthias Vallentin for introducing the teams to each
+_Special thanks go to Matthias Vallentin for introducing the teams to each
 other. Matthias is a member of the Bro team as well as a long-time contributor
-to CAF.
+to CAF._
 
 # Links
 
