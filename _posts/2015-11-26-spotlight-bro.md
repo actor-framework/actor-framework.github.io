@@ -7,7 +7,7 @@ tags: Spotlight Bro
 
 For our second article in the spotlight series, we want to higlight the popular
 open source network monitor [Bro](https://www.bro.org) and talk to the core
-development in Berkeley, California.
+development team in Berkeley, California.
 
 # Background: Bro(ker)
 
