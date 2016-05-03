@@ -8,22 +8,29 @@ tags: API
 Sometimes, a design outlives its usefulness. CAF started with its first commit
 on March 4, 2011. Its mission statement? Provide a lightweight, domain-specifc
 language (DSL) for actors in C++. The user-facing API should be as minimalistic
-as possible by hiding internal state of the actor system. Components such as
-the scheduler or the middleman are lazily initialized singletons. This design
-works great as long as applications do not wish to configure individual
-components of the actor system. With a growing userbase and more fields of
+as possible by hiding internal state of the actor runtime. Key components, such
+as scheduler or middleman, run as lazily initialized singletons. This design
+works great as long as applications do not wish to configure parameters of
+these global components. With a growing user base and more fields of
 applications, it becomes clear that hiding as much state of the system as
 possible puts obstacles in the way of many users.
 
-After much consideration, we decided to start over with a new API design in
-0.15. The next release of CAF embodies our vision for a 1.0 release and
-addresses all the feedback we collected over the years. The new anchor of CAF
-applications is `actor_system`, which replaces the previous singleton-based
-design. Users are in full control over the setup phase of actor systems and
-most of the system can now be configured via `.ini` files. We also replaced
-misleading function names like `sync_send` with more intuitive names and
-improved the garbage collection based on reference counting. Without further
-ado, this is how the hello world example will look like in 0.15:
+After much consideration, we decided to start over with a API in 0.15. 
+The next release of CAF embodies our vision for a 1.0 release, and
+addresses the vibrant feedback we received over the years. The new anchor of
+CAF applications is `actor_system`, which replaces the previous singleton-based
+design. An actor system encapsulates runtime state, which CAF previously
+maintained globally, such as announced type information and scheduler behavior.
+Users can now fully control the initialization phase of an actor system.
+Aside from improved configurability, this change has the advantage that
+multiple actor systems can now co-exist in the same process, e.g., one with a
+scheduler tuned for high-throughput and one with a scheduler optimized for low
+latency scenarios.
+
+With CAF 0.15, we replaced misleading function names with more intuitive ones
+(e.g., `sync_send` with `request`). We also improved the reference counting
+implementation used for actor garbage collection. Without further ado, this is
+how the Hello World example will look in 0.15:
 
 ```cpp
 behavior mirror(event_based_actor* self) {
@@ -104,17 +111,17 @@ int main() {
 }
 ```
 
-Most notably, the `main` function no longer calls `await_all_actors_done()` and
-`shutdown()`. Nor needs the `mirror` actor to call `quit` explictly. Once
-the `system` variable goes out of scope, it will wait for all remaining actors
-before cleaning up. The `mirror` is destroyed implicitly once there is no more
-reference to it. Finally, `sync_send` has been renamed to `request` and now
-requires a timeout.
+Most notably, we no longer need to call `await_all_actors_done()` and
+`shutdown()` in `main()`. Nor does the `mirror` actor need to call `quit()`
+explicitly. Once `system` goes out of scope, it will wait (i.e., block) for all
+remaining actors before cleaning up. The `mirror` actor is destroyed implicitly
+once there is no more reference to it. Finally, `sync_send` has been renamed to
+`request` and now requires a timeout.
 
-Without going into too much detail, dynamically and statically typed actors get
-a symmetric API. We also provide new ways to compose actors and the behavior of
-actors. If you are interested in the current state of development, check out
-the `topic/actor-system` branch. It is in development since November 2015,
+Additionally, dynamically and statically typed actors now exhibit a symmetric
+API. We also provide new ways to compose actors and the behavior of actors. If
+you are interested in the current state of development, check out the
+`topic/actor-system` branch. It is in development since November 2015,
 currently contains 200 commits, and will get merged into `develop` soon.
 
 Since version 0.15 has many API changes, we will release at least one
@@ -122,6 +129,6 @@ pre-release version for collecting user feedback and finalizing the API. The
 first pre-release is scheduled for June and will include a complete overhaul of
 the user manual. It was not an easy decision to break the API on so many
 layers. However, the changes are the result of all the feedback we received
-over the years as well as our own experiences with using CAF on a daily base.
+over years as well as our own experiences with using CAF on a daily basis.
 This makes version 0.15 the most important milestone towards a stable 1.0
 release.
