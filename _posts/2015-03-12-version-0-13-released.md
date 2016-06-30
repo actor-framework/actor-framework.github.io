@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Version 0.13 released!"
+title:  "Version 0.13 Released!"
 author: dominik
 tags: API GitHub
 ---
