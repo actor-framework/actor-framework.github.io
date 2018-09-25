@@ -13,7 +13,7 @@ authors:
     github: Neverlord
 
 # Conversion
-markdown: rdiscount
+markdown: kramdown
 highlighter: rouge
 
 # Meta information & web address
