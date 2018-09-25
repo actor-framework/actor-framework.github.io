@@ -3,7 +3,7 @@ root: /
 permalink: /:year-:month/:title/
 
 # Plugins
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 # List of all authors; add your name here before posting!
 authors:
