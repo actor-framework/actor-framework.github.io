@@ -14,7 +14,7 @@ authors:
 
 # Conversion
 markdown: rdiscount
-highlighter: pygments
+highlighter: rouge
 
 # Meta information & web address
 title:            'C++ Actor Framework &mdash; Dev Blog'
