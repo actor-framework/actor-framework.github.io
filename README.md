@@ -11,7 +11,7 @@ You will need to install ruby, nodejs, rdiscount, and jekyll:
 
 ```
 $PKG_MGR install ruby nodejs
-gem install jekyll rdiscount
+gem install jekyll rdiscount jekyll-paginate
 ```
 
 To browse the blog locally on port 4000, run:
