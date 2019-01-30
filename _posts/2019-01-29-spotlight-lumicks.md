@@ -25,13 +25,13 @@ U.S. west coast all the way to ShanghaiTech University in far east China.
 
 # The Interview
 
-__CAF Team__: Dear Lumicks team, thank you so much for taking the time speaking
-to us! Lumicks works hard to deliver unparalleled insights into biological
-processes at a molecular level. A [recent article in The
+__CAF Team__: Dear Lumicks team, thank you for taking the time speaking to us!
+Lumicks works hard to deliver unique insights into biological processes at a
+molecular level. A [recent article in The
 Scientist](https://www.the-scientist.com/modus-operandi/dancing-cells-65127/amp)
 speaks about using sound waves to capture cells, which is a process you use for
 some of your products, while other products mention optical tweezers. A bit
-exaggerated: how can lasers and music help us to cure cancer? Without going
+exaggerated: How can lasers and music help us to cure cancer? Without going
 into too much detail, how would you explain what your products do for people
 like us that don't have degrees in molecular biology?
 
@@ -45,20 +45,20 @@ engineering challenges that you faced during initial product development?
 
 __...__:
 
+__CAF Team__: Many scientists around the world rely on Lumicks products for
+their research or drug development. At the same time, you are constantly
+working to improve user experience and to deliver new features. What is your
+process for making sure your users always have a robust setup they can rely on
+while still bringing new features and improvements to your customers?
+
+__...__:
+
 __CAF Team__: A big part of software engineering is constant learning about the
 problem domain and iterating on a prototype until a robust solution emerges.
 However, we can't iterate endlessly. Time to market is very crucial, even
 critical in a startup like Lumicks. What brings the actor model, and CAF in
 particular, to the table that helps you iterating faster and reaching a
 sophisticated solution in reasonable time?
-
-__...__:
-
-__CAF Team__: Many scientists around the world rely on Lumicks products for
-their research or drug development. At the same time, you are constantly
-working to improve user experience and to deliver new features. What is your
-process for making sure your users always have a robust system they can rely on
-while still bringing new features and improvements to your customers?
 
 __...__:
 
