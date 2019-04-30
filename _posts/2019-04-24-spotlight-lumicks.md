@@ -5,7 +5,7 @@ HQ.
 # Background: Lumicks
 
 <img class="centered-image" src="{{ site.url }}/static/img/lumicks.png"
-alt="Official Lumicks Logo">
+     alt="Official Lumicks Logo">
 
 Lumicks manufactures dynamic single-molecule and cell avidity analysis
 equipment. Their breakthrough technologies enable visualization of molecular
@@ -35,7 +35,7 @@ really feel those forces in your stomach. With light, it's perhaps a bit harder
 to imagine: after all, you don't experience a "thump" whenever you turn on the
 light, nor do you feel the sunlight pushing you back on a sunny day. Yet even
 light pushes against things a tiny bit, and this is actually used in the vacuum
-of space to fly spacecraft, using "solar sails". At Lumicks, we harness those
+of space to drive spacecrafts with "solar sails". At Lumicks, we harness those
 tiny forces to push and pull on the cells and molecules that make up your body.
 We can, for instance, "grab" a DNA molecule by its ends and stretch it, and
 then watch how other molecules land on it to repair damage on the DNA.
@@ -45,7 +45,7 @@ that lead to diseases, including cancer.
 __CAF Team__: You are working with very small scales but very high resolutions.
 We can imagine it takes quite a lot of data processing in real-time in order to
 visualize the experiments and allow scientists to manipulate individual
-proteins or cells while studying their behaviour. What are the biggest software
+proteins or cells while studying their behavior. What are the biggest software
 engineering challenges that you faced during initial product development?
 
 __Lumicks Team__: Perhaps surprisingly, data volume is not our biggest
@@ -69,7 +69,7 @@ __Lumicks Team__: Our application does a lot of parallel processing and
 multi-threading: there is all sorts of hardware I/O running in the background,
 plus data processing, storage management, etc. CAF allows us to stay sane
 amidst all the threads: the actor framework enforces a clear model of data
-ownership, and saves us from a lot of mutex-related headaches. Not having to
+ownership and saves us from a lot of mutex-related headaches. Not having to
 worry about a whole class of subtle, hard-to-reproduce bugs is a life saver. On
 top of that, the availability of compile-time checking of messaging interfaces
 is very useful, and something where CAF has a tangible advantage over actor
@@ -84,16 +84,18 @@ During the development of our control software it became clear that actors
 would be a great fit and and so we undertook a review of C++ frameworks. CAF
 came out as a clear winner and we have been using it ever since. The active
 development of the library was a major factor for us, as well as its
-flexibility and level of compile-time safety. __CAF Team__: How would you
-summarize your experience with CAF so far? What was the first version you've
-used? Were there any unexpected obstacles in adopting CAF or aha moments?
+flexibility and level of compile-time safety.
+
+__CAF Team__: How would you summarize your experience with CAF so far? What was
+the first version you've used? Were there any unexpected obstacles in adopting
+CAF or aha moments?
 
 __Lumicks Team__: CAF has been working very well for us. We started on version
 0.15.5, in the Fall of 2017. We had some small issues in the beginning, mostly
-related to the lack of official shared library build in Windows, but otherwise
-have been closely tracking the official releases. We haven't had any major
-unexpected obstacles, so far, but finding the Qt mix-in was a
-pleasant surprise, it made integrating with our UI components much easier! 
+related to the lack of official shared library support on Windows, but
+otherwise have been closely tracking the official releases. We haven't had any
+major unexpected obstacles, so far, but finding the Qt mix-in was a
+pleasant surprise. It made integrating with our UI components much easier! 
 
 __CAF Team__: You develop all of your software in house with an international
 team of software engineers. How do you introduce new team members to CAF and
@@ -103,8 +105,8 @@ __Lumicks Team__: We haven't found the learning curve for new team members to
 be too challenging. As a team we have built a number of abstractions around CAF
 and so this helps to reduce the surface area that new team members need to
 learn. We also work with CAF on a single node, and use typed interfaces as much
-as possible to make intentions clear and explicit . Processes within the team
-also help, all of our code is thoroughly reviewed before merging and we do lots
+as possible to make intentions clear and explicit. Processes within the team
+also help. All of our code is thoroughly reviewed before merging and we do lots
 of internal knowledge sharing, from working together on tricky problems to
 fortnightly show and tell sessions on new and interesting developments.
 
@@ -121,11 +123,11 @@ __CAF Team__: Final question: if you were to decide what the next feature of
 CAF would be, what would you have in mind?
 
 __Lumicks Team__: One feature that would really help us as a team is better
-tooling to understand message flows, for example to visual the flow of messages
-between actors. It would help not only to debug issues during development but
-also to optimise performance. We are also particularly interested in the
-possibilities of the new streaming API, so seeing that move out of its
-experimental state would also be great!
+tooling to understand message flows, for example to visualize the flow of
+messages between actors. It would help not only to debug issues during
+development but also to optimise performance. We are also particularly
+interested in the possibilities of the new streaming API, so seeing that move
+out of its experimental state would also be great!
 
 __CAF Team__: Thank you very much for this interview! We wish you and your team
 all the great success in helping scientists around the world to
