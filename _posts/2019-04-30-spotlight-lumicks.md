@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Spotlight: Lumicks"
+author: dominik
+tags: Spotlight Lumicks
+---
+
 For this spotlight, we dive into the world of molecular research and talk to
 the software team of the highly ambitious startup Lumicks at their Amsterdam
 HQ.
