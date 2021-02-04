@@ -1,29 +1,16 @@
-<nav class="navbar navbar-inverse page-navbar" role="navigation">
-  <div class="page-navbar-container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+  <nav class="hover-underline-menu underline-from-center">
+    <div class="row">
+      <ul class="menu align-right">
+        {% if page.nav-type == "home" %}
+          <li><a href="/blog/index.html">Dev Blog</a></li>
+          <li><a href="/index.html#getting-started">Getting Started</a></li>
+          <li><a href="/index.html#users">Who Is Using CAF?</a></li>
+          <li><a href="/index.html#community">Community</a></li>
+          <li><a href="/index.html#features">Features</a></li>
+        {% else %}
+          <li><a href="/blog/index.html">Dev Blog</a></li>
+          <li><a href="/index.html">Home</a></li>
+        {% endif %}
+      </ul>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav page-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/archive">Archive</a></li>
-          <li><a href="/tags">Tags</a></li>
-          <li><a href="/about">About</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right page-nav">
-        <!-- <li><a href="https://github.com/{{site.owner.github}}">GitHub</a></li> -->
-          <li class="extern"><a href="https://groups.google.com/d/forum/actor-framework">Google Group</a></li>
-          <li class="extern"><a href="https://github.com/actor-framework/actor-framework/issues">Issue Tracker</a></li>
-          <li><a href="/feed.xml">RSS Feed</a></li>
-          <li><a href="https://actor-framework.readthedocs.io/en/stable/">DOC</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+  </nav>

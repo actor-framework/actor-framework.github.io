@@ -1,109 +1,372 @@
 ---
 layout: default
-title: CAF
+title: The C++ Actor Framework
+nav-type: home
 ---
 
-{% for post in paginator.posts %}
-{% assign author = site.authors[post.author] %}
-<div class="page-content">
-  <div class="post-heading">
-   <a href="{{ post.url }}">{{ post.title }}</a>
-  </div>
-  <div class="post-meta">
-     <span>
-      <a href="https://github.com/{{ author.github }}">{{ author.display_name }}</a>
-    </span>
-    <span><i class="fa fa-ellipsis-v"></i></span>
-    <span>
-      <a href="{{ page.url }}">{{ post.date | date_to_long_string }}</a>
-    </span>
-    <span><i class="fa fa-ellipsis-v"></i></span>
-    <span>
-      Tags:
-      {% for tag in post.tags %}
-      <a href="/tags.html#{{ tag }}-ref">{{ tag }}</a>
-      {% endfor %}
-    <span>
- </div>
-  <div class="post-entry">
-    <!-- {{  post.content || split:'<!--more-->' | first }} -->
-    {{ post.content }}
-  </div>
-  <!-- <div class="post-footer">
-    <div class="read-more">
-      <a href="{{ post.url }}">Read more &rarr;</a>
+<!-- Logo and Heading -->
+<div class="row text-center" style="padding-top: 6em">
+  <p style="padding-top: 1em">
+    <img width="400" src="/static/img/caf-logo.png">
+  </p>
+  <p>
+    <h1 style="padding-top: 20pt; color: #004358">
+      <b>CAF</b><br>
+      The C++ Actor Framework
+    </h1>
+  </p>
+</div>
+<!-- Intro Block -->
+<div style="width: 100%; background-color: #004358; color: white; margin-top: 3em; padding: 2em 0 2em 0">
+  <div class="row text-center">
+    <div class="small-2 columns">
+      &nbsp;
     </div>
-  </div> -->
-</div>
-{% endfor %}
-
-<div class="page-pagination">
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <li><a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a></li>
-    {% else %}
-      <li><span class="pagination-item older">Older</span></li>
-    {% endif %}
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-        <li><a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a></li>
-      {% else %}
-        <li><a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a></li>
-      {% endif %}
-    {% else %}
-      <li><span class="pagination-item newer">Newer</span></li>
-    {% endif %}
+    <div class="small-8 columns">
+      <h1><b>
+        <img src="/static/img/target.png" style="width: 1em">
+        In a Nutshell
+      </b></h1>
+      <p>
+        CAF offers a high-level programming environment based on the
+        <a href=https://en.wikipedia.org/wiki/Actor_model"
+           target="_blank">Actor Model</a> of computation combined with an
+        efficient, native runtime environment that lets you build scalable
+        applications. For example,
+        <a href="https://blog.actor-framework.org/2019-04/spotlight-lumicks"
+           target="_blank">software for molecular research</a>,
+        <a href="https://blog.actor-framework.org/2015-11/spotlight-bro"
+           target="_blank">communication backends for distributed network
+           security monitoring</a> or even
+        <a href="https://blog.actor-framework.org/2014-12/spotlight-dual-universe"
+           target="_blank">massive multiplayer online games</a>.
+      </p>
+      <p>
+        The framework is open source, available on GitHub under the 3-Clause
+        BSD License, and in active development since 2011.
+      </p>
+      <p>&nbsp;</p>
+      <p>
+        <a href="https://actor-framework.readthedocs.io/en/stable/Overview.html"
+           class="button main-button" target="_blank">Overview</a>
+        <a href="https://github.com/actor-framework/actor-framework"
+           class="button main-button" target="_blank">GitHub</a>
+      </p>
+      <p>
+        <a href="https://www.cafcademy.com"
+           class="button main-button" target="_blank">Training & Support</a>
+      </p>
+    </div>
+    <div class="small-2 columns">
+      &nbsp;
+    </div>
   </div>
 </div>
-
-<!-- <div class="page-pagination">
-    <ul class="pagination">
-        <li><span>Navigation:</span></li>
-    {% assign page_begin = paginator.page | minus: 5 %}
-    {% assign page_end = paginator.page | plus: 5 %}
-    {% if page_begin < 1 %}
-            {% assign page_begin = 1 %}
-    {% endif %}
-    {% if page_end > paginator.total_pages %}
-            {% assign page_end = paginator.total_pages %}
-    {% endif %}
-        <li><a href="/">First</a></li>
-    {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-        <li><a href="/">&larr;</a></li>
-    {% else %}
-        <li><a href="/page{{paginator.previous_page}}">&larr;</a></li>
-    {% endif %}
-    {% endif %}
-    {% if 6 < paginator.page %}
-        <li><a class="disabled">...</a></li>
-    {% endif %}
-    {% for count in (page_begin..page_end) %}
-    {% if 1 == count %}
-        {% if paginator.page == 1 %}
-        <li><a href="/" class="active">1</a></li>
-        {% else %}
-        <li><a href="/">1</a></li>
-        {% endif %}
-    {% else %}
-    {% if count == paginator.page %}
-        <li><a href="/page{{count}}" class="active">{{count}}</a></li>
-    {% else %}
-        <li><a href="/page{{count}}">{{count}}</a></li>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-    {% if page_end < paginator.total_pages %}
-        <li><a class="disabled">...</a></li>
-    {% endif %}
-    {% if paginator.next_page %}
-        <li><a class="next" href="/page{{paginator.next_page}}">&rarr;</a></li>
-    {% endif %}
-    {% if paginator.page == 1 %}
-        <li><a href="/">Last</a></li>
-    {% else %}
-        <li><a href="/page{{paginator.total_pages}}">Last</a></li>
-    {% endif %}
-        <!-- <li><span>Total {{ paginator.total_posts }} Articles</span></li> -->
-    <!-- </ul>
-</div> -->
+<!-- Features Block -->
+<div class="row" style="padding-top: 2em" id="features">
+  <div class="small-2 columns">
+    &nbsp;
+  </div>
+  <div class="small-8 columns">
+    <div class="row">
+      <div class="small-12 columns">
+        <p><h1>Scalable Abstractions</h1></p>
+      </div>
+      <div class="small-12 columns">
+        <div style="display: flex; column-gap: 2em">
+          <div style="min-width: 100px">
+            <img src="/static/img/boxes.png" width="100">
+          </div>
+          <div>
+            <p>
+              Network-transparent messaging combined with a shared nothing
+              architecture enables actors to run concurrently without risking
+              data races. Once applications outgrow a single machine, CAF
+              enables users to scale out seamlessly by distributing actors
+              across the network.
+            </p>
+            <p>
+              Actors naturally thrive in an ever-changing environment and scale
+              horizontally just as easily as vertically. This makes actors the
+              perfect fit for building applications that grow and shrink
+              dynamically with user demand.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
+        <p><h1>Native Execution</h1></p>
+      </div>
+      <div class="small-12 columns">
+        <div style="display: flex; column-gap: 2em">
+          <div style="min-width: 100px">
+            <img src="/static/img/tachometer.png" width="100">
+          </div>
+          <div>
+            <p>
+              Leveraging C++ enables us to tightly control memory layout as well
+              as actor scheduling. As a result, CAF actors consist of only a few
+              hundred bytes and the messaging layer reclaims memory as soon as
+              possible.
+            </p>
+            <p>
+              Whether building large-scale applications that live in the cloud,
+              or IoT application that run on resource-constrained devices, CAF
+              users can rely on a low memory footprint and fast execution thanks
+              to a minimal runtime overhead.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
+        <p><h1>Resilient Design</h1></p>
+      </div>
+      <div class="small-12 columns">
+        <div style="display: flex; column-gap: 2em">
+          <div style="min-width: 100px">
+            <img src="/static/img/shield.png" width="100">
+          </div>
+          <div>
+            <p>
+              Distributed systems have many sources of errors. Writing software
+              for the real world means to anticipate partial failures and to
+              gracefully respond to hardware, software and network errors. CAF
+              cannot make crashes and bugs go away, but it equips you with the
+              tools to manage them.
+            </p>
+            <p>
+              Actor-based design organizes applications into sub-systems with
+              failover strategies that allow forming supervision trees. These
+              techniques proved themselves in practice time and time again for
+              building reliable, fault tolerant systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="small-2 columns">
+    &nbsp;
+  </div>
+</div>
+<!-- Community Block -->
+<div style="width: 100%; background-color: #004358; color: white; margin-top: 3em; padding: 2em 0 2em 0" id="community">
+  <div class="row text-center">
+    <div class="small-12 columns">
+      <h1><b>
+        <img src="/static/img/group.png" style="width: 1em">
+        Community
+      </b></h1>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 2em">
+    <div class="medium-6 columns">
+      <h2>
+        <img src="/static/img/github.png" style="width: 1em">
+        GitHub
+      </h2>
+      <p>
+        Our main repository at
+        <a href="https://github.com/actor-framework/actor-framework"
+           target="_blank">github.com/actor-framework/actor-framework</a>
+        is where the CAF community comes together to collaborate on the
+        project.
+      </p>
+      <p>
+        Whether you found a bug, have an idea for an improvement, want to
+        submit patches, or simply want to stay up-to-date with ongoing
+        developments: we are always looking forward to welcome new
+        developers!
+      </p>
+    </div>
+    <div class="medium-6 columns">
+      <h2>
+        <img src="/static/img/twitter.png" style="width: 1em">
+        Twitter
+      </h2>
+      <p>
+        Never miss a release or other important updates by following
+        <a href="https://twitter.com/actor_framework"
+           target="_blank">@actor_framework</a> on Twitter! Likes and
+         retweets that help us spread the word are much appreciated!
+      </p>
+      <p>
+        Our Twitter handle is managed directly by the maintainers of the
+        open source project, so Twitter is also a great place to get in
+        touch with the people behind the framework.
+      </p>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 2em">
+    <div class="medium-6 columns">
+      <h2>
+        <img src="/static/img/chat.png" style="width: 1em">
+        Messaging
+      </h2>
+      <p>
+        Come and say hi on
+        <a href="https://gitter.im/actor-framework/chat"
+          target="_blank">gitter.im/actor-framework</a>! Our chat room is a
+        great place to get in touch with other CAF users and to ask quick
+        questions.
+      </p>
+      <p>
+        Becoming a member of our user mailing list at
+        <a href="https://groups.google.com/d/forum/actor-framework"
+           target="_blank">actor-framework@googlegroups.com</a>
+        connects you to CAF users around the world for sharing your
+        thoughts, asking questions and participating in online discussions
+        surrounding CAF.
+      </p>
+    </div>
+    <div class="medium-6 columns">
+      <h2>
+        <img src="/static/img/research.png" style="width: 1em">
+        Research
+      </h2>
+      <p>
+        Many years of research at the
+        <a href="http://inet.haw-hamburg.de"
+           target="_blank">INET working group</a>
+        of the
+        <a href="https://www.haw-hamburg.de/en/"
+           target="_blank">Hamburg University of Applied Sciences</a>
+        guided the development of CAF. When using CAF in a scientific
+        context, please
+        <a href="https://github.com/actor-framework/actor-framework#scientific-use"
+           target="_blank">cite one of our primary publications</a>.
+      </p>
+      <p>
+        The INET working group is always open for joint research projects or
+        other forms of collaborations. Please contact
+        <a href="https://inet.haw-hamburg.de/members/schmidt"
+          target="_blank">Thomas C. Schmidt</a> for questions related to
+        formal project establishment.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- References Block -->
+<div class="row" style="padding-top: 2em" id="users">
+  <div class="small-12 columns text-center">
+    <h1><b>
+      <img src="/static/img/globe.png" style="width: 1em">
+      Our Users Include
+    </b></h1>
+  </div>
+</div>
+<div class="row" style="padding-top: 2em">
+  <div class="small-12 columns text-center">
+    <a href="http://www.atscom.it/sitowp/en/" target="_blank">
+      <img style="height: 80px; margin: 2em" src="/static/img/ats.png">
+    </a>
+    <a href="https://corelight.com" target="_blank">
+      <img style="height: 80px; margin: 2em" src="/static/img/corelight.png">
+    </a>
+    <a href="https://glvi.de" target="_blank">
+      <img style="height: 80px; margin: 2em" src="/static/img/glvi.png">
+    </a>
+    <a href="https://lumicks.com" target="_blank">
+      <img style="height: 80px; margin: 2em" src="/static/img/lumicks.png">
+    </a>
+    <a href="https://www.dualuniverse.game" target="_blank">
+      <img style="height: 80px; margin: 2em" src="/static/img/novaquark.png">
+    </a>
+  </div>
+</div>
+<!-- Getting Started Block -->
+<div style="width: 100%; background-color: #004358; color: white; margin-top: 3em; padding: 2em 0 2em 0" id="getting-started">
+  <div class="row text-center">
+    <div class="small-12 columns">
+      <h1><b>
+        <img src="/static/img/rocket.png" style="width: 1em">
+        Getting Started
+      </b></h1>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 2em">
+    <div class="medium-6 columns">
+      <h2>
+        <img src="/static/img/examples.png" style="width: 1em">
+        Examples
+      </h2>
+      <p>
+        The
+        <a href="https://github.com/actor-framework/actor-framework/tree/master/examples"
+           target="_blank">examples folder</a> in the main repository
+         contains many small applications showcasing selected features of
+         the framework. Of course, the folder also contains the obligatory
+        <a href="https://github.com/actor-framework/actor-framework/blob/master/examples/hello_world.cpp"
+           target="_blank">Hello World</a>.
+      </p>
+      <p>
+        We strongly recommend looking at the message passing examples first
+        to get an initial feeling for the framework. Afterwards, the
+        remoting examples will help you to distribute your CAF applications.
+      </p>
+    </div>
+    <div class="medium-6 columns">
+      <h2>
+        <img src="/static/img/manual.png" style="width: 1em">
+        Documentation
+      </h2>
+      <p>
+        The
+        <a href="https://actor-framework.readthedocs.io/en/stable"
+           target="_blank">user manual</a> discusses CAF feature by
+        feature and highlights selected components such as the scheduler.
+        The introduction chapter also explains terminology and concepts we
+        use throughout all of our resources.
+      </p>
+      <p>
+        Complementary to the user manual,
+        our
+        <a href="https://codedocs.xyz/actor-framework/actor-framework"
+           target="_blank">Doxygen documentation</a> contains details on all
+        public API classes and functions.
+      </p>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 2em">
+    <!--
+    <div class="medium-6 columns">
+      <h2>
+        <img src="article.png" style="width: 1em">
+        Blog
+      </h2>
+      <p>
+        In our
+        <a href="https://blog.actor-framework.org" target="_blank">developer
+          blog</a>, we publish previews for upcoming changes,
+      </p>
+    </div>
+    -->
+    <div class="medium-3 columns">&nbsp;</div>
+    <div class="medium-6 columns">
+      <h2>
+        <img src="/static/img/caf-logo-white.png" style="width: 1em">
+        Support
+      </h2>
+      <p>
+        Are you considering CAF for your next software project?
+        Get help directly from
+        the
+        creators and maintainers of CAF at
+        <a href="https://www.cafcademy.com"
+           target="_blank">cafcademy.com</a>!
+      </p>
+      <p>
+        Accelerate learning of your engineering team through training
+        sessions and workshops, improve the quality of your applications
+        through architecture and code reviews, or speed up progress of your
+        project by having one of our CAF experts join your team during the
+        early development phases.
+      </p>
+    </div>
+    <div class="medium-3 columns">&nbsp;</div>
+  </div>
+</div>

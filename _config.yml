@@ -9,12 +9,14 @@ plugins: [jekyll-paginate]
 authors:
   dominik:
     display_name: Dominik Charousset
-    email: dominik.charousset@haw-hamburg.de
+    email: dominik@charousset.de
     github: Neverlord
 
 # Conversion
 markdown: kramdown
 highlighter: rouge
+kramdown:
+    input: GFM
 
 # Meta information & web address
 title:            'C++ Actor Framework &mdash; Dev Blog'

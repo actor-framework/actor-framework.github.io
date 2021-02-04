@@ -1,0 +1,58 @@
+---
+layout: archive
+---
+
+<div class="row text-center" style="padding-top: 6em">
+  {% for post in paginator.posts %}
+  {% assign author = site.authors[post.author] %}
+  <div class="page-content">
+    <div class="post-heading">
+     <a href="{{ post.url }}">{{ post.title }}</a>
+    </div>
+    <div class="post-meta">
+       <span>
+        <a href="https://github.com/{{ author.github }}">{{ author.display_name }}</a>
+      </span>
+      <span><i class="fa fa-ellipsis-v"></i></span>
+      <span>
+        <a href="{{ page.url }}">{{ post.date | date_to_long_string }}</a>
+      </span>
+      <span><i class="fa fa-ellipsis-v"></i></span>
+      <span>
+        Tags:
+        {% for tag in post.tags %}
+        <a href="/tags.html#{{ tag }}-ref">{{ tag }}</a>
+        {% endfor %}
+      <span>
+   </div>
+    <div class="post-entry">
+      <!-- {{  post.content || split:'<!--more-->' | first }} -->
+      {{ post.content }}
+    </div>
+    <!-- <div class="post-footer">
+      <div class="read-more">
+        <a href="{{ post.url }}">Read more &rarr;</a>
+      </div>
+    </div> -->
+  </div>
+  {% endfor %}
+
+  <div class="page-pagination">
+    <div class="pagination">
+      {% if paginator.next_page %}
+        <li><a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a></li>
+      {% else %}
+        <li><span class="pagination-item older">Older</span></li>
+      {% endif %}
+      {% if paginator.previous_page %}
+        {% if paginator.page == 2 %}
+          <li><a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a></li>
+        {% else %}
+          <li><a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a></li>
+        {% endif %}
+      {% else %}
+        <li><span class="pagination-item newer">Newer</span></li>
+      {% endif %}
+    </div>
+  </div>
+</div>

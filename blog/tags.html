@@ -1,0 +1,38 @@
+---
+layout: default
+title: Tags
+---
+
+<div class="row" style="padding-top: 6em; padding-bottom: 4em">
+  <div class="row text-center">
+    <div class="small-12 columns">
+      <h1><b>
+      <img src="/static/img/blog/tag.png" style="width: 1em">
+      {{ page.title }}
+      </b></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-2 columns">
+      &nbsp;
+    </div>
+    <div class="small-8 columns">
+      {% for tag in site.tags %}
+        <div class="page-list">
+          <h3 id="{{ tag[0] }}-ref"> {{ tag[0] }}</h3>
+          <ul>
+          {% for post in tag[1] %}
+            <li>
+              <span>{{ post.date | date_to_long_string }} </span>
+              <a href="{{ post.url }}">{{post.title}} </a>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="small-2 columns">
+      &nbsp;
+    </div>
+  </div>
+</div>
