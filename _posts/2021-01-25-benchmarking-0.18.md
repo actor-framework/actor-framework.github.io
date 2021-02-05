@@ -172,7 +172,6 @@ last three major release versions. All values are wall-clock time in
 | `serialization/load_foo_binary`      |        47.8 |       31.0 |	8.44     |
 | `serialization/load_bar_binary`      |        84.7 |       55.5 |	16.8     |
 | `serialization/load_msg_2int_binary` |         627 |        566 |	266      |
-|                                      |             |            |          |
 
 Creating messages using `make_message` is slightly faster than before, due to
 the simpler (flat) data structure used internally as of 0.18. However, the same
@@ -209,7 +208,6 @@ also recorded values for those. This time, all values in *seconds*:
 | `mixed_case`                         |        22.8 |       26.8 | 24.2     |
 | `actor_creation`                     |         2.9 |        1.3 | 0.7      |
 | `mailbox_performance`                |        34.9 |       35.2 | 33.7     |
-|                                      |             |            |          |
 
 Results shown in the table above are the average of ten runs. None of these
 benchmarks do any networking and thus no serialization. We included them mostly
