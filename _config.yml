@@ -1,6 +1,6 @@
 # Paths
 root: /
-permalink: /:year-:month/:title/
+permalink: /blog/:year-:month/:title/
 
 # Plugins
 plugins: [jekyll-paginate]
@@ -19,10 +19,10 @@ kramdown:
     input: GFM
 
 # Meta information & web address
-title:            'C++ Actor Framework &mdash; Dev Blog'
-tagline:          'The developer blog of the <a href="http://actor-framework.org/" target="_blank">C++ Actor Framework</a>.'
-description:      'An Open Source implementation of the actor model in C++'
-url:              'http://blog.actor-framework.org/'
+title:            'CAF, the C++ Actor Framework'
+tagline:          'An Open Source implementation of the actor model in C++.'
+description:      'CAF is an open source implementation of the actor model for C++ featuring lightweight & fast actor implementations, pattern matching for messages, network transparent messaging, and more.'
+url:              'https://www.actor-framework.org/'
 baseurl:          /
 owner:
   name:           C++ Actor Framework
@@ -43,7 +43,7 @@ version:           0.14.0
 
 # Repository
 github:
-  repo:           https://github.com/actor-framework
+  repo:           https://github.com/actor-framework/actor-framework
 
 # Google analytics
 google_analytics:
