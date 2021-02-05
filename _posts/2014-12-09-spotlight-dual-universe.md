@@ -12,8 +12,8 @@ president of Novaquark, the company behind the game.
 
 # Background: Dual Universe
 
-<a href="{{ site.url }}/static/img/dualuniverse.jpg" data-lightbox="image-1">
-  <img class="centered-image" src="{{ site.url }}/static/img/dualuniverse.jpg" alt="Official Dual Universe Artwort">
+<a href="{{ site.url }}/static/img/blog/dualuniverse.jpg" data-lightbox="image-1">
+  <img class="centered-image" src="{{ site.url }}/static/img/blog/dualuniverse.jpg" alt="Official Dual Universe Artwort">
 </a>
 
 Dual Universe is a science fiction, multi-planet world where "players are free

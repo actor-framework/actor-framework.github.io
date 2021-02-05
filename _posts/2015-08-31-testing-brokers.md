@@ -25,7 +25,7 @@ trick them into a fake environment.
 Before we talk about how to take control of I/O, we first need to understand how
 the machinery behind brokers works.
 
-![brokers]({{ site.url }}/static/img/broker.png)
+![brokers]({{ site.url }}/static/img/blog/broker.png)
 
 The UML diagram above shows the relations a brokers has with I/O-related classes
 in CAF. The `middleman` is a singleton in CAF that provides access to various
@@ -121,7 +121,7 @@ public:
   /// A buffer storing bytes.
   using buffer_type = std::vector<char>;
 
-  /// Models pending data on the network, i.e., the network 
+  /// Models pending data on the network, i.e., the network
   /// input buffer usually managed by the operating system.
   buffer_type& virtual_network_buffer(connection_handle hdl);
 

@@ -11,7 +11,7 @@ HQ.
 
 # Background: Lumicks
 
-<img class="centered-image" src="{{ site.url }}/static/img/lumicks.png"
+<img class="centered-image" src="{{ site.url }}/static/img/blog/lumicks.png"
      alt="Official Lumicks Logo">
 
 Lumicks manufactures dynamic single-molecule and cell avidity analysis

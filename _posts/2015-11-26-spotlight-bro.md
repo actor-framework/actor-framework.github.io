@@ -12,7 +12,7 @@ development team in Berkeley, California.
 # Background: Bro(ker)
 
 <center>
-  <img src="{{ site.url }}/static/img/bro.png" alt="Official Bro Logo">
+  <img src="{{ site.url }}/static/img/blog/bro.png" alt="Official Bro Logo">
 </center>
 
 <br>
