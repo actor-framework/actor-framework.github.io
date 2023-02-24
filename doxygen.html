@@ -1,0 +1,43 @@
+---
+layout: default
+title: The C++ Actor Framework
+nav-type: doxygen
+---
+
+<div class="row" style="padding-top: 6em; padding-bottom: 4em">
+  <div class="row text-center">
+    <div class="small-12 columns">
+      <h1>
+        <b>
+          <img src="/static/img/page.png" style="width: 1em"> Doxygen
+        </b>
+      </h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-2 columns">
+      &nbsp;
+    </div>
+    <div class="small-8 columns">
+      <p>
+        <ul>
+          {% assign sorted_files = site.static_files | sort: 'path' %}
+          {% for dir in sorted_files reversed %}
+            {% if dir.path contains 'doxygen' and dir.path contains '/index.html' %}
+              {% assign version_str = dir.path | split: '/' | slice: -2, 1 %}
+              <li>
+                <a href="{{ site.url  }}{{ dir.path }}">
+                  <img src="/static/img/exit.png" style="height: 1em">
+                  CAF {{ version_str }}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </p>
+    </div>
+    <div class="small-2 columns">
+      &nbsp;
+    </div>
+  </div>
+</div>

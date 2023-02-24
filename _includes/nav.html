@@ -1,16 +1,49 @@
   <nav class="hover-underline-menu underline-from-center">
-    <div class="row">
-      <ul class="menu align-right">
-        {% if page.nav-type == "home" %}
-          <li><a href="/blog/index.html">Dev Blog</a></li>
-          <li><a href="/index.html#getting-started">Getting Started</a></li>
-          <li><a href="/index.html#users">Who Is Using CAF?</a></li>
-          <li><a href="/index.html#community">Community</a></li>
-          <li><a href="/index.html#features">Features</a></li>
-        {% else %}
-          <li><a href="/blog/index.html">Dev Blog</a></li>
-          <li><a href="/index.html">Home</a></li>
-        {% endif %}
-      </ul>
+    <div class="row ">
+      <div class="columns">
+        <ul class="menu expanded">
+          {% if page.nav-type == "home" %}
+            <li><a href="/index.html#features">Features</a></li>
+            <li><a href="/index.html#community">Community</a></li>
+            <li><a href="/index.html#users">Who Is Using CAF?</a></li>
+            <li><a href="/index.html#getting-started">Getting Started</a></li>
+            <li>
+              <a href="/doxygen/">
+                <img src="/static/img/exit-white.png" style="height: 1em">
+                Doxygen
+              </a>
+            </li>
+            <li>
+              <a href="/blog/">
+                <img src="/static/img/exit-white.png" style="height: 1em">
+                Dev Blog
+              </a>
+            </li>
+          {% else %}
+            <li>
+              <a href="/index.html">
+                <img src="/static/img/exit-white.png" style="height: 1em">
+                Home
+              </a>
+            </li>
+            {% if page.nav-type != "blog" %}
+            <li style="text-align: right">
+              <a href="/blog/">
+                <img src="/static/img/exit-white.png" style="height: 1em">
+                Dev Blog
+              </a>
+            </li>
+            {% endif %}
+            {% if page.nav-type != "doxygen" %}
+            <li style="text-align: right">
+              <a href="/doxygen/">
+                <img src="/static/img/exit-white.png" style="height: 1em">
+                Doxygen
+              </a>
+            </li>
+            {% endif %}
+          {% endif %}
+        </ul>
+      </div>
     </div>
   </nav>
