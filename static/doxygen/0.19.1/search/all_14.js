@@ -65,6 +65,7 @@ var searchData=
   ['use_5fprivate_5fkey_5ffile_5fif_62',['use_private_key_file_if',['../namespacecaf_1_1net_1_1ssl.html#adc120984ba73574ec90e4ef452cf9f15',1,'caf::net::ssl']]],
   ['use_5fproxy_63',['use_proxy',['../namespacecaf_1_1net_1_1http.html#aafe9e893dd8c1140c5384606c49390a7a910b02467b0674ae0042a7fff67c9052',1,'caf::net::http']]],
   ['user_5fshutdown_64',['user_shutdown',['../namespacecaf.html#a72ed789d5a799ff8eab4697604ae5784aa0ea9b704b284e4ea1d35df90b587e2b',1,'caf']]],
-  ['utility_5factors_5f_65',['utility_actors_',['../classcaf_1_1scheduler_1_1abstract__coordinator.html#a211264244c466667ccc826743334e1ad',1,'caf::scheduler::abstract_coordinator']]],
-  ['uuid_66',['uuid',['../classcaf_1_1uuid.html',1,'caf::uuid'],['../classcaf_1_1uuid.html#aec4d726628abc991d5c75a511f505862',1,'caf::uuid::uuid()']]]
+  ['utc_5foffset_65',['utc_offset',['../classcaf_1_1chrono_1_1datetime.html#ae722473060118038a915965cd76ff155',1,'caf::chrono::datetime']]],
+  ['utility_5factors_5f_66',['utility_actors_',['../classcaf_1_1scheduler_1_1abstract__coordinator.html#a211264244c466667ccc826743334e1ad',1,'caf::scheduler::abstract_coordinator']]],
+  ['uuid_67',['uuid',['../classcaf_1_1uuid.html',1,'caf::uuid'],['../classcaf_1_1uuid.html#aec4d726628abc991d5c75a511f505862',1,'caf::uuid::uuid()']]]
 ];

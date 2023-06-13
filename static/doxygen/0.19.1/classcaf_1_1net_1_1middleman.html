@@ -77,6 +77,7 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classcaf_1_1net_1_1middleman-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">caf::net::middleman Class Reference</div></div>
 </div><!--header-->
@@ -104,6 +105,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>module</b> = <a clas
 <tr class="memitem:a840055de1929a4883896d78d9214a5a5"><td class="memItemLeft" align="right" valign="top"><a id="a840055de1929a4883896d78d9214a5a5" name="a840055de1929a4883896d78d9214a5a5"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>module_ptr</b> = actor_system::module_ptr</td></tr>
 <tr class="separator:a840055de1929a4883896d78d9214a5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7565fff0fbd150b29d6bac1e05d57d"><td class="memItemLeft" align="right" valign="top"><a id="adb7565fff0fbd150b29d6bac1e05d57d" name="adb7565fff0fbd150b29d6bac1e05d57d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>void_fun_t</b> = void(*)()</td></tr>
+<tr class="separator:adb7565fff0fbd150b29d6bac1e05d57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classcaf_1_1actor__system_1_1module"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classcaf_1_1actor__system_1_1module')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classcaf_1_1actor__system_1_1module.html">caf::actor_system::module</a></td></tr>
 <tr class="memitem:a1ad95fedcfb8fb953d9e6211ea4625a5 inherit pub_types_classcaf_1_1actor__system_1_1module"><td class="memItemLeft" align="right" valign="top"><a id="a1ad95fedcfb8fb953d9e6211ea4625a5" name="a1ad95fedcfb8fb953d9e6211ea4625a5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>id_t</b> { <br />
 &#160;&#160;<b>scheduler</b>
@@ -180,6 +184,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a42447577ab3219d240b360a6220dbb87"><td class="memItemLeft" align="right" valign="top"><a id="a42447577ab3219d240b360a6220dbb87" name="a42447577ab3219d240b360a6220dbb87"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>init_global_meta_objects</b> ()</td></tr>
 <tr class="separator:a42447577ab3219d240b360a6220dbb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13fe6a267543c48de32b5c614bc92c96"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classcaf_1_1actor__system_1_1global__state__guard.html">actor_system::global_state_guard</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaf_1_1net_1_1middleman.html#a13fe6a267543c48de32b5c614bc92c96">init_host_system</a> ()</td></tr>
+<tr class="memdesc:a13fe6a267543c48de32b5c614bc92c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes global state for the network backend by calling platform-dependent functions such as <code>WSAStartup</code> and <code><a class="el" href="namespacecaf_1_1net_1_1ssl.html#aad9e1bcb55300594d855ea1f8264004b" title="Initializes the SSL layer.">ssl::startup()</a></code>.  <br /></td></tr>
+<tr class="separator:a13fe6a267543c48de32b5c614bc92c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8186f39982c79d75d367d6abc2d5a9d"><td class="memItemLeft" align="right" valign="top"><a id="ab8186f39982c79d75d367d6abc2d5a9d" name="ab8186f39982c79d75d367d6abc2d5a9d"></a>
 static <a class="el" href="classcaf_1_1actor__system_1_1module.html">module</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>make</b> (<a class="el" href="classcaf_1_1actor__system.html">actor_system</a> &amp;sys, <a class="el" href="structcaf_1_1detail_1_1type__list.html">detail::type_list</a>&lt;&gt;)</td></tr>
 <tr class="separator:ab8186f39982c79d75d367d6abc2d5a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,6 +194,13 @@ static <a class="el" href="classcaf_1_1actor__system_1_1module.html">module</a> 
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>add_module_options</b> (<a class="el" href="classcaf_1_1actor__system__config.html">actor_system_config</a> &amp;cfg)</td></tr>
 <tr class="memdesc:a1b2d32a102f4590f5ba14cb12414ff9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds module-specific options to the config before loading the module. <br /></td></tr>
 <tr class="separator:a1b2d32a102f4590f5ba14cb12414ff9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a6a0dfe4a51fc7263bf8afcd896edf0fc"><td class="memItemLeft" align="right" valign="top"><a id="a6a0dfe4a51fc7263bf8afcd896edf0fc" name="a6a0dfe4a51fc7263bf8afcd896edf0fc"></a>
+actor_system::module::id_t&#160;</td><td class="memItemRight" valign="bottom"><b>id_v</b> = actor_system::module::network_manager</td></tr>
+<tr class="memdesc:a6a0dfe4a51fc7263bf8afcd896edf0fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies the network manager module. <br /></td></tr>
+<tr class="separator:a6a0dfe4a51fc7263bf8afcd896edf0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides a network backend for running protocol stacks. </p>
@@ -247,6 +261,34 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>add_module_opt
 <p>Allows the module to change the configuration of the actor system during startup. </p>
 
 <p>Implements <a class="el" href="classcaf_1_1actor__system_1_1module.html#a572968f0f20a542ab50d1bcfead6bbf0">caf::actor_system::module</a>.</p>
+
+</div>
+</div>
+<a id="a13fe6a267543c48de32b5c614bc92c96" name="a13fe6a267543c48de32b5c614bc92c96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13fe6a267543c48de32b5c614bc92c96">&#9670;&#160;</a></span>init_host_system()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classcaf_1_1actor__system_1_1global__state__guard.html">actor_system::global_state_guard</a> caf::net::middleman::init_host_system </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes global state for the network backend by calling platform-dependent functions such as <code>WSAStartup</code> and <code><a class="el" href="namespacecaf_1_1net_1_1ssl.html#aad9e1bcb55300594d855ea1f8264004b" title="Initializes the SSL layer.">ssl::startup()</a></code>. </p>
+<dl class="section return"><dt>Returns</dt><dd>a guard object shutting down the global state. </dd></dl>
 
 </div>
 </div>

@@ -235,10 +235,6 @@ CAF_IO_EXPORT <a class="el" href="namespacecaf_1_1io.html#a9927141e662590de30dbd
 <tr class="memitem:a50f8fe4914a9717ba289ccaa7c283085"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1expected.html">expected</a>&lt; uint16_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecaf_1_1io.html#a50f8fe4914a9717ba289ccaa7c283085">publish</a> (const Handle &amp;whom, uint16_t port, const char *in=nullptr, bool reuse=false)</td></tr>
 <tr class="memdesc:a50f8fe4914a9717ba289ccaa7c283085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to publish <code>whom</code> at <code>port</code> and returns either an <code>error</code> or the bound port.  <br /></td></tr>
 <tr class="separator:a50f8fe4914a9717ba289ccaa7c283085"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba02eae47ceb703021c72ad4232172da"><td class="memTemplParams" colspan="2">template&lt;class Handle &gt; </td></tr>
-<tr class="memitem:aba02eae47ceb703021c72ad4232172da"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1expected.html">expected</a>&lt; void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecaf_1_1io.html#aba02eae47ceb703021c72ad4232172da">unpublish</a> (const Handle &amp;whom, uint16_t port=0)</td></tr>
-<tr class="memdesc:aba02eae47ceb703021c72ad4232172da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpublishes <code>whom</code> by closing <code>port</code> or all assigned ports if <code>port == 0</code>.  <br /></td></tr>
-<tr class="separator:aba02eae47ceb703021c72ad4232172da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac92cce68cd189b6592e311a92aeedc4a"><td class="memItemLeft" align="right" valign="top"><a id="ac92cce68cd189b6592e311a92aeedc4a" name="ac92cce68cd189b6592e311a92aeedc4a"></a>
 constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>to_integer</b> (receive_policy_flag x)</td></tr>
 <tr class="separator:ac92cce68cd189b6592e311a92aeedc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,6 +255,10 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>to_string</b> 
 template&lt;class Inspector &gt; </td></tr>
 <tr class="memitem:a57665a2f1af84d4544690723e53ebeb7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>inspect</b> (Inspector &amp;f, <a class="el" href="structcaf_1_1io_1_1new__connection__msg.html">new_connection_msg</a> &amp;x)</td></tr>
 <tr class="separator:a57665a2f1af84d4544690723e53ebeb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba02eae47ceb703021c72ad4232172da"><td class="memTemplParams" colspan="2">template&lt;class Handle &gt; </td></tr>
+<tr class="memitem:aba02eae47ceb703021c72ad4232172da"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1expected.html">expected</a>&lt; void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecaf_1_1io.html#aba02eae47ceb703021c72ad4232172da">unpublish</a> (const Handle &amp;whom, uint16_t port=0)</td></tr>
+<tr class="memdesc:aba02eae47ceb703021c72ad4232172da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpublishes <code>whom</code> by closing <code>port</code> or all assigned ports if <code>port == 0</code>.  <br /></td></tr>
+<tr class="separator:aba02eae47ceb703021c72ad4232172da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

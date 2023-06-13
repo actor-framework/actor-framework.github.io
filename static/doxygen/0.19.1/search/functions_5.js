@@ -35,6 +35,7 @@ var searchData=
   ['from_5fgenerator_32',['from_generator',['../classcaf_1_1flow_1_1observable__builder.html#a0b7fe2f910ebd5c3e8dadcab80c5e4d0',1,'caf::flow::observable_builder']]],
   ['from_5fnative_33',['from_native',['../classcaf_1_1net_1_1ssl_1_1connection.html#a23988ae999cf10a46cc94a3862f642e2',1,'caf::net::ssl::connection::from_native()'],['../classcaf_1_1net_1_1ssl_1_1context.html#ac5b4f663cae5b4530df1f949a7cc81b4',1,'caf::net::ssl::context::from_native()']]],
   ['from_5fresource_34',['from_resource',['../classcaf_1_1flow_1_1observable__builder.html#ad431bbcee9877a9f1c126c1b5e94c6d7',1,'caf::flow::observable_builder']]],
-  ['front_35',['front',['../classcaf_1_1intrusive_1_1task__queue.html#a6de195a32964fd5eb850b8b07cf32bd0',1,'caf::intrusive::task_queue']]],
-  ['full_5fname_36',['full_name',['../classcaf_1_1config__option.html#a6781331f0eee320bebfa803551565c4e',1,'caf::config_option']]]
+  ['from_5fstring_35',['from_string',['../classcaf_1_1chrono_1_1datetime.html#a0d062316ec8740d1eb1949e8d4e83700',1,'caf::chrono::datetime']]],
+  ['front_36',['front',['../classcaf_1_1intrusive_1_1task__queue.html#a6de195a32964fd5eb850b8b07cf32bd0',1,'caf::intrusive::task_queue']]],
+  ['full_5fname_37',['full_name',['../classcaf_1_1config__option.html#a6781331f0eee320bebfa803551565c4e',1,'caf::config_option']]]
 ];

@@ -7,5 +7,6 @@ var searchData=
   ['head_5f_4',['head_',['../classcaf_1_1intrusive_1_1task__queue.html#a8cb26dd6514e6063b6ab403b202c7f0b',1,'caf::intrusive::task_queue']]],
   ['header_5fsize_5',['header_size',['../group___b_a_s_p.html#gac9a0c0d3a0eb73be7c7149c7c124220a',1,'caf::io::basp::header']]],
   ['hidden_6',['hidden',['../group___actor_creation.html#gac7b5c96cbf488921f9871ff46b0ea877',1,'caf']]],
-  ['host_7',['host',['../structcaf_1_1net_1_1dsl_1_1server__address.html#adb4b3d4f398b590645f0118e5c18da58',1,'caf::net::dsl::server_address']]]
+  ['host_7',['host',['../structcaf_1_1net_1_1dsl_1_1server__address.html#adb4b3d4f398b590645f0118e5c18da58',1,'caf::net::dsl::server_address']]],
+  ['hour_8',['hour',['../classcaf_1_1chrono_1_1datetime.html#ac06772c95948ae8294d1a89d39c96195',1,'caf::chrono::datetime']]]
 ];

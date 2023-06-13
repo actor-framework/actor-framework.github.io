@@ -9,7 +9,8 @@ var searchData=
   ['get_5fname_6',['get_name',['../structcaf_1_1net_1_1dsl_1_1get__name.html',1,'caf::net::dsl']]],
   ['get_5for_5fauto_5fdeduce_7',['get_or_auto_deduce',['../structcaf_1_1get__or__auto__deduce.html',1,'caf']]],
   ['get_5for_5fdeduction_5fguide_8',['get_or_deduction_guide',['../structcaf_1_1get__or__deduction__guide.html',1,'caf']]],
-  ['group_5fdown_5fmsg_9',['group_down_msg',['../structcaf_1_1group__down__msg.html',1,'caf']]],
-  ['group_5fmodule_10',['group_module',['../classcaf_1_1group__module.html',1,'caf']]],
-  ['group_5ftunnel_11',['group_tunnel',['../classcaf_1_1detail_1_1group__tunnel.html',1,'caf::detail']]]
+  ['global_5fstate_5fguard_9',['global_state_guard',['../classcaf_1_1actor__system_1_1global__state__guard.html',1,'caf::actor_system']]],
+  ['group_5fdown_5fmsg_10',['group_down_msg',['../structcaf_1_1group__down__msg.html',1,'caf']]],
+  ['group_5fmodule_11',['group_module',['../classcaf_1_1group__module.html',1,'caf']]],
+  ['group_5ftunnel_12',['group_tunnel',['../classcaf_1_1detail_1_1group__tunnel.html',1,'caf::detail']]]
 ];
