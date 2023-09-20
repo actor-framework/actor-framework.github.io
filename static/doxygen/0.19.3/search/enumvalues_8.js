@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['incompatible_5fapplication_5fids_0',['incompatible_application_ids',['../group___b_a_s_p.html#gga93565d04c32ae7fd8541faa8528137c9a43259c3224a72abce20646a3a0b802e3',1,'caf::io::basp::incompatible_application_ids'],['../namespacecaf.html#aad31759ecbee7d4d2133a5618a053a78a6642893019029eb5392c48c23df33a7c',1,'caf::incompatible_application_ids']]],
+  ['incompatible_5fversions_1',['incompatible_versions',['../group___b_a_s_p.html#gga93565d04c32ae7fd8541faa8528137c9ae76bfdcf248c09f33495a0707df3a91e',1,'caf::io::basp::incompatible_versions'],['../namespacecaf.html#aad31759ecbee7d4d2133a5618a053a78a3c5b83ab628258751100cdcabaf5971d',1,'caf::incompatible_versions']]],
+  ['inconsistent_5fdata_2',['inconsistent_data',['../namespacecaf_1_1net_1_1web__socket.html#a910e679c72d8d519d9617a060da5f4e3a91be298c021a018931099935007ecbab',1,'caf::net::web_socket']]],
+  ['indeterminate_3',['indeterminate',['../namespacecaf_1_1io_1_1network.html#abb11678f0cd9b855baab1fd86aeeac15a44560d82707cce3b8111a770924cf0e2',1,'caf::io::network']]],
+  ['integer_5foverflow_4',['integer_overflow',['../namespacecaf.html#a82b93288f573f015630a689bd03607caae9a83ecfce47bad5a02cf347e7cd5796',1,'caf']]],
+  ['integer_5funderflow_5',['integer_underflow',['../namespacecaf.html#a82b93288f573f015630a689bd03607caaff3b21a97947ac46215370aee7af776b',1,'caf']]],
+  ['internal_5fserver_5ferror_6',['internal_server_error',['../namespacecaf_1_1net_1_1http.html#aafe9e893dd8c1140c5384606c49390a7ace0ad649797c3b15fbed0b35850fa92a',1,'caf::net::http']]],
+  ['invalid_5fargument_7',['invalid_argument',['../namespacecaf.html#a82b93288f573f015630a689bd03607caae55d43eabeefe5a8271b4a3c898bd18f',1,'caf::invalid_argument'],['../namespacecaf.html#aad31759ecbee7d4d2133a5618a053a78ae55d43eabeefe5a8271b4a3c898bd18f',1,'caf::invalid_argument']]],
+  ['invalid_5fcategory_8',['invalid_category',['../namespacecaf.html#a82b93288f573f015630a689bd03607caa0416e200d7acdab3eb1d301e458ebd21',1,'caf']]],
+  ['invalid_5fdata_9',['invalid_data',['../namespacecaf_1_1net_1_1web__socket.html#a910e679c72d8d519d9617a060da5f4e3af066046fed1ddb2a6d6eb43e445b50a6',1,'caf::net::web_socket']]],
+  ['invalid_5fescape_5fsequence_10',['invalid_escape_sequence',['../namespacecaf.html#a82b93288f573f015630a689bd03607caa089031f44942f5039bf1c4eae7bedd44',1,'caf']]],
+  ['invalid_5ffield_5fname_11',['invalid_field_name',['../namespacecaf.html#a82b93288f573f015630a689bd03607caa9b38077cbfb9d7b3ebb1a586cf3a1b54',1,'caf']]],
+  ['invalid_5ffield_5ftype_12',['invalid_field_type',['../namespacecaf.html#aad31759ecbee7d4d2133a5618a053a78a975d2ebf2eeb2499c359b46331a9d5b8',1,'caf']]],
+  ['invalid_5fobservable_13',['invalid_observable',['../namespacecaf.html#aad31759ecbee7d4d2133a5618a053a78ae9e4421b96feac67b3dc881f712cefc8',1,'caf']]],
+  ['invalid_5fprotocol_5ffamily_14',['invalid_protocol_family',['../namespacecaf.html#aad31759ecbee7d4d2133a5618a053a78adff503db0417804f50d2ef49a5280366',1,'caf']]],
+  ['invalid_5frange_5fexpression_15',['invalid_range_expression',['../namespacecaf.html#a82b93288f573f015630a689bd03607caa6bdbd4c80b3712ffd66335d14f16ba61',1,'caf']]],
+  ['invalid_5fstate_16',['invalid_state',['../namespacecaf.html#a82b93288f573f015630a689bd03607caa1528b2e7d0051d6d859b53639dd6f49c',1,'caf']]],
+  ['invalid_5fstream_17',['invalid_stream',['../namespacecaf.html#aad31759ecbee7d4d2133a5618a053a78a1f99819be3c85c9180c9a0df2e10cbd3',1,'caf']]],
+  ['io_5factor_18',['io_actor',['../classcaf_1_1resumable.html#a4504f333dbba41322cad6cb1b4d87693a647d63da55666a3ee74df9a235b6718d',1,'caf::resumable']]]
+];
