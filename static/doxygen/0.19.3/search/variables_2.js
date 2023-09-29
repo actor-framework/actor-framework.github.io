@@ -12,10 +12,8 @@ var searchData=
   ['config_5ffile_5fpath_5falternatives_9',['config_file_path_alternatives',['../classcaf_1_1actor__system__config.html#a8a0e428aad883bcda9572abf0ba0ca22',1,'caf::actor_system_config']]],
   ['config_5fserver_5fid_10',['config_server_id',['../structcaf_1_1io_1_1basp_1_1header.html#a164d397f5874ad4dbedb4debd4b9a826',1,'caf::io::basp::header']]],
   ['connection_5ftimeout_11',['connection_timeout',['../classcaf_1_1net_1_1dsl_1_1client__config_1_1lazy.html#aa862ff2dba9bbb1a1b4dfec6c5b6f1d2',1,'caf::net::dsl::client_config::lazy']]],
-  ['console_5fcoloring_12',['console_coloring',['../structcaf_1_1logger_1_1config.html#a614a0cc26bbdddaa509a9955b99900c1',1,'caf::logger::config']]],
-  ['console_5fverbosity_13',['console_verbosity',['../structcaf_1_1logger_1_1config.html#a3e31c301da66695439220588b5e7f880',1,'caf::logger::config']]],
-  ['content_14',['content',['../structcaf_1_1stream__batch__msg.html#aa2d9b2849b060439993f4da18afa9fd7',1,'caf::stream_batch_msg']]],
-  ['context_5f_15',['context_',['../classcaf_1_1deserializer.html#a3806b0eb23218494810aa77673136d31',1,'caf::deserializer::context_'],['../classcaf_1_1serializer.html#ab4082b5acb3e91cb9d365377f9184d9a',1,'caf::serializer::context_']]],
-  ['copy_5fconstruct_16',['copy_construct',['../structcaf_1_1detail_1_1meta__object.html#acbab6041016a30a53d3750910f9a53cd',1,'caf::detail::meta_object']]],
-  ['ctx_17',['ctx',['../classcaf_1_1io_1_1basp__broker.html#a33cdf559b006f1aa049c9070c3ff980f',1,'caf::io::basp_broker::ctx'],['../classcaf_1_1net_1_1dsl_1_1has__ctx.html#a50ebc7585b8aa9a6bf18ef5df7106326',1,'caf::net::dsl::has_ctx::ctx']]]
+  ['content_12',['content',['../structcaf_1_1stream__batch__msg.html#aa2d9b2849b060439993f4da18afa9fd7',1,'caf::stream_batch_msg']]],
+  ['context_5f_13',['context_',['../classcaf_1_1deserializer.html#a3806b0eb23218494810aa77673136d31',1,'caf::deserializer::context_'],['../classcaf_1_1serializer.html#ab4082b5acb3e91cb9d365377f9184d9a',1,'caf::serializer::context_']]],
+  ['copy_5fconstruct_14',['copy_construct',['../structcaf_1_1detail_1_1meta__object.html#acbab6041016a30a53d3750910f9a53cd',1,'caf::detail::meta_object']]],
+  ['ctx_15',['ctx',['../classcaf_1_1io_1_1basp__broker.html#a33cdf559b006f1aa049c9070c3ff980f',1,'caf::io::basp_broker::ctx'],['../classcaf_1_1net_1_1dsl_1_1has__ctx.html#a50ebc7585b8aa9a6bf18ef5df7106326',1,'caf::net::dsl::has_ctx::ctx']]]
 ];

@@ -1,20 +1,11 @@
 var searchData=
 [
-  ['server_5ft_0',['server_t',['../classcaf_1_1net_1_1dsl_1_1client__config_1_1lazy.html#a63dfac61321ef993a2d65f8057cf5b6c',1,'caf::net::dsl::client_config::lazy']]],
-  ['settings_1',['settings',['../classcaf_1_1config__value.html#acc74ef801189734b44e2ae2310fc767d',1,'caf::config_value']]],
-  ['shared_5faction_5fptr_2',['shared_action_ptr',['../classcaf_1_1callback.html#ac5957496c51a7a4ab596b63b7a210e67',1,'caf::callback']]],
-  ['shared_5fcallback_5fptr_3',['shared_callback_ptr',['../namespacecaf.html#a0d0b8d208f947bc6834ee6ee723312b2',1,'caf']]],
-  ['signatures_4',['signatures',['../classcaf_1_1actor__companion.html#aba8f9ce551248d5c5a4e06c14fdd5a23',1,'caf::actor_companion::signatures'],['../classcaf_1_1blocking__actor.html#a6cad1bd1e7a67bcd965674bd0340f652',1,'caf::blocking_actor::signatures'],['../classcaf_1_1event__based__actor.html#ae0139e8ae9fec8354b0d3f4e0b072a1f',1,'caf::event_based_actor::signatures'],['../classcaf_1_1typed__actor.html#a2a265be9d3a9bc6eb33f508d1c166e3f',1,'caf::typed_actor::signatures'],['../classcaf_1_1typed__actor__pointer.html#a2590421b142592276a3891a22d95cfeb',1,'caf::typed_actor_pointer::signatures'],['../classcaf_1_1typed__actor__view.html#ad3b6e2f93305032fb1d32f9cfd409b16',1,'caf::typed_actor_view::signatures']]],
-  ['signed_5fsocket_5fid_5',['signed_socket_id',['../structcaf_1_1net_1_1socket.html#a8c4a59106f74c00da3537558508d827c',1,'caf::net::socket']]],
-  ['socket_5fid_6',['socket_id',['../structcaf_1_1net_1_1socket.html#aff07f7fc9f24080fb188e17b1a8c3983',1,'caf::net::socket']]],
-  ['span_5ft_7',['span_t',['../classcaf_1_1telemetry_1_1metric__registry.html#a2a89d021aef3520a371810b0d992300b',1,'caf::telemetry::metric_registry']]],
-  ['stateful_5fbroker_8',['stateful_broker',['../namespacecaf_1_1io.html#af1b2f88035ee1e44d1e69438f73081d8',1,'caf::io']]],
-  ['stateful_5fbroker_5fbase_9',['stateful_broker_base',['../classcaf_1_1typed__actor.html#a4cbf986aa459ecfc9e34a14e1906e573',1,'caf::typed_actor']]],
-  ['stateful_5fbroker_5fpointer_10',['stateful_broker_pointer',['../classcaf_1_1typed__actor.html#a14cc92039ce4e5a541a3caf9d3c70f91',1,'caf::typed_actor']]],
-  ['stateful_5fimpl_11',['stateful_impl',['../classcaf_1_1typed__actor.html#a479e4cf67e4506f8a934b168b5edfc1e',1,'caf::typed_actor']]],
-  ['stateful_5fpointer_12',['stateful_pointer',['../classcaf_1_1typed__actor.html#a5959afd8708fe6c660bba0a48e316c04',1,'caf::typed_actor']]],
-  ['steady_5ftime_5fpoint_13',['steady_time_point',['../classcaf_1_1flow_1_1coordinator.html#a8a7484d37a57b2e5b2f65e7278d84901',1,'caf::flow::coordinator']]],
-  ['string_5fparser_5fstate_14',['string_parser_state',['../namespacecaf.html#a87801fa4c0faf10a31d02e700a6617d7',1,'caf']]],
-  ['subscriptions_15',['subscriptions',['../classcaf_1_1mixin_1_1subscriber.html#af0cc44ba5db9e5afec2559b63204ac0f',1,'caf::mixin::subscriber']]],
-  ['super_16',['super',['../classcaf_1_1blocking__actor.html#acac7e3b2205e855a59c96039c652d57b',1,'caf::blocking_actor::super'],['../classcaf_1_1hash_1_1sha1.html#a1a94989db26a3aeb58ecbe36f2acbda6',1,'caf::hash::sha1::super'],['../structcaf_1_1net_1_1stream__socket.html#ad40c3a803adc383c4a93567a6b7051cb',1,'caf::net::stream_socket::super'],['../structcaf_1_1net_1_1tcp__accept__socket.html#af901ca8c1531cf7998349d2449a84169',1,'caf::net::tcp_accept_socket::super'],['../structcaf_1_1net_1_1tcp__stream__socket.html#ad40c3a803adc383c4a93567a6b7051cb',1,'caf::net::tcp_stream_socket::super']]]
+  ['time_5fpoint_0',['time_point',['../classcaf_1_1actor__clock.html#acd123f9ed26ae34601f0e0ba9300dd6c',1,'caf::actor_clock']]],
+  ['timeout_5ftype_1',['timeout_type',['../classcaf_1_1blocking__actor.html#ab0663d695caa2b9c0d7561ce7ec1277a',1,'caf::blocking_actor']]],
+  ['timespan_2',['timespan',['../namespacecaf.html#adc3db7177cb06bf8d5bfd2df387729d4',1,'caf']]],
+  ['timestamp_3',['timestamp',['../namespacecaf.html#a04add1a401710dc6f24029aab294b9b7',1,'caf']]],
+  ['transport_5ftype_4',['transport_type',['../classcaf_1_1net_1_1ssl_1_1connection.html#a0e7cd110176428bce028ab5dd3b610a4',1,'caf::net::ssl::connection::transport_type'],['../structcaf_1_1net_1_1stream__socket.html#ae1f4b3fc27a57932257fd03ddd826ca1',1,'caf::net::stream_socket::transport_type'],['../structcaf_1_1net_1_1tcp__accept__socket.html#af5852003e5565c54a6031c3122ee73da',1,'caf::net::tcp_accept_socket::transport_type']]],
+  ['type_5',['type',['../classcaf_1_1optional.html#a2206e7e9a26157156f55f6d41029b618',1,'caf::optional']]],
+  ['type_5fby_5fid_5ft_6',['type_by_id_t',['../structcaf_1_1type__by__id.html#acb3624ebf0dce9223493d7fe3f665b67',1,'caf::type_by_id']]],
+  ['type_5fid_5ft_7',['type_id_t',['../namespacecaf.html#a44855080188b6693187137bd666c7eb4',1,'caf']]]
 ];

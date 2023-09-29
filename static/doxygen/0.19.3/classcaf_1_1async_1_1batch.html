@@ -76,22 +76,22 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classcaf_1_1async_1_1batch-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">caf::async::batch Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>A reference-counted container for transferring items from publishers to subscribers.  
+<p>A reference-counted, type-erased container for transferring items from producers to consumers.  
  <a href="classcaf_1_1async_1_1batch.html#details">More...</a></p>
 
 <p><code>#include &lt;batch.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a8cf63b0ce66952648beb3a037ba1022c"><td class="memItemLeft" align="right" valign="top"><a id="a8cf63b0ce66952648beb3a037ba1022c" name="a8cf63b0ce66952648beb3a037ba1022c"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>item_destructor</b> = void(*)(<a class="el" href="namespacecaf.html#a44855080188b6693187137bd666c7eb4">type_id_t</a>, uint16_t, size_t, std::byte *)</td></tr>
-<tr class="separator:a8cf63b0ce66952648beb3a037ba1022c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f871c0a0b4a72609f1140f7ec0a72f8"><td class="memItemLeft" align="right" valign="top"><a id="a9f871c0a0b4a72609f1140f7ec0a72f8" name="a9f871c0a0b4a72609f1140f7ec0a72f8"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>item_destructor</b> = void(*)(<a class="el" href="namespacecaf.html#a44855080188b6693187137bd666c7eb4">type_id_t</a>, size_t, size_t, std::byte *)</td></tr>
+<tr class="separator:a9f871c0a0b4a72609f1140f7ec0a72f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -113,14 +113,13 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const n
 <tr class="memitem:a417aeb0c50eafbcc3e42158cd7c9b1c6"><td class="memItemLeft" align="right" valign="top"><a id="a417aeb0c50eafbcc3e42158cd7c9b1c6" name="a417aeb0c50eafbcc3e42158cd7c9b1c6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const noexcept</td></tr>
 <tr class="separator:a417aeb0c50eafbcc3e42158cd7c9b1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b4e8ac724db0a1c5941832e323cab14"><td class="memTemplParams" colspan="2"><a id="a3b4e8ac724db0a1c5941832e323cab14" name="a3b4e8ac724db0a1c5941832e323cab14"></a>
+<tr class="memitem:a78b3327d02040dffcdcf5e6232e360ce"><td class="memItemLeft" align="right" valign="top"><a id="a78b3327d02040dffcdcf5e6232e360ce" name="a78b3327d02040dffcdcf5e6232e360ce"></a>
+<a class="el" href="namespacecaf.html#a44855080188b6693187137bd666c7eb4">type_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>item_type</b> () const noexcept</td></tr>
+<tr class="separator:a78b3327d02040dffcdcf5e6232e360ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e49795b71dc064f8b463502645fdb8"><td class="memTemplParams" colspan="2"><a id="a56e49795b71dc064f8b463502645fdb8" name="a56e49795b71dc064f8b463502645fdb8"></a>
 template&lt;class T &gt; </td></tr>
-<tr class="memitem:a3b4e8ac724db0a1c5941832e323cab14"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1span.html">span</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>items</b> () noexcept</td></tr>
-<tr class="separator:a3b4e8ac724db0a1c5941832e323cab14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9300eeb32dafeb18a7511dfc3b5a1f9f"><td class="memTemplParams" colspan="2"><a id="a9300eeb32dafeb18a7511dfc3b5a1f9f" name="a9300eeb32dafeb18a7511dfc3b5a1f9f"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:a9300eeb32dafeb18a7511dfc3b5a1f9f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1span.html">span</a>&lt; const T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>items</b> () const noexcept</td></tr>
-<tr class="separator:a9300eeb32dafeb18a7511dfc3b5a1f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e49795b71dc064f8b463502645fdb8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1span.html">span</a>&lt; const T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>items</b> () const</td></tr>
+<tr class="separator:a56e49795b71dc064f8b463502645fdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a009fa23b0a2b73acf67cee7e8062173d"><td class="memItemLeft" align="right" valign="top"><a id="a009fa23b0a2b73acf67cee7e8062173d" name="a009fa23b0a2b73acf67cee7e8062173d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> (<a class="el" href="classcaf_1_1serializer.html">serializer</a> &amp;f) const</td></tr>
 <tr class="separator:a009fa23b0a2b73acf67cee7e8062173d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,15 +136,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (<a class="e
 void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="classcaf_1_1async_1_1batch.html">batch</a> &amp;<a class="el" href="namespacecaf.html#a38cc4480fa62093d67ea760129a9e8d0a795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>)</td></tr>
 <tr class="separator:afe17efb88afc815761fa0304d924a7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:ad94e7a4646eff611d75d676af5de3e96"><td class="memTemplParams" colspan="2"><a id="ad94e7a4646eff611d75d676af5de3e96" name="ad94e7a4646eff611d75d676af5de3e96"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:ad94e7a4646eff611d75d676af5de3e96"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1async_1_1batch.html">batch</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_batch</b> (<a class="el" href="classcaf_1_1span.html">span</a>&lt; const T &gt; items)</td></tr>
-<tr class="separator:ad94e7a4646eff611d75d676af5de3e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:afce4ebed850d6ed79946dd3577efd37a"><td class="memTemplParams" colspan="2"><a id="afce4ebed850d6ed79946dd3577efd37a" name="afce4ebed850d6ed79946dd3577efd37a"></a>
+template&lt;class List &gt; </td></tr>
+<tr class="memitem:afce4ebed850d6ed79946dd3577efd37a"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classcaf_1_1async_1_1batch.html">batch</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>from</b> (const List &amp;items)</td></tr>
+<tr class="separator:afce4ebed850d6ed79946dd3577efd37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A reference-counted container for transferring items from publishers to subscribers. </p>
+<div class="textblock"><p>A reference-counted, type-erased container for transferring items from producers to consumers. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>libcaf_core/caf/async/batch.hpp</li>
 <li>libcaf_core/caf/async/batch.cpp</li>

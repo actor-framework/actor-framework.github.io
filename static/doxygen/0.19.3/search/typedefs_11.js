@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unique_5fcallback_5fptr_0',['unique_callback_ptr',['../namespacecaf.html#aa0e72689fa673a7bd77f5936f281e6ec',1,'caf']]]
+  ['with_0',['with',['../structcaf_1_1extend.html#a8bd400017ed18d35642fe942a9199706',1,'caf::extend']]]
 ];

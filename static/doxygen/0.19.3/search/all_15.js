@@ -9,9 +9,8 @@ var searchData=
   ['value_5for_6',['value_or',['../classcaf_1_1expected.html#adaaecb4b2539f917cba3e0f90e9f2479',1,'caf::expected::value_or()'],['../classcaf_1_1optional.html#a0d9d19516cd15617861fd45a99235b70',1,'caf::optional::value_or()'],['../classcaf_1_1expected.html#a8e83cedcd15949ad9cef0c10e076557b',1,'caf::expected::value_or()']]],
   ['variant_7',['variant',['../classcaf_1_1uuid.html#a643299574a85171ea60b397432d42c94',1,'caf::uuid']]],
   ['variant_5ffield_8',['variant_field',['../classcaf_1_1uuid.html#a48c26512e8451402f0af674b7975b87a',1,'caf::uuid']]],
-  ['verbosity_9',['verbosity',['../structcaf_1_1logger_1_1config.html#a7808b12ab7d2c20e8764a6341017617f',1,'caf::logger::config']]],
-  ['verify_5fmode_10',['verify_mode',['../classcaf_1_1net_1_1ssl_1_1context.html#ac656b9f9632ac167aa1b0185deccf6bc',1,'caf::net::ssl::context']]],
-  ['verify_5ft_11',['verify_t',['../namespacecaf_1_1net_1_1ssl.html#a6e352d292c451f9220e2858df2b05313',1,'caf::net::ssl']]],
-  ['version_12',['version',['../classcaf_1_1uuid.html#a2c39f3c76e7d4c27acae66c2e8664e8e',1,'caf::uuid::version()'],['../classcaf_1_1net_1_1http_1_1request__header.html#a04322caf21927f0541a970d375041685',1,'caf::net::http::request_header::version()'],['../group___b_a_s_p.html#ga81b3b888e54afd4539b1a50e41fda817',1,'caf::io::basp::version']]],
-  ['version_5ffield_13',['version_field',['../classcaf_1_1uuid.html#af37b840b8ba9c4b7bb6c58946ea74ed8',1,'caf::uuid']]]
+  ['verify_5fmode_9',['verify_mode',['../classcaf_1_1net_1_1ssl_1_1context.html#ac656b9f9632ac167aa1b0185deccf6bc',1,'caf::net::ssl::context']]],
+  ['verify_5ft_10',['verify_t',['../namespacecaf_1_1net_1_1ssl.html#a6e352d292c451f9220e2858df2b05313',1,'caf::net::ssl']]],
+  ['version_11',['version',['../classcaf_1_1uuid.html#a2c39f3c76e7d4c27acae66c2e8664e8e',1,'caf::uuid::version()'],['../classcaf_1_1net_1_1http_1_1request__header.html#a04322caf21927f0541a970d375041685',1,'caf::net::http::request_header::version()'],['../group___b_a_s_p.html#ga81b3b888e54afd4539b1a50e41fda817',1,'caf::io::basp::version']]],
+  ['version_5ffield_12',['version_field',['../classcaf_1_1uuid.html#af37b840b8ba9c4b7bb6c58946ea74ed8',1,'caf::uuid']]]
 ];
