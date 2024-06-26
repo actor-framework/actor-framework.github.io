@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Annouoncing Version 1.0"
+title:  "Announcing Version 1.0"
 author: dominik
 tags: API Roadmap
 ---
