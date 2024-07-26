@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['handle_5ftype_0',['handle_type',['../classcaf_1_1actor__from__state__t.html#a1e3c10df3ac5276d6eed4ae3fd8c5741',1,'caf::actor_from_state_t::handle_type'],['../classcaf_1_1flow_1_1op_1_1base.html#ae0b048562268ab9ff1d3668d3a39930c',1,'caf::flow::op::base::handle_type']]],
-  ['host_5ftype_1',['host_type',['../classcaf_1_1uri.html#a9e7339c6c7402780d61aae4dc944e588',1,'caf::uri']]]
+  ['frame_0',['frame',['../namespacecaf_1_1net_1_1lp.html#af0779ee214d902fa53de6709ed7f04a2',1,'caf::net::lp']]],
+  ['function_5fview_5fstorage_5ft_1',['function_view_storage_t',['../namespacecaf.html#a67437819f20841b7b0ed3ec3764e20b5',1,'caf']]]
 ];

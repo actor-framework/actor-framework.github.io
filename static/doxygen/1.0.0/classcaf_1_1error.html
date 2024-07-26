@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>caf</b></li><li class="navelem"><a class="el" href="classcaf_1_1error.html">error</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecaf.html">caf</a></li><li class="navelem"><a class="el" href="classcaf_1_1error.html">error</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -155,7 +155,7 @@ template&lt;class E &gt; </td></tr>
 <tr class="memitem:a13d719d6d7dd64b98a0033ed16298cbd" id="r_a13d719d6d7dd64b98a0033ed16298cbd"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13d719d6d7dd64b98a0033ed16298cbd">code</a> () const noexcept</td></tr>
 <tr class="memdesc:a13d719d6d7dd64b98a0033ed16298cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the category-specific error code, whereas <code>0</code> means "no error".  <br /></td></tr>
 <tr class="separator:a13d719d6d7dd64b98a0033ed16298cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af50223743286035620164d1a76f09113" id="r_af50223743286035620164d1a76f09113"><td class="memItemLeft" align="right" valign="top">type_id_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af50223743286035620164d1a76f09113">category</a> () const noexcept</td></tr>
+<tr class="memitem:af50223743286035620164d1a76f09113" id="r_af50223743286035620164d1a76f09113"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af50223743286035620164d1a76f09113">category</a> () const noexcept</td></tr>
 <tr class="memdesc:af50223743286035620164d1a76f09113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type_id of the category for this error.  <br /></td></tr>
 <tr class="separator:af50223743286035620164d1a76f09113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad29a2f1e1bd51705a7574a31117d93e6" id="r_ad29a2f1e1bd51705a7574a31117d93e6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classcaf_1_1message.html">message</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad29a2f1e1bd51705a7574a31117d93e6">context</a> () const noexcept</td></tr>
@@ -180,7 +180,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const no
 int&#160;</td><td class="memItemRight" valign="bottom"><b>compare</b> (const <a class="el" href="classcaf_1_1error.html">error</a> &amp;) const noexcept</td></tr>
 <tr class="separator:a0193c88de90ca55eb7decf8bcfb04870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cc00ebf0a0f59e4f55ac88d6e4bd903" id="r_a3cc00ebf0a0f59e4f55ac88d6e4bd903"><td class="memItemLeft" align="right" valign="top"><a id="a3cc00ebf0a0f59e4f55ac88d6e4bd903" name="a3cc00ebf0a0f59e4f55ac88d6e4bd903"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>compare</b> (uint8_t <a class="el" href="#a13d719d6d7dd64b98a0033ed16298cbd">code</a>, type_id_t <a class="el" href="#af50223743286035620164d1a76f09113">category</a>) const noexcept</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>compare</b> (uint8_t <a class="el" href="#a13d719d6d7dd64b98a0033ed16298cbd">code</a>, <a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a> <a class="el" href="#af50223743286035620164d1a76f09113">category</a>) const noexcept</td></tr>
 <tr class="separator:a3cc00ebf0a0f59e4f55ac88d6e4bd903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a894b4ea9aee4aee63d2a347a001b1047" id="r_a894b4ea9aee4aee63d2a347a001b1047"><td class="memTemplParams" colspan="2"><a id="a894b4ea9aee4aee63d2a347a001b1047" name="a894b4ea9aee4aee63d2a347a001b1047"></a>
 template&lt;class Enum , class... Ts&gt; </td></tr>
@@ -269,7 +269,7 @@ Why is there no <code>string()</code> member function?</h1>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">type_id_t caf::error::category </td>
+          <td class="memname"><a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a> caf::error::category </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>

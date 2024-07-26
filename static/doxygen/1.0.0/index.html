@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>C++ Actor Framework: Main Page</title>
+<title>C++ Actor Framework: CAF</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,10 +83,74 @@ $(function(){ initResizable(false); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">C++ Actor Framework Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">CAF </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><h1><a class="anchor" id="Intro"></a>
+Introduction</h1>
+<p>This framework provides an implementation of the actor model for C++. It uses network transparent messaging to ease development of concurrent and distributed software.</p>
+<p>To get started with the framework, please read the <a href="https://actor-framework.readthedocs.io">manual</a> first.</p>
+<h1><a class="anchor" id="IntroHelloWorld"></a>
+Hello World Example</h1>
+<div class="fragment"><div class="line"><span class="comment">// The obligatory &quot;Hello World!&quot; example.</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &quot;caf/actor_ostream.hpp&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;caf/actor_system.hpp&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;caf/caf_main.hpp&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;caf/event_based_actor.hpp&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacecaf.html">caf</a>;</div>
+<div class="line"><span class="keyword">using namespace </span>std::literals;</div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_class" href="classcaf_1_1behavior.html">behavior</a> mirror(<a class="code hl_class" href="classcaf_1_1event__based__actor.html">event_based_actor</a>* self) {</div>
+<div class="line">  <span class="comment">// return the (initial) actor behavior</span></div>
+<div class="line">  <span class="keywordflow">return</span> {</div>
+<div class="line">    <span class="comment">// a handler for messages containing a single string</span></div>
+<div class="line">    <span class="comment">// that replies with a string</span></div>
+<div class="line">    [self](<span class="keyword">const</span> std::string&amp; what) -&gt; std::string {</div>
+<div class="line">      <span class="comment">// prints &quot;Hello World!&quot; (thread-safe)</span></div>
+<div class="line">      self-&gt;println(<span class="stringliteral">&quot;{}&quot;</span>, what);</div>
+<div class="line">      <span class="comment">// reply &quot;!dlroW olleH&quot;</span></div>
+<div class="line">      <span class="keywordflow">return</span> std::string{what.rbegin(), what.rend()};</div>
+<div class="line">    },</div>
+<div class="line">  };</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> hello_world(<a class="code hl_class" href="classcaf_1_1event__based__actor.html">event_based_actor</a>* self, <span class="keyword">const</span> <a class="code hl_class" href="classcaf_1_1actor.html">actor</a>&amp; buddy) {</div>
+<div class="line">  <span class="comment">// send &quot;Hello World!&quot; to our buddy ...</span></div>
+<div class="line">  self-&gt;mail(<span class="stringliteral">&quot;Hello World!&quot;</span>)</div>
+<div class="line">    .request(buddy, 10s)</div>
+<div class="line">    .then(</div>
+<div class="line">      <span class="comment">// ... wait up to 10s for a response ...</span></div>
+<div class="line">      [self](<span class="keyword">const</span> std::string&amp; what) {</div>
+<div class="line">        <span class="comment">// ... and print it</span></div>
+<div class="line">        self-&gt;println(<span class="stringliteral">&quot;{}&quot;</span>, what);</div>
+<div class="line">      });</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> caf_main(<a class="code hl_class" href="classcaf_1_1actor__system.html">actor_system</a>&amp; sys) {</div>
+<div class="line">  <span class="comment">// create a new actor that calls &#39;mirror()&#39;</span></div>
+<div class="line">  <span class="keyword">auto</span> mirror_actor = sys.<a class="code hl_function" href="classcaf_1_1actor__system.html#a8109a9af54f390a3496f942fe9432949">spawn</a>(mirror);</div>
+<div class="line">  <span class="comment">// create another actor that calls &#39;hello_world(mirror_actor)&#39;;</span></div>
+<div class="line">  sys.<a class="code hl_function" href="classcaf_1_1actor__system.html#a8109a9af54f390a3496f942fe9432949">spawn</a>(hello_world, mirror_actor);</div>
+<div class="line">  <span class="comment">// the system will wait until both actors are done before exiting the program</span></div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// creates a main function for us that calls our caf_main</span></div>
+<div class="line">CAF_MAIN()</div>
+<div class="ttc" id="aclasscaf_1_1actor__system_html"><div class="ttname"><a href="classcaf_1_1actor__system.html">caf::actor_system</a></div><div class="ttdoc">Actor environment including scheduler, registry, and optional components such as a middleman.</div><div class="ttdef"><b>Definition</b> actor_system.hpp:87</div></div>
+<div class="ttc" id="aclasscaf_1_1actor__system_html_a8109a9af54f390a3496f942fe9432949"><div class="ttname"><a href="classcaf_1_1actor__system.html#a8109a9af54f390a3496f942fe9432949">caf::actor_system::spawn</a></div><div class="ttdeci">infer_handle_from_class_t&lt; C &gt; spawn(Ts &amp;&amp;... xs)</div><div class="ttdoc">Returns a new actor of type C using xs... as constructor arguments.</div><div class="ttdef"><b>Definition</b> actor_system.hpp:383</div></div>
+<div class="ttc" id="aclasscaf_1_1actor_html"><div class="ttname"><a href="classcaf_1_1actor.html">caf::actor</a></div><div class="ttdoc">Identifies an untyped actor.</div><div class="ttdef"><b>Definition</b> actor.hpp:30</div></div>
+<div class="ttc" id="aclasscaf_1_1behavior_html"><div class="ttname"><a href="classcaf_1_1behavior.html">caf::behavior</a></div><div class="ttdoc">Describes the behavior of an actor, i.e., provides a message handler and an optional timeout.</div><div class="ttdef"><b>Definition</b> behavior.hpp:24</div></div>
+<div class="ttc" id="aclasscaf_1_1event__based__actor_html"><div class="ttname"><a href="classcaf_1_1event__based__actor.html">caf::event_based_actor</a></div><div class="ttdoc">A cooperatively scheduled, event-based actor implementation.</div><div class="ttdef"><b>Definition</b> event_based_actor.hpp:31</div></div>
+<div class="ttc" id="anamespacecaf_html"><div class="ttname"><a href="namespacecaf.html">caf</a></div><div class="ttdoc">Root namespace of libcaf.</div><div class="ttdef"><b>Definition</b> abstract_actor.cpp:23</div></div>
+</div><!-- fragment --><h1><a class="anchor" id="IntroMoreExamples"></a>
+More Examples</h1>
+<p>The <code><a class="el" href="">Math Actor Example</a></code> shows the usage of <code><a class="el" href="">receive_loop</a></code> and <code><a class="el" href="">arg_match</a></code>. The <code><a class="el" href="dining_philosophers_8cpp-example.html">Dining Philosophers Example</a></code> introduces event-based actors covers various features of CAF. </p>
+</div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"/>
 </div><!-- contents -->
 <!-- start footer part -->

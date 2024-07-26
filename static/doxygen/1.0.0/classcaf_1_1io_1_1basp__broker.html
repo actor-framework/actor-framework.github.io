@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>caf</b></li><li class="navelem"><b>io</b></li><li class="navelem"><a class="el" href="classcaf_1_1io_1_1basp__broker.html">basp_broker</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecaf.html">caf</a></li><li class="navelem"><a class="el" href="namespacecaf_1_1io.html">io</a></li><li class="navelem"><a class="el" href="classcaf_1_1io_1_1basp__broker.html">basp_broker</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -177,7 +177,7 @@ resume_result&#160;</td><td class="memItemRight" valign="bottom"><b>resume</b> (
 <tr class="memitem:abdc232c70229a3c43305df3427903ea9" id="r_abdc232c70229a3c43305df3427903ea9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdc232c70229a3c43305df3427903ea9">learned_new_node_indirectly</a> (const <a class="el" href="classcaf_1_1node__id.html">node_id</a> &amp;nid) override</td></tr>
 <tr class="memdesc:abdc232c70229a3c43305df3427903ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever BASP learns the ID of a remote node to which it does not have a direct connection.  <br /></td></tr>
 <tr class="separator:abdc232c70229a3c43305df3427903ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9687a7073d7086060a35ef6a99c6a78" id="r_ae9687a7073d7086060a35ef6a99c6a78"><td class="memItemLeft" align="right" valign="top">byte_buffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9687a7073d7086060a35ef6a99c6a78">get_buffer</a> (<a class="el" href="classcaf_1_1io_1_1connection__handle.html">connection_handle</a> hdl) override</td></tr>
+<tr class="memitem:ae9687a7073d7086060a35ef6a99c6a78" id="r_ae9687a7073d7086060a35ef6a99c6a78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9687a7073d7086060a35ef6a99c6a78">get_buffer</a> (<a class="el" href="classcaf_1_1io_1_1connection__handle.html">connection_handle</a> hdl) override</td></tr>
 <tr class="memdesc:ae9687a7073d7086060a35ef6a99c6a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the sent buffer.  <br /></td></tr>
 <tr class="separator:ae9687a7073d7086060a35ef6a99c6a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fa0664f164661e4ea4b573a3e46c490" id="r_a9fa0664f164661e4ea4b573a3e46c490"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fa0664f164661e4ea4b573a3e46c490">flush</a> (<a class="el" href="classcaf_1_1io_1_1connection__handle.html">connection_handle</a> hdl) override</td></tr>
@@ -204,7 +204,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>learned_new_node</b> 
 <tr class="memdesc:a97688fe869bf3dc13c5107e43de07b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets <code>this_context</code> by either creating or accessing state for <code>hdl</code>.  <br /></td></tr>
 <tr class="separator:a97688fe869bf3dc13c5107e43de07b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae359929d678c65c7811b439bed1f3e0a" id="r_ae359929d678c65c7811b439bed1f3e0a"><td class="memItemLeft" align="right" valign="top"><a id="ae359929d678c65c7811b439bed1f3e0a" name="ae359929d678c65c7811b439bed1f3e0a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>connection_cleanup</b> (<a class="el" href="classcaf_1_1io_1_1connection__handle.html">connection_handle</a> hdl, sec code)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>connection_cleanup</b> (<a class="el" href="classcaf_1_1io_1_1connection__handle.html">connection_handle</a> hdl, <a class="el" href="namespacecaf.html#aad31759ecbee7d4d2133a5618a053a78">sec</a> code)</td></tr>
 <tr class="memdesc:ae359929d678c65c7811b439bed1f3e0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up any state for <code>hdl</code>. <br /></td></tr>
 <tr class="separator:ae359929d678c65c7811b439bed1f3e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a577433d33f72c33d53d2060f11795502" id="r_a577433d33f72c33d53d2060f11795502"><td class="memItemLeft" align="right" valign="top"><a id="a577433d33f72c33d53d2060f11795502" name="a577433d33f72c33d53d2060f11795502"></a>
@@ -289,7 +289,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ack_writes</b> (<a cl
 <tr class="memdesc:a931df9f19ff845ba6829748481aa0b38 inherit pub_methods_classcaf_1_1io_1_1abstract__broker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables write notifications for a given connection. <br /></td></tr>
 <tr class="separator:a931df9f19ff845ba6829748481aa0b38 inherit pub_methods_classcaf_1_1io_1_1abstract__broker"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af72bdcff3b6a0e0dcf5da80894768aea inherit pub_methods_classcaf_1_1io_1_1abstract__broker" id="r_af72bdcff3b6a0e0dcf5da80894768aea"><td class="memItemLeft" align="right" valign="top">
-byte_buffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>wr_buf</b> (<a class="el" href="classcaf_1_1io_1_1connection__handle.html">connection_handle</a> hdl)</td></tr>
+<a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>wr_buf</b> (<a class="el" href="classcaf_1_1io_1_1connection__handle.html">connection_handle</a> hdl)</td></tr>
 <tr class="memdesc:af72bdcff3b6a0e0dcf5da80894768aea inherit pub_methods_classcaf_1_1io_1_1abstract__broker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the write buffer for a given connection. <br /></td></tr>
 <tr class="separator:af72bdcff3b6a0e0dcf5da80894768aea inherit pub_methods_classcaf_1_1io_1_1abstract__broker"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65a1f7cd63a6b9f581b9cd68dbe0b3de inherit pub_methods_classcaf_1_1io_1_1abstract__broker" id="r_a65a1f7cd63a6b9f581b9cd68dbe0b3de"><td class="memItemLeft" align="right" valign="top">
@@ -309,11 +309,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ack_writes</b> (<a cl
 <tr class="memdesc:a1105d4afc0a6fe483becc19c083a7176 inherit pub_methods_classcaf_1_1io_1_1abstract__broker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables write notifications for a given datagram socket. <br /></td></tr>
 <tr class="separator:a1105d4afc0a6fe483becc19c083a7176 inherit pub_methods_classcaf_1_1io_1_1abstract__broker"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09d16748ca464976f25a88810483f037 inherit pub_methods_classcaf_1_1io_1_1abstract__broker" id="r_a09d16748ca464976f25a88810483f037"><td class="memItemLeft" align="right" valign="top">
-byte_buffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>wr_buf</b> (<a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a> hdl)</td></tr>
+<a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>wr_buf</b> (<a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a> hdl)</td></tr>
 <tr class="memdesc:a09d16748ca464976f25a88810483f037 inherit pub_methods_classcaf_1_1io_1_1abstract__broker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the write buffer for a given sink. <br /></td></tr>
 <tr class="separator:a09d16748ca464976f25a88810483f037 inherit pub_methods_classcaf_1_1io_1_1abstract__broker"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb2f149f1724baa41dcdc52c40b16f25 inherit pub_methods_classcaf_1_1io_1_1abstract__broker" id="r_acb2f149f1724baa41dcdc52c40b16f25"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>enqueue_datagram</b> (<a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a>, byte_buffer)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enqueue_datagram</b> (<a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a>, <a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a>)</td></tr>
 <tr class="memdesc:acb2f149f1724baa41dcdc52c40b16f25 inherit pub_methods_classcaf_1_1io_1_1abstract__broker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue a buffer to be sent as a datagram via a given endpoint. <br /></td></tr>
 <tr class="separator:acb2f149f1724baa41dcdc52c40b16f25 inherit pub_methods_classcaf_1_1io_1_1abstract__broker"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0089589db76beb96f210992fe5e20b8 inherit pub_methods_classcaf_1_1io_1_1abstract__broker" id="r_ac0089589db76beb96f210992fe5e20b8"><td class="memItemLeft" align="right" valign="top">
@@ -641,7 +641,7 @@ template&lt;class Handle &gt; </td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">byte_buffer &amp; caf::io::basp_broker::get_buffer </td>
+          <td class="memname"><a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> &amp; caf::io::basp_broker::get_buffer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classcaf_1_1io_1_1connection__handle.html">connection_handle</a></td>          <td class="paramname"><span class="paramname"><em>hdl</em></span></td><td>)</td>
           <td></td>

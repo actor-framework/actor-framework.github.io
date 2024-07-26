@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['protocol_0',['Binary Actor System Protocol',['../group___b_a_s_p.html',1,'']]]
+  ['implicit_20type_20conversions_0',['Implicit Type Conversions',['../group___implicit_conversion.html',1,'']]]
 ];

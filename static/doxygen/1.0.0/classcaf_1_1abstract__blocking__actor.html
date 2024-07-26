@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>caf</b></li><li class="navelem"><a class="el" href="classcaf_1_1abstract__blocking__actor.html">abstract_blocking_actor</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecaf.html">caf</a></li><li class="navelem"><a class="el" href="classcaf_1_1abstract__blocking__actor.html">abstract_blocking_actor</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -150,7 +150,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>launch</b> (<
 clock_type::time_point&#160;</td><td class="memItemRight" valign="bottom"><b>now</b> () const noexcept</td></tr>
 <tr class="memdesc:ab3dfe7bb6c92645b1eaeb479e74d45c4 inherit pub_methods_classcaf_1_1local__actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time. <br /></td></tr>
 <tr class="separator:ab3dfe7bb6c92645b1eaeb479e74d45c4 inherit pub_methods_classcaf_1_1local__actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2134eecb2442242a96a37af7262e618c inherit pub_methods_classcaf_1_1local__actor" id="r_a2134eecb2442242a96a37af7262e618c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1disposable.html">disposable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaf_1_1local__actor.html#a2134eecb2442242a96a37af7262e618c">request_response_timeout</a> (timespan d, <a class="el" href="classcaf_1_1message__id.html">message_id</a> mid)</td></tr>
+<tr class="memitem:a2134eecb2442242a96a37af7262e618c inherit pub_methods_classcaf_1_1local__actor" id="r_a2134eecb2442242a96a37af7262e618c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1disposable.html">disposable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaf_1_1local__actor.html#a2134eecb2442242a96a37af7262e618c">request_response_timeout</a> (<a class="el" href="namespacecaf.html#a327e0d330244de57d64ec4216428b1b5">timespan</a> d, <a class="el" href="classcaf_1_1message__id.html">message_id</a> mid)</td></tr>
 <tr class="memdesc:a2134eecb2442242a96a37af7262e618c inherit pub_methods_classcaf_1_1local__actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests a new timeout for <code>mid</code>.  <br /></td></tr>
 <tr class="separator:a2134eecb2442242a96a37af7262e618c inherit pub_methods_classcaf_1_1local__actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af47473b565a29309a46d1ec97e983a2b inherit pub_methods_classcaf_1_1local__actor" id="r_af47473b565a29309a46d1ec97e983a2b"><td class="memTemplParams" colspan="2">
@@ -160,7 +160,7 @@ template&lt;class... Args&gt; </td></tr>
 <tr class="separator:af47473b565a29309a46d1ec97e983a2b inherit pub_methods_classcaf_1_1local__actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab357507b5bfebdee39b601ddaa4c8f3e inherit pub_methods_classcaf_1_1local__actor" id="r_ab357507b5bfebdee39b601ddaa4c8f3e"><td class="memTemplParams" colspan="2">
 template&lt;class... Args&gt; </td></tr>
-<tr class="memitem:ab357507b5bfebdee39b601ddaa4c8f3e inherit pub_methods_classcaf_1_1local__actor"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>println</b> (term color, std::string_view fmt, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:ab357507b5bfebdee39b601ddaa4c8f3e inherit pub_methods_classcaf_1_1local__actor"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>println</b> (<a class="el" href="namespacecaf.html#aa601da0abafbe531a0068d454c7e8ccc">term</a> color, std::string_view fmt, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:ab357507b5bfebdee39b601ddaa4c8f3e inherit pub_methods_classcaf_1_1local__actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new line to stdout. <br /></td></tr>
 <tr class="separator:ab357507b5bfebdee39b601ddaa4c8f3e inherit pub_methods_classcaf_1_1local__actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3065f221e900ada840e564ebedaffd34 inherit pub_methods_classcaf_1_1local__actor" id="r_a3065f221e900ada840e564ebedaffd34"><td class="memTemplParams" colspan="2">
@@ -288,21 +288,21 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>detach</b> (const <
 <tr class="memdesc:a23625c6c88daf5dba73a40c3d59c9989 inherit pub_methods_classcaf_1_1abstract__actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detaches the first attached object that matches <code>what</code>. <br /></td></tr>
 <tr class="separator:a23625c6c88daf5dba73a40c3d59c9989 inherit pub_methods_classcaf_1_1abstract__actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a681a85ad376479add40b39f3b6b00203 inherit pub_methods_classcaf_1_1abstract__actor" id="r_a681a85ad376479add40b39f3b6b00203"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>link_to</b> (const <a class="el" href="classcaf_1_1actor__addr.html">actor_addr</a> &amp;other)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>link_to</b> (const <a class="el" href="classcaf_1_1actor__addr.html">actor_addr</a> &amp;<a class="el" href="namespacecaf.html#a38cc4480fa62093d67ea760129a9e8d0a795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>)</td></tr>
 <tr class="memdesc:a681a85ad376479add40b39f3b6b00203 inherit pub_methods_classcaf_1_1abstract__actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links this actor to <code>other</code>. <br /></td></tr>
 <tr class="separator:a681a85ad376479add40b39f3b6b00203 inherit pub_methods_classcaf_1_1abstract__actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec05ef5fcc32ba0a1a2c3fc369c0756f inherit pub_methods_classcaf_1_1abstract__actor" id="r_aec05ef5fcc32ba0a1a2c3fc369c0756f"><td class="memTemplParams" colspan="2">
 template&lt;class ActorHandle &gt; </td></tr>
-<tr class="memitem:aec05ef5fcc32ba0a1a2c3fc369c0756f inherit pub_methods_classcaf_1_1abstract__actor"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>link_to</b> (const ActorHandle &amp;other)</td></tr>
+<tr class="memitem:aec05ef5fcc32ba0a1a2c3fc369c0756f inherit pub_methods_classcaf_1_1abstract__actor"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>link_to</b> (const ActorHandle &amp;<a class="el" href="namespacecaf.html#a38cc4480fa62093d67ea760129a9e8d0a795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>)</td></tr>
 <tr class="memdesc:aec05ef5fcc32ba0a1a2c3fc369c0756f inherit pub_methods_classcaf_1_1abstract__actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links this actor to <code>other</code>. <br /></td></tr>
 <tr class="separator:aec05ef5fcc32ba0a1a2c3fc369c0756f inherit pub_methods_classcaf_1_1abstract__actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29f956d1d173dc2345b691a3f701e258 inherit pub_methods_classcaf_1_1abstract__actor" id="r_a29f956d1d173dc2345b691a3f701e258"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>unlink_from</b> (const <a class="el" href="classcaf_1_1actor__addr.html">actor_addr</a> &amp;other)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>unlink_from</b> (const <a class="el" href="classcaf_1_1actor__addr.html">actor_addr</a> &amp;<a class="el" href="namespacecaf.html#a38cc4480fa62093d67ea760129a9e8d0a795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>)</td></tr>
 <tr class="memdesc:a29f956d1d173dc2345b691a3f701e258 inherit pub_methods_classcaf_1_1abstract__actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlinks this actor from <code>addr</code>. <br /></td></tr>
 <tr class="separator:a29f956d1d173dc2345b691a3f701e258 inherit pub_methods_classcaf_1_1abstract__actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9000dd0f9581760958874538a0f13591 inherit pub_methods_classcaf_1_1abstract__actor" id="r_a9000dd0f9581760958874538a0f13591"><td class="memTemplParams" colspan="2">
 template&lt;class ActorHandle &gt; </td></tr>
-<tr class="memitem:a9000dd0f9581760958874538a0f13591 inherit pub_methods_classcaf_1_1abstract__actor"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>unlink_from</b> (const ActorHandle &amp;other)</td></tr>
+<tr class="memitem:a9000dd0f9581760958874538a0f13591 inherit pub_methods_classcaf_1_1abstract__actor"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>unlink_from</b> (const ActorHandle &amp;<a class="el" href="namespacecaf.html#a38cc4480fa62093d67ea760129a9e8d0a795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>)</td></tr>
 <tr class="memdesc:a9000dd0f9581760958874538a0f13591 inherit pub_methods_classcaf_1_1abstract__actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links this actor to <code>hdl</code>. <br /></td></tr>
 <tr class="separator:a9000dd0f9581760958874538a0f13591 inherit pub_methods_classcaf_1_1abstract__actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1ecc6c4b6f42ead1289914df37a4f51 inherit pub_methods_classcaf_1_1abstract__actor" id="r_ad1ecc6c4b6f42ead1289914df37a4f51"><td class="memItemLeft" align="right" valign="top">
@@ -381,17 +381,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>attach_impl</b> (atta
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>detach_impl</b> (const <a class="el" href="structcaf_1_1attachable_1_1token.html">attachable::token</a> &amp;what, bool stop_on_hit=false, bool dry_run=false)</td></tr>
 <tr class="separator:a800cab460406a5d1e5de7ae76ece320e inherit pro_methods_classcaf_1_1abstract__actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a046edb500e442feca8069df8a534c657 inherit pro_methods_classcaf_1_1abstract__actor" id="r_a046edb500e442feca8069df8a534c657"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add_link</b> (<a class="el" href="classcaf_1_1abstract__actor.html">abstract_actor</a> *other)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_link</b> (<a class="el" href="classcaf_1_1abstract__actor.html">abstract_actor</a> *<a class="el" href="namespacecaf.html#a38cc4480fa62093d67ea760129a9e8d0a795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>)</td></tr>
 <tr class="memdesc:a046edb500e442feca8069df8a534c657 inherit pro_methods_classcaf_1_1abstract__actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes the actor to establish a link to <code>other</code>. <br /></td></tr>
 <tr class="separator:a046edb500e442feca8069df8a534c657 inherit pro_methods_classcaf_1_1abstract__actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1f179e6fb2743324960937ace7348ed inherit pro_methods_classcaf_1_1abstract__actor" id="r_aa1f179e6fb2743324960937ace7348ed"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>remove_link</b> (<a class="el" href="classcaf_1_1abstract__actor.html">abstract_actor</a> *other)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>remove_link</b> (<a class="el" href="classcaf_1_1abstract__actor.html">abstract_actor</a> *<a class="el" href="namespacecaf.html#a38cc4480fa62093d67ea760129a9e8d0a795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>)</td></tr>
 <tr class="memdesc:aa1f179e6fb2743324960937ace7348ed inherit pro_methods_classcaf_1_1abstract__actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes the actor to remove any established link to <code>other</code>. <br /></td></tr>
 <tr class="separator:aa1f179e6fb2743324960937ace7348ed inherit pro_methods_classcaf_1_1abstract__actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4760ea49dc7ae5d2c5369140a7e911ca inherit pro_methods_classcaf_1_1abstract__actor" id="r_a4760ea49dc7ae5d2c5369140a7e911ca"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaf_1_1abstract__actor.html#a4760ea49dc7ae5d2c5369140a7e911ca">add_backlink</a> (<a class="el" href="classcaf_1_1abstract__actor.html">abstract_actor</a> *other)</td></tr>
+<tr class="memitem:a4760ea49dc7ae5d2c5369140a7e911ca inherit pro_methods_classcaf_1_1abstract__actor" id="r_a4760ea49dc7ae5d2c5369140a7e911ca"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaf_1_1abstract__actor.html#a4760ea49dc7ae5d2c5369140a7e911ca">add_backlink</a> (<a class="el" href="classcaf_1_1abstract__actor.html">abstract_actor</a> *<a class="el" href="namespacecaf.html#a38cc4480fa62093d67ea760129a9e8d0a795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>)</td></tr>
 <tr class="memdesc:a4760ea49dc7ae5d2c5369140a7e911ca inherit pro_methods_classcaf_1_1abstract__actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an entry to <code>other</code> to the link table of this actor.  <br /></td></tr>
 <tr class="separator:a4760ea49dc7ae5d2c5369140a7e911ca inherit pro_methods_classcaf_1_1abstract__actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada7374c0ea2c6b06cb84d451f5ade3a1 inherit pro_methods_classcaf_1_1abstract__actor" id="r_ada7374c0ea2c6b06cb84d451f5ade3a1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaf_1_1abstract__actor.html#ada7374c0ea2c6b06cb84d451f5ade3a1">remove_backlink</a> (<a class="el" href="classcaf_1_1abstract__actor.html">abstract_actor</a> *other)</td></tr>
+<tr class="memitem:ada7374c0ea2c6b06cb84d451f5ade3a1 inherit pro_methods_classcaf_1_1abstract__actor" id="r_ada7374c0ea2c6b06cb84d451f5ade3a1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaf_1_1abstract__actor.html#ada7374c0ea2c6b06cb84d451f5ade3a1">remove_backlink</a> (<a class="el" href="classcaf_1_1abstract__actor.html">abstract_actor</a> *<a class="el" href="namespacecaf.html#a38cc4480fa62093d67ea760129a9e8d0a795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>)</td></tr>
 <tr class="memdesc:ada7374c0ea2c6b06cb84d451f5ade3a1 inherit pro_methods_classcaf_1_1abstract__actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an entry to <code>other</code> from the link table of this actor.  <br /></td></tr>
 <tr class="separator:ada7374c0ea2c6b06cb84d451f5ade3a1 inherit pro_methods_classcaf_1_1abstract__actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classcaf_1_1local__actor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classcaf_1_1local__actor')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classcaf_1_1local__actor.html">caf::local_actor</a></td></tr>

@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>caf</b></li><li class="navelem"><a class="el" href="classcaf_1_1deserializer.html">deserializer</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecaf.html">caf</a></li><li class="navelem"><a class="el" href="classcaf_1_1deserializer.html">deserializer</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -129,7 +129,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac8d996cdd99aa14c34d2b94c5a670be0" id="r_ac8d996cdd99aa14c34d2b94c5a670be0"><td class="memItemLeft" align="right" valign="top"><a id="ac8d996cdd99aa14c34d2b94c5a670be0" name="ac8d996cdd99aa14c34d2b94c5a670be0"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_human_readable_format</b> () const noexcept</td></tr>
 <tr class="separator:ac8d996cdd99aa14c34d2b94c5a670be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a582b9ac20c0a9a2e8348938fad995bdb" id="r_a582b9ac20c0a9a2e8348938fad995bdb"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a582b9ac20c0a9a2e8348938fad995bdb">fetch_next_object_type</a> (type_id_t &amp;type)=0</td></tr>
+<tr class="memitem:a582b9ac20c0a9a2e8348938fad995bdb" id="r_a582b9ac20c0a9a2e8348938fad995bdb"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a582b9ac20c0a9a2e8348938fad995bdb">fetch_next_object_type</a> (<a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a> &amp;type)=0</td></tr>
 <tr class="memdesc:a582b9ac20c0a9a2e8348938fad995bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads run-time-type information for the next object if available.  <br /></td></tr>
 <tr class="separator:a582b9ac20c0a9a2e8348938fad995bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65a5ed028a5a08fb8198a51b5232ed5c" id="r_a65a5ed028a5a08fb8198a51b5232ed5c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65a5ed028a5a08fb8198a51b5232ed5c">fetch_next_object_name</a> (std::string_view &amp;<a class="el" href="structcaf_1_1type__name.html">type_name</a>)</td></tr>
@@ -143,7 +143,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>next_object_name_matc
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>assert_next_object_name</b> (std::string_view <a class="el" href="structcaf_1_1type__name.html">type_name</a>)</td></tr>
 <tr class="memdesc:ade7a691405541e5688727c8229cad871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <code>next_object_name_matches</code>, but sets an error on the deserializer on a mismatch. <br /></td></tr>
 <tr class="separator:ade7a691405541e5688727c8229cad871"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2998d3ec339c8d4e84ccad55ae225cec" id="r_a2998d3ec339c8d4e84ccad55ae225cec"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2998d3ec339c8d4e84ccad55ae225cec">begin_object</a> (type_id_t type, std::string_view pretty_class_name)=0</td></tr>
+<tr class="memitem:a2998d3ec339c8d4e84ccad55ae225cec" id="r_a2998d3ec339c8d4e84ccad55ae225cec"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2998d3ec339c8d4e84ccad55ae225cec">begin_object</a> (<a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a> type, std::string_view pretty_class_name)=0</td></tr>
 <tr class="memdesc:a2998d3ec339c8d4e84ccad55ae225cec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins processing of an object, may perform a type check depending on the data format.  <br /></td></tr>
 <tr class="separator:a2998d3ec339c8d4e84ccad55ae225cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a428868506adad1db29f4691a69bdf064" id="r_a428868506adad1db29f4691a69bdf064"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a428868506adad1db29f4691a69bdf064">end_object</a> ()=0</td></tr>
@@ -156,10 +156,10 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>begin_field</
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>begin_field</b> (std::string_view, bool &amp;is_present)=0</td></tr>
 <tr class="separator:a40eae5d01d672636e0524cf92bb20bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ed3206a1a8f3f4cac551168284e0417" id="r_a6ed3206a1a8f3f4cac551168284e0417"><td class="memItemLeft" align="right" valign="top"><a id="a6ed3206a1a8f3f4cac551168284e0417" name="a6ed3206a1a8f3f4cac551168284e0417"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>begin_field</b> (std::string_view name, <a class="el" href="classcaf_1_1span.html">span</a>&lt; const type_id_t &gt; types, size_t &amp;index)=0</td></tr>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>begin_field</b> (std::string_view name, <a class="el" href="classcaf_1_1span.html">span</a>&lt; const <a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a> &gt; types, size_t &amp;index)=0</td></tr>
 <tr class="separator:a6ed3206a1a8f3f4cac551168284e0417"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c2913a19e0438e5c50ce9b127446665" id="r_a1c2913a19e0438e5c50ce9b127446665"><td class="memItemLeft" align="right" valign="top"><a id="a1c2913a19e0438e5c50ce9b127446665" name="a1c2913a19e0438e5c50ce9b127446665"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>begin_field</b> (std::string_view name, bool &amp;is_present, <a class="el" href="classcaf_1_1span.html">span</a>&lt; const type_id_t &gt; types, size_t &amp;index)=0</td></tr>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>begin_field</b> (std::string_view name, bool &amp;is_present, <a class="el" href="classcaf_1_1span.html">span</a>&lt; const <a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a> &gt; types, size_t &amp;index)=0</td></tr>
 <tr class="separator:a1c2913a19e0438e5c50ce9b127446665"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45e62a7fa424c4511c2952f4db28e0c1" id="r_a45e62a7fa424c4511c2952f4db28e0c1"><td class="memItemLeft" align="right" valign="top"><a id="a45e62a7fa424c4511c2952f4db28e0c1" name="a45e62a7fa424c4511c2952f4db28e0c1"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>end_field</b> ()=0</td></tr>
@@ -333,7 +333,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_human_readable_fo
         <tr>
           <td class="memname">virtual bool caf::deserializer::begin_object </td>
           <td>(</td>
-          <td class="paramtype">type_id_t</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -351,8 +351,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_human_readable_fo
 <p>Begins processing of an object, may perform a type check depending on the data format. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>16-bit ID for known types, invalid_type_id otherwise. </td></tr>
-    <tr><td class="paramname">pretty_class_name</td><td>Either the output of type_name_or_anonymous or the optionally defined pretty name. </td></tr>
+    <tr><td class="paramname">type</td><td>16-bit ID for known types, <a class="el" href="namespacecaf.html#a843669aeffc99e0fc80664b6731f77c4">invalid_type_id</a> otherwise. </td></tr>
+    <tr><td class="paramname">pretty_class_name</td><td>Either the output of <a class="el" href="namespacecaf.html#a5e0b2bab8dc58e5dfe8a740feabbf5e6">type_name_or_anonymous</a> or the optionally defined pretty name. </td></tr>
   </table>
   </dd>
 </dl>
@@ -608,7 +608,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_human_readable_fo
         <tr>
           <td class="memname">virtual bool caf::deserializer::fetch_next_object_type </td>
           <td>(</td>
-          <td class="paramtype">type_id_t &amp;</td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

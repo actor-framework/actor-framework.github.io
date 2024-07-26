@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>caf</b></li><li class="navelem"><b>net</b></li><li class="navelem"><b>http</b></li><li class="navelem"><a class="el" href="classcaf_1_1net_1_1http_1_1response__header.html">response_header</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecaf.html">caf</a></li><li class="navelem"><a class="el" href="namespacecaf_1_1net.html">net</a></li><li class="navelem"><a class="el" href="namespacecaf_1_1net_1_1http.html">http</a></li><li class="navelem"><a class="el" href="classcaf_1_1net_1_1http_1_1response__header.html">response_header</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -153,7 +153,7 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>status</b> () con
 std::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>status_text</b> () const noexcept</td></tr>
 <tr class="memdesc:a2179ddc3e23b8f28405db0851b8b22e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the HTTP status text of the request. <br /></td></tr>
 <tr class="separator:a2179ddc3e23b8f28405db0851b8b22e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0a33453f74c3de3914927d3e4c6f724" id="r_ac0a33453f74c3de3914927d3e4c6f724"><td class="memItemLeft" align="right" valign="top">std::pair&lt; http::status, std::string_view &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0a33453f74c3de3914927d3e4c6f724">parse</a> (std::string_view raw)</td></tr>
+<tr class="memitem:ac0a33453f74c3de3914927d3e4c6f724" id="r_ac0a33453f74c3de3914927d3e4c6f724"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="namespacecaf_1_1net_1_1http.html#aafe9e893dd8c1140c5384606c49390a7">http::status</a>, std::string_view &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0a33453f74c3de3914927d3e4c6f724">parse</a> (std::string_view raw)</td></tr>
 <tr class="memdesc:ac0a33453f74c3de3914927d3e4c6f724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a raw response header string and returns a pair containing the status and a description for the status.  <br /></td></tr>
 <tr class="separator:ac0a33453f74c3de3914927d3e4c6f724"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcaf_1_1net_1_1http_1_1header"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classcaf_1_1net_1_1http_1_1header')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcaf_1_1net_1_1http_1_1header.html">caf::net::http::header</a></td></tr>
@@ -241,7 +241,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>fields_map</b> = std
 fields_map::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>find_by_key_icase</b> (std::string_view key) const noexcept</td></tr>
 <tr class="separator:a57900e7514b493471960b59a76ffa9b0 inherit pro_methods_classcaf_1_1net_1_1http_1_1header"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74b537c8691f83d611589afd7562473e inherit pro_methods_classcaf_1_1net_1_1http_1_1header" id="r_a74b537c8691f83d611589afd7562473e"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>reassign_fields</b> (const <a class="el" href="classcaf_1_1net_1_1http_1_1header.html">header</a> &amp;other)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reassign_fields</b> (const <a class="el" href="classcaf_1_1net_1_1http_1_1header.html">header</a> &amp;<a class="el" href="namespacecaf.html#a38cc4480fa62093d67ea760129a9e8d0a795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>)</td></tr>
 <tr class="memdesc:a74b537c8691f83d611589afd7562473e inherit pro_methods_classcaf_1_1net_1_1http_1_1header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reassigns the shallow map from one address to another. <br /></td></tr>
 <tr class="separator:a74b537c8691f83d611589afd7562473e inherit pro_methods_classcaf_1_1net_1_1http_1_1header"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_methods_classcaf_1_1net_1_1http_1_1header"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_static_methods_classcaf_1_1net_1_1http_1_1header')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classcaf_1_1net_1_1http_1_1header.html">caf::net::http::header</a></td></tr>
@@ -294,7 +294,7 @@ std::vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt; <a class="el" href="#ac7ab616006a9f066c5e4bb9a1f50a444">status</a>, std::string_view &gt; caf::net::http::response_header::parse </td>
+          <td class="memname">std::pair&lt; <a class="el" href="namespacecaf_1_1net_1_1http.html#aafe9e893dd8c1140c5384606c49390a7">status</a>, std::string_view &gt; caf::net::http::response_header::parse </td>
           <td>(</td>
           <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>raw</em></span></td><td>)</td>
           <td></td>
@@ -303,7 +303,7 @@ std::vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
 </div><div class="memdoc">
 
 <p>Parses a raw response header string and returns a pair containing the status and a description for the status. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>status::bad_request</code> on error with a human-readable description of the error, <code>status::ok</code> otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="namespacecaf_1_1net_1_1http.html#aafe9e893dd8c1140c5384606c49390a7a373d9e6e1aaf30e691dadb57eb22d7b1" title="Indicates that the server cannot or will not process the request due to something that is perceived t...">status::bad_request</a></code> on error with a human-readable description of the error, <code><a class="el" href="namespacecaf_1_1net_1_1http.html#aafe9e893dd8c1140c5384606c49390a7a444bcb3a3fcf8389296c49467f27e1d6" title="Indicates that the request has succeeded.">status::ok</a></code> otherwise. </dd></dl>
 
 </div>
 </div>

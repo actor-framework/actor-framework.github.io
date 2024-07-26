@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>caf</b></li><li class="navelem"><a class="el" href="classcaf_1_1blocking__mail__t.html">blocking_mail_t</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecaf.html">caf</a></li><li class="navelem"><a class="el" href="classcaf_1_1blocking__mail__t.html">blocking_mail_t</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -119,7 +119,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>super</b> = <a class
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9c97c689188db289e61fedf224e0ef02" id="r_a9c97c689188db289e61fedf224e0ef02"><td class="memItemLeft" align="right" valign="top"><a id="a9c97c689188db289e61fedf224e0ef02" name="a9c97c689188db289e61fedf224e0ef02"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>blocking_mail_t</b> (<a class="el" href="classcaf_1_1abstract__blocking__actor.html">abstract_blocking_actor</a> *self, <a class="el" href="classcaf_1_1message.html">message</a> &amp;&amp;<a class="el" href="actor__system__config_8cpp.html#a1042959728d1c6b2df830afe6d5e653e">content</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>blocking_mail_t</b> (<a class="el" href="classcaf_1_1abstract__blocking__actor.html">abstract_blocking_actor</a> *self, <a class="el" href="classcaf_1_1message.html">message</a> &amp;&amp;<a class="el" href="namespacecaf.html#a1042959728d1c6b2df830afe6d5e653e">content</a>)</td></tr>
 <tr class="separator:a9c97c689188db289e61fedf224e0ef02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa631c84697edff4683d991f9ffd2855c" id="r_aa631c84697edff4683d991f9ffd2855c"><td class="memTemplParams" colspan="2"><a id="aa631c84697edff4683d991f9ffd2855c" name="aa631c84697edff4683d991f9ffd2855c"></a>
 template&lt;message_priority P = Priority, class E  = std::enable_if_t&lt;P == message_priority::normal&gt;&gt; </td></tr>
@@ -136,12 +136,12 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>delay</b> (<a class="
 <tr class="separator:ad131c6cc400cefe341f242f8e46cbdeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7979ad7f35c6e96a345f116a37a4a1bb" id="r_a7979ad7f35c6e96a345f116a37a4a1bb"><td class="memTemplParams" colspan="2"><a id="a7979ad7f35c6e96a345f116a37a4a1bb" name="a7979ad7f35c6e96a345f116a37a4a1bb"></a>
 template&lt;class Handle &gt; </td></tr>
-<tr class="memitem:a7979ad7f35c6e96a345f116a37a4a1bb"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>request</b> (const Handle &amp;receiver, timespan relative_timeout) &amp;&amp;</td></tr>
+<tr class="memitem:a7979ad7f35c6e96a345f116a37a4a1bb"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>request</b> (const Handle &amp;receiver, <a class="el" href="namespacecaf.html#a327e0d330244de57d64ec4216428b1b5">timespan</a> relative_timeout) &amp;&amp;</td></tr>
 <tr class="memdesc:a7979ad7f35c6e96a345f116a37a4a1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the message to <code>receiver</code> as a request message and returns a handle for processing the response. <br /></td></tr>
 <tr class="separator:a7979ad7f35c6e96a345f116a37a4a1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcaf_1_1async__mail__base__t"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classcaf_1_1async__mail__base__t')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcaf_1_1async__mail__base__t.html">caf::async_mail_base_t&lt; Priority, Trait, Args... &gt;</a></td></tr>
 <tr class="memitem:ae218271e8afe5df875447368865e6f28 inherit pub_methods_classcaf_1_1async__mail__base__t" id="r_ae218271e8afe5df875447368865e6f28"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>async_mail_base_t</b> (<a class="el" href="classcaf_1_1local__actor.html">local_actor</a> *self, <a class="el" href="classcaf_1_1message.html">message</a> &amp;&amp;<a class="el" href="actor__system__config_8cpp.html#a1042959728d1c6b2df830afe6d5e653e">content</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>async_mail_base_t</b> (<a class="el" href="classcaf_1_1local__actor.html">local_actor</a> *self, <a class="el" href="classcaf_1_1message.html">message</a> &amp;&amp;<a class="el" href="namespacecaf.html#a1042959728d1c6b2df830afe6d5e653e">content</a>)</td></tr>
 <tr class="separator:ae218271e8afe5df875447368865e6f28 inherit pub_methods_classcaf_1_1async__mail__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7441f590668b3296e69183285ecab82f inherit pub_methods_classcaf_1_1async__mail__base__t" id="r_a7441f590668b3296e69183285ecab82f"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>async_mail_base_t</b> (const <a class="el" href="classcaf_1_1async__mail__base__t.html">async_mail_base_t</a> &amp;)=delete</td></tr>

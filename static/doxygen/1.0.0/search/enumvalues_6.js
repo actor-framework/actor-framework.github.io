@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['incompatible_5fapplication_5fids_0',['incompatible_application_ids',['../group___b_a_s_p.html#gga93565d04c32ae7fd8541faa8528137c9a43259c3224a72abce20646a3a0b802e3',1,'caf::io::basp']]],
-  ['incompatible_5fversions_1',['incompatible_versions',['../group___b_a_s_p.html#gga93565d04c32ae7fd8541faa8528137c9ae76bfdcf248c09f33495a0707df3a91e',1,'caf::io::basp']]],
-  ['io_5factor_2',['io_actor',['../classcaf_1_1resumable.html#a4504f333dbba41322cad6cb1b4d87693a647d63da55666a3ee74df9a235b6718d',1,'caf::resumable']]]
+  ['gateway_5ftimeout_0',['gateway_timeout',['../namespacecaf_1_1net_1_1http.html#aafe9e893dd8c1140c5384606c49390a7aa96a18d998411ddbef3e3734de136504',1,'caf::net::http']]],
+  ['get_1',['get',['../namespacecaf_1_1net_1_1http.html#afc7c7ea929d11fcb14d21a900933e537ab5eda0a74558a342cf659187f06f746f',1,'caf::net::http']]],
+  ['going_5faway_2',['going_away',['../namespacecaf_1_1net_1_1web__socket.html#a910e679c72d8d519d9617a060da5f4e3a21b83598d2a23d1d1cdc2ed6122c4a15',1,'caf::net::web_socket']]],
+  ['gone_3',['gone',['../namespacecaf_1_1net_1_1http.html#aafe9e893dd8c1140c5384606c49390a7a50c1f58be7f5e47e0f53d64c094783c2',1,'caf::net::http']]],
+  ['green_4',['green',['../namespacecaf.html#aa601da0abafbe531a0068d454c7e8ccca9f27410725ab8cc8854a2769c7a516b8',1,'caf']]]
 ];

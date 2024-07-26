@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>caf</b></li><li class="navelem"><a class="el" href="classcaf_1_1json__builder.html">json_builder</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecaf.html">caf</a></li><li class="navelem"><a class="el" href="classcaf_1_1json__builder.html">json_builder</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -164,7 +164,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr
 <tr class="memitem:ae760a122636576f9cba531f2b03ea7c8" id="r_ae760a122636576f9cba531f2b03ea7c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1json__value.html">json_value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae760a122636576f9cba531f2b03ea7c8">seal</a> ()</td></tr>
 <tr class="memdesc:ae760a122636576f9cba531f2b03ea7c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seals the JSON value, i.e., rendering it immutable, and returns it.  <br /></td></tr>
 <tr class="separator:ae760a122636576f9cba531f2b03ea7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad16a115e4d49c1e9c14a77c67c37814b" id="r_ad16a115e4d49c1e9c14a77c67c37814b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad16a115e4d49c1e9c14a77c67c37814b">begin_object</a> (type_id_t <a class="el" href="classcaf_1_1json__writer.html#a8891509041df05a56bec01a3a35f0625">type</a>, std::string_view name) override</td></tr>
+<tr class="memitem:ad16a115e4d49c1e9c14a77c67c37814b" id="r_ad16a115e4d49c1e9c14a77c67c37814b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad16a115e4d49c1e9c14a77c67c37814b">begin_object</a> (<a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a> <a class="el" href="classcaf_1_1json__writer.html#a8891509041df05a56bec01a3a35f0625">type</a>, std::string_view name) override</td></tr>
 <tr class="memdesc:ad16a115e4d49c1e9c14a77c67c37814b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins processing of an object.  <br /></td></tr>
 <tr class="separator:ad16a115e4d49c1e9c14a77c67c37814b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9986e4f29464315e69c6b67ccd8b6de" id="r_ae9986e4f29464315e69c6b67ccd8b6de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9986e4f29464315e69c6b67ccd8b6de">end_object</a> () override</td></tr>
@@ -174,9 +174,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr
 <tr class="separator:a00730a896202584fd8c73d855a7428ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4daa88fa774eb5dc7ddfd7bc91d6401f" id="r_a4daa88fa774eb5dc7ddfd7bc91d6401f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4daa88fa774eb5dc7ddfd7bc91d6401f">begin_field</a> (std::string_view name, bool is_present) override</td></tr>
 <tr class="separator:a4daa88fa774eb5dc7ddfd7bc91d6401f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae548d21fa362e5127a18b113a2b40567" id="r_ae548d21fa362e5127a18b113a2b40567"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae548d21fa362e5127a18b113a2b40567">begin_field</a> (std::string_view name, <a class="el" href="classcaf_1_1span.html">span</a>&lt; const type_id_t &gt; types, size_t index) override</td></tr>
+<tr class="memitem:ae548d21fa362e5127a18b113a2b40567" id="r_ae548d21fa362e5127a18b113a2b40567"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae548d21fa362e5127a18b113a2b40567">begin_field</a> (std::string_view name, <a class="el" href="classcaf_1_1span.html">span</a>&lt; const <a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a> &gt; types, size_t index) override</td></tr>
 <tr class="separator:ae548d21fa362e5127a18b113a2b40567"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae494df2e9bb96a3c0dd27ecf44967d48" id="r_ae494df2e9bb96a3c0dd27ecf44967d48"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae494df2e9bb96a3c0dd27ecf44967d48">begin_field</a> (std::string_view name, bool is_present, <a class="el" href="classcaf_1_1span.html">span</a>&lt; const type_id_t &gt; types, size_t index) override</td></tr>
+<tr class="memitem:ae494df2e9bb96a3c0dd27ecf44967d48" id="r_ae494df2e9bb96a3c0dd27ecf44967d48"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae494df2e9bb96a3c0dd27ecf44967d48">begin_field</a> (std::string_view name, bool is_present, <a class="el" href="classcaf_1_1span.html">span</a>&lt; const <a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a> &gt; types, size_t index) override</td></tr>
 <tr class="separator:ae494df2e9bb96a3c0dd27ecf44967d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c26d35cdec7511d62dc3078efd6867c" id="r_a7c26d35cdec7511d62dc3078efd6867c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c26d35cdec7511d62dc3078efd6867c">end_field</a> () override</td></tr>
 <tr class="separator:a7c26d35cdec7511d62dc3078efd6867c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -371,7 +371,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_human_readable_fo
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classcaf_1_1span.html">span</a>&lt; const type_id_t &gt;</td>          <td class="paramname"><span class="paramname"><em>types</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classcaf_1_1span.html">span</a>&lt; const <a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>types</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -407,7 +407,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_human_readable_fo
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classcaf_1_1span.html">span</a>&lt; const type_id_t &gt;</td>          <td class="paramname"><span class="paramname"><em>types</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classcaf_1_1span.html">span</a>&lt; const <a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>types</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -495,7 +495,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_human_readable_fo
         <tr>
           <td class="memname">bool caf::json_builder::begin_object </td>
           <td>(</td>
-          <td class="paramtype">type_id_t</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

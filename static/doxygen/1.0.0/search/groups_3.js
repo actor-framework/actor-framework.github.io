@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['network_20abstraction_0',['Actor-based Network Abstraction',['../group___broker.html',1,'']]]
+  ['handling_0',['Message Handling',['../group___message_handling.html',1,'']]]
 ];

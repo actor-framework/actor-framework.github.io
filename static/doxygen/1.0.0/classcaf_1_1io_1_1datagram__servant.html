@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>caf</b></li><li class="navelem"><b>io</b></li><li class="navelem"><a class="el" href="classcaf_1_1io_1_1datagram__servant.html">datagram_servant</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecaf.html">caf</a></li><li class="navelem"><a class="el" href="namespacecaf_1_1io.html">io</a></li><li class="navelem"><a class="el" href="classcaf_1_1io_1_1datagram__servant.html">datagram_servant</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -119,10 +119,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a92ad746366340103b0ab52fbd4696dd0" id="r_a92ad746366340103b0ab52fbd4696dd0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92ad746366340103b0ab52fbd4696dd0">ack_writes</a> (bool enable)=0</td></tr>
 <tr class="memdesc:a92ad746366340103b0ab52fbd4696dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables write notifications.  <br /></td></tr>
 <tr class="separator:a92ad746366340103b0ab52fbd4696dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3af130d97d9aada6aa472af9904d4a2c" id="r_a3af130d97d9aada6aa472af9904d4a2c"><td class="memItemLeft" align="right" valign="top">virtual byte_buffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3af130d97d9aada6aa472af9904d4a2c">wr_buf</a> (<a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a>)=0</td></tr>
+<tr class="memitem:a3af130d97d9aada6aa472af9904d4a2c" id="r_a3af130d97d9aada6aa472af9904d4a2c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3af130d97d9aada6aa472af9904d4a2c">wr_buf</a> (<a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a>)=0</td></tr>
 <tr class="memdesc:a3af130d97d9aada6aa472af9904d4a2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new output buffer.  <br /></td></tr>
 <tr class="separator:a3af130d97d9aada6aa472af9904d4a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35dca08939834a7f71a2ca2649c311d2" id="r_a35dca08939834a7f71a2ca2649c311d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35dca08939834a7f71a2ca2649c311d2">enqueue_datagram</a> (<a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a>, byte_buffer)=0</td></tr>
+<tr class="memitem:a35dca08939834a7f71a2ca2649c311d2" id="r_a35dca08939834a7f71a2ca2649c311d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35dca08939834a7f71a2ca2649c311d2">enqueue_datagram</a> (<a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a>, <a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a>)=0</td></tr>
 <tr class="memdesc:a35dca08939834a7f71a2ca2649c311d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue a buffer to be sent as a datagram.  <br /></td></tr>
 <tr class="separator:a35dca08939834a7f71a2ca2649c311d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5c40cbaabe5f9dbcfcf4952dc153c1e" id="r_af5c40cbaabe5f9dbcfcf4952dc153c1e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classcaf_1_1io_1_1network_1_1receive__buffer.html">network::receive_buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5c40cbaabe5f9dbcfcf4952dc153c1e">rd_buf</a> ()=0</td></tr>
@@ -147,7 +147,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>remove_endpoi
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>consume</b> (<a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *, <a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a> hdl, <a class="el" href="classcaf_1_1io_1_1network_1_1receive__buffer.html">network::receive_buffer</a> &amp;buf) override</td></tr>
 <tr class="separator:a41cb5bd48ab208acd0b43e1c4c176471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e5b1dfc056f506ee37e30462185f2fc" id="r_a8e5b1dfc056f506ee37e30462185f2fc"><td class="memItemLeft" align="right" valign="top"><a id="a8e5b1dfc056f506ee37e30462185f2fc" name="a8e5b1dfc056f506ee37e30462185f2fc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>datagram_sent</b> (<a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *, <a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a> hdl, size_t, byte_buffer buffer) override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>datagram_sent</b> (<a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *, <a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a> hdl, size_t, <a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> buffer) override</td></tr>
 <tr class="separator:a8e5b1dfc056f506ee37e30462185f2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb19de26fd27d360d0ffeafef63c285e" id="r_afb19de26fd27d360d0ffeafef63c285e"><td class="memItemLeft" align="right" valign="top"><a id="afb19de26fd27d360d0ffeafef63c285e" name="afb19de26fd27d360d0ffeafef63c285e"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>detach_handles</b> ()=0</td></tr>
@@ -293,7 +293,7 @@ std::optional&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">byte_buffer</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a></td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -435,7 +435,7 @@ std::optional&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual byte_buffer &amp; caf::io::datagram_servant::wr_buf </td>
+          <td class="memname">virtual <a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> &amp; caf::io::datagram_servant::wr_buf </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>

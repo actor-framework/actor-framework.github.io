@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>caf</b></li><li class="navelem"><b>io</b></li><li class="navelem"><b>network</b></li><li class="navelem"><a class="el" href="classcaf_1_1io_1_1network_1_1pipe__reader.html">pipe_reader</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecaf.html">caf</a></li><li class="navelem"><a class="el" href="namespacecaf_1_1io.html">io</a></li><li class="navelem"><a class="el" href="namespacecaf_1_1io_1_1network.html">network</a></li><li class="navelem"><a class="el" href="classcaf_1_1io_1_1network_1_1pipe__reader.html">pipe_reader</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -114,13 +114,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a721a8efcabf4a41ae1f559d5e0b52894" id="r_a721a8efcabf4a41ae1f559d5e0b52894"><td class="memItemLeft" align="right" valign="top"><a id="a721a8efcabf4a41ae1f559d5e0b52894" name="a721a8efcabf4a41ae1f559d5e0b52894"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>pipe_reader</b> (default_multiplexer &amp;dm)</td></tr>
 <tr class="separator:a721a8efcabf4a41ae1f559d5e0b52894"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a160548506de280299c13028b5b0fa90f" id="r_a160548506de280299c13028b5b0fa90f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a160548506de280299c13028b5b0fa90f">removed_from_loop</a> (operation op) override</td></tr>
+<tr class="memitem:a160548506de280299c13028b5b0fa90f" id="r_a160548506de280299c13028b5b0fa90f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a160548506de280299c13028b5b0fa90f">removed_from_loop</a> (<a class="el" href="namespacecaf_1_1io_1_1network.html#a88e180a8a20a501a2b971ff0f8bd578b">operation</a> op) override</td></tr>
 <tr class="memdesc:a160548506de280299c13028b5b0fa90f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to signalize that this handler has been removed from the event loop for operations of type <code>op</code>.  <br /></td></tr>
 <tr class="separator:a160548506de280299c13028b5b0fa90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc3f44686d123eb40b8c0477a4a5f04a" id="r_acc3f44686d123eb40b8c0477a4a5f04a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc3f44686d123eb40b8c0477a4a5f04a">graceful_shutdown</a> () override</td></tr>
 <tr class="memdesc:acc3f44686d123eb40b8c0477a4a5f04a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuts down communication on the managed socket, eventually removing this event handler from the I/O loop.  <br /></td></tr>
 <tr class="separator:acc3f44686d123eb40b8c0477a4a5f04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a607a392e415fc58ddce2c1e615cc8156" id="r_a607a392e415fc58ddce2c1e615cc8156"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a607a392e415fc58ddce2c1e615cc8156">handle_event</a> (operation op) override</td></tr>
+<tr class="memitem:a607a392e415fc58ddce2c1e615cc8156" id="r_a607a392e415fc58ddce2c1e615cc8156"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a607a392e415fc58ddce2c1e615cc8156">handle_event</a> (<a class="el" href="namespacecaf_1_1io_1_1network.html#a88e180a8a20a501a2b971ff0f8bd578b">operation</a> op) override</td></tr>
 <tr class="memdesc:a607a392e415fc58ddce2c1e615cc8156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true once the requested operation is done, i.e., to signalize the multiplexer to remove this handler.  <br /></td></tr>
 <tr class="separator:a607a392e415fc58ddce2c1e615cc8156"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a347d6f241191b33b538e41100b9d6fb3" id="r_a347d6f241191b33b538e41100b9d6fb3"><td class="memItemLeft" align="right" valign="top"><a id="a347d6f241191b33b538e41100b9d6fb3" name="a347d6f241191b33b538e41100b9d6fb3"></a>
@@ -235,7 +235,7 @@ default_multiplexer &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>
         <tr>
           <td class="memname">void caf::io::network::pipe_reader::handle_event </td>
           <td>(</td>
-          <td class="paramtype">operation</td>          <td class="paramname"><span class="paramname"><em>op</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespacecaf_1_1io_1_1network.html#a88e180a8a20a501a2b971ff0f8bd578b">operation</a></td>          <td class="paramname"><span class="paramname"><em>op</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -265,7 +265,7 @@ default_multiplexer &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>
         <tr>
           <td class="memname">void caf::io::network::pipe_reader::removed_from_loop </td>
           <td>(</td>
-          <td class="paramtype">operation</td>          <td class="paramname"><span class="paramname"><em>op</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespacecaf_1_1io_1_1network.html#a88e180a8a20a501a2b971ff0f8bd578b">operation</a></td>          <td class="paramname"><span class="paramname"><em>op</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

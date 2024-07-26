@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['variant_5ffield_0',['variant_field',['../classcaf_1_1uuid.html#a48c26512e8451402f0af674b7975b87a',1,'caf::uuid']]],
-  ['version_5ffield_1',['version_field',['../classcaf_1_1uuid.html#af37b840b8ba9c4b7bb6c58946ea74ed8',1,'caf::uuid']]]
+  ['operation_0',['operation',['../namespacecaf_1_1io_1_1network.html#a88e180a8a20a501a2b971ff0f8bd578b',1,'caf::io::network']]]
 ];

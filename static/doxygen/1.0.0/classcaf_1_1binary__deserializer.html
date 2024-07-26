@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>caf</b></li><li class="navelem"><a class="el" href="classcaf_1_1binary__deserializer.html">binary_deserializer</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecaf.html">caf</a></li><li class="navelem"><a class="el" href="classcaf_1_1binary__deserializer.html">binary_deserializer</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -161,10 +161,10 @@ const std::byte *&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> 
 <tr class="memdesc:a6bee5f2c5f4d72fce7d0f5686edfe2d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the end of the assigned memory block. <br /></td></tr>
 <tr class="separator:a6bee5f2c5f4d72fce7d0f5686edfe2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae14a31cb0ed615e672a7b64c2ffdc2d3" id="r_ae14a31cb0ed615e672a7b64c2ffdc2d3"><td class="memItemLeft" align="right" valign="top"><a id="ae14a31cb0ed615e672a7b64c2ffdc2d3" name="ae14a31cb0ed615e672a7b64c2ffdc2d3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>fetch_next_object_type</b> (type_id_t &amp;type) noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>fetch_next_object_type</b> (<a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a> &amp;type) noexcept</td></tr>
 <tr class="separator:ae14a31cb0ed615e672a7b64c2ffdc2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e57e60db3286813974c79b3ecb284d0" id="r_a4e57e60db3286813974c79b3ecb284d0"><td class="memItemLeft" align="right" valign="top"><a id="a4e57e60db3286813974c79b3ecb284d0" name="a4e57e60db3286813974c79b3ecb284d0"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>begin_object</b> (type_id_t, std::string_view) noexcept</td></tr>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>begin_object</b> (<a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a>, std::string_view) noexcept</td></tr>
 <tr class="separator:a4e57e60db3286813974c79b3ecb284d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6c84abe09f012a5529d3077512fd9c0" id="r_ad6c84abe09f012a5529d3077512fd9c0"><td class="memItemLeft" align="right" valign="top"><a id="ad6c84abe09f012a5529d3077512fd9c0" name="ad6c84abe09f012a5529d3077512fd9c0"></a>
 constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>end_object</b> () noexcept</td></tr>
@@ -176,10 +176,10 @@ constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>begin_field
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>begin_field</b> (std::string_view name, bool &amp;is_present) noexcept</td></tr>
 <tr class="separator:a3ca667e76152a26e6dc39181e2cf931c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9d6ef6855509450d2578554c8702d6d" id="r_af9d6ef6855509450d2578554c8702d6d"><td class="memItemLeft" align="right" valign="top"><a id="af9d6ef6855509450d2578554c8702d6d" name="af9d6ef6855509450d2578554c8702d6d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>begin_field</b> (std::string_view name, <a class="el" href="classcaf_1_1span.html">span</a>&lt; const type_id_t &gt; types, size_t &amp;index) noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>begin_field</b> (std::string_view name, <a class="el" href="classcaf_1_1span.html">span</a>&lt; const <a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a> &gt; types, size_t &amp;index) noexcept</td></tr>
 <tr class="separator:af9d6ef6855509450d2578554c8702d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f2817b9774da8c73ec8bd18251799db" id="r_a0f2817b9774da8c73ec8bd18251799db"><td class="memItemLeft" align="right" valign="top"><a id="a0f2817b9774da8c73ec8bd18251799db" name="a0f2817b9774da8c73ec8bd18251799db"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>begin_field</b> (std::string_view name, bool &amp;is_present, <a class="el" href="classcaf_1_1span.html">span</a>&lt; const type_id_t &gt; types, size_t &amp;index) noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>begin_field</b> (std::string_view name, bool &amp;is_present, <a class="el" href="classcaf_1_1span.html">span</a>&lt; const <a class="el" href="namespacecaf.html#acd7b85a0713a3139f8b8bc0e3e2b0084">type_id_t</a> &gt; types, size_t &amp;index) noexcept</td></tr>
 <tr class="separator:a0f2817b9774da8c73ec8bd18251799db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad81402c06e71b351ef2620c24093ba46" id="r_ad81402c06e71b351ef2620c24093ba46"><td class="memItemLeft" align="right" valign="top"><a id="ad81402c06e71b351ef2620c24093ba46" name="ad81402c06e71b351ef2620c24093ba46"></a>
 constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>end_field</b> ()</td></tr>

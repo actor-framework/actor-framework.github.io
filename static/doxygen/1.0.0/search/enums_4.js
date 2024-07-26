@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['position_0',['position',['../classcaf_1_1json__reader.html#a0bb554d22dbbf45ae6592b2cce044bd2',1,'caf::json_reader']]]
+  ['format_0',['format',['../namespacecaf_1_1net_1_1ssl.html#a265d7a8050a0f782ff95477aa034d8d0',1,'caf::net::ssl']]]
 ];

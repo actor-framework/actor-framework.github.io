@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>caf</b></li><li class="navelem"><a class="el" href="classcaf_1_1actor__system.html">actor_system</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecaf.html">caf</a></li><li class="navelem"><a class="el" href="classcaf_1_1actor__system.html">actor_system</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -299,7 +299,7 @@ template&lt;<a class="el" href="group___actor_creation.html#ga291d9d4fcae86cf8d3
 <tr class="separator:a348e2895c747a641bf5e2061a00aed0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a854426833d1625b3504d5c9a492cb60d" id="r_a854426833d1625b3504d5c9a492cb60d"><td class="memTemplParams" colspan="2"><a id="a854426833d1625b3504d5c9a492cb60d" name="a854426833d1625b3504d5c9a492cb60d"></a>
 template&lt;class... Args&gt; </td></tr>
-<tr class="memitem:a854426833d1625b3504d5c9a492cb60d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>println</b> (term color, std::string_view fmt, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:a854426833d1625b3504d5c9a492cb60d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>println</b> (<a class="el" href="namespacecaf.html#aa601da0abafbe531a0068d454c7e8ccc">term</a> color, std::string_view fmt, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a854426833d1625b3504d5c9a492cb60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new line to stdout. <br /></td></tr>
 <tr class="separator:a854426833d1625b3504d5c9a492cb60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3be6c38beff6a500f48f1c26f160c967" id="r_a3be6c38beff6a500f48f1c26f160c967"><td class="memTemplParams" colspan="2"><a id="a3be6c38beff6a500f48f1c26f160c967" name="a3be6c38beff6a500f48f1c26f160c967"></a>
@@ -307,7 +307,7 @@ template&lt;class... Args&gt; </td></tr>
 <tr class="memitem:a3be6c38beff6a500f48f1c26f160c967"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>println</b> (std::string_view fmt, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a3be6c38beff6a500f48f1c26f160c967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new line to stdout. <br /></td></tr>
 <tr class="separator:a3be6c38beff6a500f48f1c26f160c967"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e0ca1e480d71b7e2cb242c30e8971c2" id="r_a7e0ca1e480d71b7e2cb242c30e8971c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e0ca1e480d71b7e2cb242c30e8971c2">redirect_text_output</a> (void *out, void(*write)(void *, term, const char *, size_t), void(*cleanup)(void *))</td></tr>
+<tr class="memitem:a7e0ca1e480d71b7e2cb242c30e8971c2" id="r_a7e0ca1e480d71b7e2cb242c30e8971c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e0ca1e480d71b7e2cb242c30e8971c2">redirect_text_output</a> (void *out, void(*write)(void *, <a class="el" href="namespacecaf.html#aa601da0abafbe531a0068d454c7e8ccc">term</a>, const char *, size_t), void(*cleanup)(void *))</td></tr>
 <tr class="memdesc:a7e0ca1e480d71b7e2cb242c30e8971c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redirects the output of <code>println</code> to a custom function.  <br /></td></tr>
 <tr class="separator:a7e0ca1e480d71b7e2cb242c30e8971c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -341,7 +341,7 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>detail::printer_act
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Actor environment including scheduler, registry, and optional components such as a middleman. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="dancing_kirby_8cpp-example.html#_a3">dancing_kirby.cpp</a>, <a class="el" href="dining_philosophers_8cpp-example.html#_a7">dining_philosophers.cpp</a>, and <a class="el" href="hello_world_8cpp-example.html#_a3">hello_world.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="dancing_kirby_8cpp-example.html#_a2">dancing_kirby.cpp</a>, <a class="el" href="dining_philosophers_8cpp-example.html#_a7">dining_philosophers.cpp</a>, and <a class="el" href="hello_world_8cpp-example.html#_a3">hello_world.cpp</a>.</dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a21623213b0312a0f1d46b9a77d4d52ac" name="a21623213b0312a0f1d46b9a77d4d52ac"></a>
@@ -536,7 +536,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*</td>          <td class="paramname"><span class="paramname"><em>write&#160;</em></span>)(void *, term, const char *, size_t), </td>
+          <td class="paramtype">void(*</td>          <td class="paramname"><span class="paramname"><em>write&#160;</em></span>)(void *, <a class="el" href="namespacecaf.html#aa601da0abafbe531a0068d454c7e8ccc">term</a>, const char *, size_t), </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

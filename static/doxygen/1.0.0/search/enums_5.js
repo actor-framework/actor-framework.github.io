@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['resume_5fresult_0',['resume_result',['../classcaf_1_1resumable.html#a17cbf60b5a9d80e62f45c56edbabf17e',1,'caf::resumable']]]
+  ['invoke_5fmessage_5fresult_0',['invoke_message_result',['../namespacecaf.html#a2d701f7629091f4f89f273ab9bb44a20',1,'caf']]]
 ];

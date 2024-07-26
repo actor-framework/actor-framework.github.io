@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>caf</b></li><li class="navelem"><b>io</b></li><li class="navelem"><b>basp</b></li><li class="navelem"><a class="el" href="classcaf_1_1io_1_1basp_1_1instance.html">instance</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecaf.html">caf</a></li><li class="navelem"><a class="el" href="namespacecaf_1_1io.html">io</a></li><li class="navelem"><a class="el" href="namespacecaf_1_1io_1_1basp.html">basp</a></li><li class="navelem"><a class="el" href="classcaf_1_1io_1_1basp_1_1instance.html">instance</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -180,23 +180,23 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>dispatch</b> (<a clas
 const <a class="el" href="#a099add56da11c9a14b3674dc69892365">published_actor_map</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>published_actors</b> () const</td></tr>
 <tr class="memdesc:a09ef5a6357ff0326cd07bf2a926bf817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current mapping of ports to addresses and interfaces of published actors. <br /></td></tr>
 <tr class="separator:a09ef5a6357ff0326cd07bf2a926bf817"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb8787ee4e2f5edaa4cf21b3c1b91446" id="r_aeb8787ee4e2f5edaa4cf21b3c1b91446"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb8787ee4e2f5edaa4cf21b3c1b91446">write_server_handshake</a> (<a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *ctx, byte_buffer &amp;out_buf, std::optional&lt; uint16_t &gt; port)</td></tr>
+<tr class="memitem:aeb8787ee4e2f5edaa4cf21b3c1b91446" id="r_aeb8787ee4e2f5edaa4cf21b3c1b91446"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb8787ee4e2f5edaa4cf21b3c1b91446">write_server_handshake</a> (<a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *ctx, <a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> &amp;out_buf, std::optional&lt; uint16_t &gt; port)</td></tr>
 <tr class="memdesc:aeb8787ee4e2f5edaa4cf21b3c1b91446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the server handshake containing the information of the actor published at <code>port</code> to <code>buf</code>.  <br /></td></tr>
 <tr class="separator:aeb8787ee4e2f5edaa4cf21b3c1b91446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb8c2b3c9dbaa6ce79913d5231cda211" id="r_afb8c2b3c9dbaa6ce79913d5231cda211"><td class="memItemLeft" align="right" valign="top"><a id="afb8c2b3c9dbaa6ce79913d5231cda211" name="afb8c2b3c9dbaa6ce79913d5231cda211"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>write_client_handshake</b> (<a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *ctx, byte_buffer &amp;buf)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>write_client_handshake</b> (<a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *ctx, <a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> &amp;buf)</td></tr>
 <tr class="memdesc:afb8c2b3c9dbaa6ce79913d5231cda211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the client handshake to <code>buf</code>. <br /></td></tr>
 <tr class="separator:afb8c2b3c9dbaa6ce79913d5231cda211"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac88f379a3299f9c4107e6fd126c54f1b" id="r_ac88f379a3299f9c4107e6fd126c54f1b"><td class="memItemLeft" align="right" valign="top"><a id="ac88f379a3299f9c4107e6fd126c54f1b" name="ac88f379a3299f9c4107e6fd126c54f1b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>write_monitor_message</b> (<a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *ctx, byte_buffer &amp;buf, const <a class="el" href="classcaf_1_1node__id.html">node_id</a> &amp;dest_node, actor_id aid)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>write_monitor_message</b> (<a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *ctx, <a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> &amp;buf, const <a class="el" href="classcaf_1_1node__id.html">node_id</a> &amp;dest_node, actor_id aid)</td></tr>
 <tr class="memdesc:ac88f379a3299f9c4107e6fd126c54f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an <code>announce_proxy</code> to <code>buf</code>. <br /></td></tr>
 <tr class="separator:ac88f379a3299f9c4107e6fd126c54f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a591b4e58b7ed040a26c637f41d4515c8" id="r_a591b4e58b7ed040a26c637f41d4515c8"><td class="memItemLeft" align="right" valign="top"><a id="a591b4e58b7ed040a26c637f41d4515c8" name="a591b4e58b7ed040a26c637f41d4515c8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>write_down_message</b> (<a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *ctx, byte_buffer &amp;buf, const <a class="el" href="classcaf_1_1node__id.html">node_id</a> &amp;dest_node, actor_id aid, const <a class="el" href="classcaf_1_1error.html">error</a> &amp;rsn)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>write_down_message</b> (<a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *ctx, <a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> &amp;buf, const <a class="el" href="classcaf_1_1node__id.html">node_id</a> &amp;dest_node, actor_id aid, const <a class="el" href="classcaf_1_1error.html">error</a> &amp;rsn)</td></tr>
 <tr class="memdesc:a591b4e58b7ed040a26c637f41d4515c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a <code>kill_proxy</code> to <code>buf</code>. <br /></td></tr>
 <tr class="separator:a591b4e58b7ed040a26c637f41d4515c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7305a22b6431c3c79a7649620ccfe3b3" id="r_a7305a22b6431c3c79a7649620ccfe3b3"><td class="memItemLeft" align="right" valign="top"><a id="a7305a22b6431c3c79a7649620ccfe3b3" name="a7305a22b6431c3c79a7649620ccfe3b3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>write_heartbeat</b> (<a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *ctx, byte_buffer &amp;buf)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>write_heartbeat</b> (<a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *ctx, <a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> &amp;buf)</td></tr>
 <tr class="memdesc:a7305a22b6431c3c79a7649620ccfe3b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a <code>heartbeat</code> to <code>buf</code>. <br /></td></tr>
 <tr class="separator:a7305a22b6431c3c79a7649620ccfe3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4922e53314de7ac04f79f363affd7ad" id="r_aa4922e53314de7ac04f79f363affd7ad"><td class="memItemLeft" align="right" valign="top"><a id="aa4922e53314de7ac04f79f363affd7ad" name="aa4922e53314de7ac04f79f363affd7ad"></a>
@@ -215,13 +215,13 @@ detail::worker_hub&lt; <a class="el" href="classcaf_1_1io_1_1basp_1_1worker.html
 const <a class="el" href="classcaf_1_1actor__system__config.html">actor_system_config</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>config</b> ()</td></tr>
 <tr class="separator:ab6820b296ba4288832cbffd58b0b368f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33c29adef2d3bc491e8b221dcf65ec58" id="r_a33c29adef2d3bc491e8b221dcf65ec58"><td class="memItemLeft" align="right" valign="top"><a id="a33c29adef2d3bc491e8b221dcf65ec58" name="a33c29adef2d3bc491e8b221dcf65ec58"></a>
-<a class="el" href="group___b_a_s_p.html#ga93565d04c32ae7fd8541faa8528137c9">connection_state</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> (<a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *ctx, <a class="el" href="classcaf_1_1io_1_1connection__handle.html">connection_handle</a> hdl, <a class="el" href="structcaf_1_1io_1_1basp_1_1header.html">header</a> &amp;hdr, byte_buffer *payload)</td></tr>
+<a class="el" href="group___b_a_s_p.html#ga93565d04c32ae7fd8541faa8528137c9">connection_state</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> (<a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *ctx, <a class="el" href="classcaf_1_1io_1_1connection__handle.html">connection_handle</a> hdl, <a class="el" href="structcaf_1_1io_1_1basp_1_1header.html">header</a> &amp;hdr, <a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> *payload)</td></tr>
 <tr class="separator:a33c29adef2d3bc491e8b221dcf65ec58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad1b440859770585a3cef5656adce030a" id="r_ad1b440859770585a3cef5656adce030a"><td class="memItemLeft" align="right" valign="top"><a id="ad1b440859770585a3cef5656adce030a" name="ad1b440859770585a3cef5656adce030a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (<a class="el" href="classcaf_1_1actor__system.html">actor_system</a> &amp;sys, <a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *ctx, byte_buffer &amp;buf, <a class="el" href="structcaf_1_1io_1_1basp_1_1header.html">header</a> &amp;hdr, <a class="el" href="#ae9fab5425c25c8681d6b1319b86fbc03">payload_writer</a> *pw=nullptr)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (<a class="el" href="classcaf_1_1actor__system.html">actor_system</a> &amp;sys, <a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *ctx, <a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> &amp;buf, <a class="el" href="structcaf_1_1io_1_1basp_1_1header.html">header</a> &amp;hdr, <a class="el" href="#ae9fab5425c25c8681d6b1319b86fbc03">payload_writer</a> *pw=nullptr)</td></tr>
 <tr class="memdesc:ad1b440859770585a3cef5656adce030a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a header followed by its payload to <code>storage</code>. <br /></td></tr>
 <tr class="separator:ad1b440859770585a3cef5656adce030a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -276,7 +276,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (<a 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">byte_buffer &amp;</td>          <td class="paramname"><span class="paramname"><em>out_buf</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out_buf</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

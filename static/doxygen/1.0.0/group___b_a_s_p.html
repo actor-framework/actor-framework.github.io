@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -130,19 +130,19 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:ga93565d04c32ae7fd8541faa8528137c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Denotes the state of a connection between two BASP nodes.  <a href="#ga93565d04c32ae7fd8541faa8528137c9">More...</a><br /></td></tr>
 <tr class="separator:ga93565d04c32ae7fd8541faa8528137c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab4a80a50db79ed975f645501bbf1a8fa" id="r_gab4a80a50db79ed975f645501bbf1a8fa"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab4a80a50db79ed975f645501bbf1a8fa">caf::io::basp::message_type</a> : uint8_t { <br />
-&#160;&#160;<a class="el" href="#ggab4a80a50db79ed975f645501bbf1a8faa68f1851994f5966b59d2bd3ffb3fcfa5">message_type::server_handshake</a> = 0x00
+&#160;&#160;<a class="el" href="#ggab4a80a50db79ed975f645501bbf1a8faa68f1851994f5966b59d2bd3ffb3fcfa5">caf::io::basp::message_type::server_handshake</a> = 0x00
 , <br />
-&#160;&#160;<a class="el" href="#ggab4a80a50db79ed975f645501bbf1a8faa755176cd4556f0782f82bf7e169fc550">message_type::client_handshake</a> = 0x01
+&#160;&#160;<a class="el" href="#ggab4a80a50db79ed975f645501bbf1a8faa755176cd4556f0782f82bf7e169fc550">caf::io::basp::message_type::client_handshake</a> = 0x01
 , <br />
-&#160;&#160;<a class="el" href="#ggab4a80a50db79ed975f645501bbf1a8faa9be42dd11086aff54e44377255afc73b">message_type::direct_message</a> = 0x02
+&#160;&#160;<a class="el" href="#ggab4a80a50db79ed975f645501bbf1a8faa9be42dd11086aff54e44377255afc73b">caf::io::basp::message_type::direct_message</a> = 0x02
 , <br />
-&#160;&#160;<a class="el" href="#ggab4a80a50db79ed975f645501bbf1a8faa13a2104d37c15f89d76984ad250b4dac">message_type::routed_message</a> = 0x03
+&#160;&#160;<a class="el" href="#ggab4a80a50db79ed975f645501bbf1a8faa13a2104d37c15f89d76984ad250b4dac">caf::io::basp::message_type::routed_message</a> = 0x03
 , <br />
-&#160;&#160;<a class="el" href="#ggab4a80a50db79ed975f645501bbf1a8faab9538bc5d61173a7f4725e897a965f34">message_type::monitor_message</a> = 0x04
+&#160;&#160;<a class="el" href="#ggab4a80a50db79ed975f645501bbf1a8faab9538bc5d61173a7f4725e897a965f34">caf::io::basp::message_type::monitor_message</a> = 0x04
 , <br />
-&#160;&#160;<a class="el" href="#ggab4a80a50db79ed975f645501bbf1a8faa6bb532f246f78ce5fd450ab16f5f2026">message_type::down_message</a> = 0x05
+&#160;&#160;<a class="el" href="#ggab4a80a50db79ed975f645501bbf1a8faa6bb532f246f78ce5fd450ab16f5f2026">caf::io::basp::message_type::down_message</a> = 0x05
 , <br />
-&#160;&#160;<a class="el" href="#ggab4a80a50db79ed975f645501bbf1a8faa3a06e053a0726537b202ce4ace81dee7">message_type::heartbeat</a> = 0x06
+&#160;&#160;<a class="el" href="#ggab4a80a50db79ed975f645501bbf1a8faa3a06e053a0726537b202ce4ace81dee7">caf::io::basp::message_type::heartbeat</a> = 0x06
 <br />
  }</td></tr>
 <tr class="memdesc:gab4a80a50db79ed975f645501bbf1a8fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the first header field of a BASP message and determines the interpretation of the other header fields.  <a href="#gab4a80a50db79ed975f645501bbf1a8fa">More...</a><br /></td></tr>
@@ -154,7 +154,7 @@ Functions</h2></td></tr>
 constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>caf::io::basp::requires_shutdown</b> (<a class="el" href="#ga93565d04c32ae7fd8541faa8528137c9">connection_state</a> x) noexcept</td></tr>
 <tr class="memdesc:ga27e0a1e9ab60e72f991461ffb75f1ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the connection state requires a shutdown of the socket connection. <br /></td></tr>
 <tr class="separator:ga27e0a1e9ab60e72f991461ffb75f1ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaee0c93683f370496d4df9eed904c48c4" id="r_gaee0c93683f370496d4df9eed904c48c4"><td class="memItemLeft" align="right" valign="top">sec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaee0c93683f370496d4df9eed904c48c4">caf::io::basp::to_sec</a> (<a class="el" href="#ga93565d04c32ae7fd8541faa8528137c9">connection_state</a> x) noexcept</td></tr>
+<tr class="memitem:gaee0c93683f370496d4df9eed904c48c4" id="r_gaee0c93683f370496d4df9eed904c48c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecaf.html#aad31759ecbee7d4d2133a5618a053a78">sec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaee0c93683f370496d4df9eed904c48c4">caf::io::basp::to_sec</a> (<a class="el" href="#ga93565d04c32ae7fd8541faa8528137c9">connection_state</a> x) noexcept</td></tr>
 <tr class="memdesc:gaee0c93683f370496d4df9eed904c48c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the connection state to a system error code if it holds one of the overlapping values.  <br /></td></tr>
 <tr class="separator:gaee0c93683f370496d4df9eed904c48c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad5323663fbe69cdc954c996ebaf3d00b" id="r_gad5323663fbe69cdc954c996ebaf3d00b"><td class="memItemLeft" align="right" valign="top"><a id="gad5323663fbe69cdc954c996ebaf3d00b" name="gad5323663fbe69cdc954c996ebaf3d00b"></a>
@@ -277,17 +277,17 @@ Example</h1>
 </td></tr>
 <tr><td class="fieldname"><a id="gga93565d04c32ae7fd8541faa8528137c9aa8cc7b137ae9f75c5adad2ea8e58a3e9" name="gga93565d04c32ae7fd8541faa8528137c9aa8cc7b137ae9f75c5adad2ea8e58a3e9"></a>close_connection&#160;</td><td class="fielddoc"><p>Indicates that this connection no longer exists. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga93565d04c32ae7fd8541faa8528137c9ae76bfdcf248c09f33495a0707df3a91e" name="gga93565d04c32ae7fd8541faa8528137c9ae76bfdcf248c09f33495a0707df3a91e"></a>incompatible_versions&#160;</td><td class="fielddoc"><p>See <code>sec::incompatible_versions</code>. </p>
+<tr><td class="fieldname"><a id="gga93565d04c32ae7fd8541faa8528137c9ae76bfdcf248c09f33495a0707df3a91e" name="gga93565d04c32ae7fd8541faa8528137c9ae76bfdcf248c09f33495a0707df3a91e"></a>incompatible_versions&#160;</td><td class="fielddoc"><p>See <code><a class="el" href="namespacecaf.html#aad31759ecbee7d4d2133a5618a053a78a3c5b83ab628258751100cdcabaf5971d" title="Connection refused because of incompatible CAF versions.">sec::incompatible_versions</a></code>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga93565d04c32ae7fd8541faa8528137c9a43259c3224a72abce20646a3a0b802e3" name="gga93565d04c32ae7fd8541faa8528137c9a43259c3224a72abce20646a3a0b802e3"></a>incompatible_application_ids&#160;</td><td class="fielddoc"><p>See <code>sec::incompatible_application_ids</code>. </p>
+<tr><td class="fieldname"><a id="gga93565d04c32ae7fd8541faa8528137c9a43259c3224a72abce20646a3a0b802e3" name="gga93565d04c32ae7fd8541faa8528137c9a43259c3224a72abce20646a3a0b802e3"></a>incompatible_application_ids&#160;</td><td class="fielddoc"><p>See <code><a class="el" href="namespacecaf.html#aad31759ecbee7d4d2133a5618a053a78a6642893019029eb5392c48c23df33a7c" title="Connection refused because of incompatible application IDs.">sec::incompatible_application_ids</a></code>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga93565d04c32ae7fd8541faa8528137c9a4ad1435970432a92c02447b0da193148" name="gga93565d04c32ae7fd8541faa8528137c9a4ad1435970432a92c02447b0da193148"></a>malformed_message&#160;</td><td class="fielddoc"><p>See <code>sec::malformed_message</code>. </p>
+<tr><td class="fieldname"><a id="gga93565d04c32ae7fd8541faa8528137c9a4ad1435970432a92c02447b0da193148" name="gga93565d04c32ae7fd8541faa8528137c9a4ad1435970432a92c02447b0da193148"></a>malformed_message&#160;</td><td class="fielddoc"><p>See <code><a class="el" href="namespacecaf.html#aad31759ecbee7d4d2133a5618a053a78a49d795906ce974934dd9603eb74c6266" title="Received a malformed message from another node.">sec::malformed_message</a></code>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga93565d04c32ae7fd8541faa8528137c9a0d94b3fc36be0772b6cfe6c0ea177c84" name="gga93565d04c32ae7fd8541faa8528137c9a0d94b3fc36be0772b6cfe6c0ea177c84"></a>serializing_basp_payload_failed&#160;</td><td class="fielddoc"><p>See <code>sec::serializing_basp_payload_failed</code>. </p>
+<tr><td class="fieldname"><a id="gga93565d04c32ae7fd8541faa8528137c9a0d94b3fc36be0772b6cfe6c0ea177c84" name="gga93565d04c32ae7fd8541faa8528137c9a0d94b3fc36be0772b6cfe6c0ea177c84"></a>serializing_basp_payload_failed&#160;</td><td class="fielddoc"><p>See <code><a class="el" href="namespacecaf.html#aad31759ecbee7d4d2133a5618a053a78ae700afffc67d712f83909d1dccfe0a45" title="The middleman closed a connection because it failed to serialize or deserialize a payload.">sec::serializing_basp_payload_failed</a></code>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga93565d04c32ae7fd8541faa8528137c9a7e0ee3506c23e90680d5f7763187a7ec" name="gga93565d04c32ae7fd8541faa8528137c9a7e0ee3506c23e90680d5f7763187a7ec"></a>redundant_connection&#160;</td><td class="fielddoc"><p>See <code>sec::redundant_connection</code>. </p>
+<tr><td class="fieldname"><a id="gga93565d04c32ae7fd8541faa8528137c9a7e0ee3506c23e90680d5f7763187a7ec" name="gga93565d04c32ae7fd8541faa8528137c9a7e0ee3506c23e90680d5f7763187a7ec"></a>redundant_connection&#160;</td><td class="fielddoc"><p>See <code><a class="el" href="namespacecaf.html#aad31759ecbee7d4d2133a5618a053a78a1defcc2f092a086729836d8c2d7ba6ef" title="The middleman closed a connection to itself or an already connected node.">sec::redundant_connection</a></code>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga93565d04c32ae7fd8541faa8528137c9a6a0066528a9709ec31fc69a499501d6c" name="gga93565d04c32ae7fd8541faa8528137c9a6a0066528a9709ec31fc69a499501d6c"></a>no_route_to_receiving_node&#160;</td><td class="fielddoc"><p>See <code>sec::no_route_to_receiving_node</code>. </p>
+<tr><td class="fieldname"><a id="gga93565d04c32ae7fd8541faa8528137c9a6a0066528a9709ec31fc69a499501d6c" name="gga93565d04c32ae7fd8541faa8528137c9a6a0066528a9709ec31fc69a499501d6c"></a>no_route_to_receiving_node&#160;</td><td class="fielddoc"><p>See <code><a class="el" href="namespacecaf.html#aad31759ecbee7d4d2133a5618a053a78a57be9b695350dca990b35a9152085b54" title="Tried to forward a message via BASP to an unknown node ID.">sec::no_route_to_receiving_node</a></code>. </p>
 </td></tr>
 </table>
 
@@ -315,7 +315,7 @@ Example</h1>
 
 <p>Describes the first header field of a BASP message and determines the interpretation of the other header fields. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab4a80a50db79ed975f645501bbf1a8faa68f1851994f5966b59d2bd3ffb3fcfa5" name="ggab4a80a50db79ed975f645501bbf1a8faa68f1851994f5966b59d2bd3ffb3fcfa5"></a>server_handshake&#160;</td><td class="fielddoc"><p>Send from server, i.e., the node with a published actor, to client, i.e., node that initiates a new connection using remote_actor(). </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab4a80a50db79ed975f645501bbf1a8faa68f1851994f5966b59d2bd3ffb3fcfa5" name="ggab4a80a50db79ed975f645501bbf1a8faa68f1851994f5966b59d2bd3ffb3fcfa5"></a>server_handshake&#160;</td><td class="fielddoc"><p>Send from server, i.e., the node with a published actor, to client, i.e., node that initiates a new connection using <a class="el" href="namespacecaf_1_1io.html#a7e0c47100ee994d381ac3d93f43363f8" title="Establish a new connection to the actor at host on given port.">remote_actor()</a>. </p>
 <div class="image">
 <img src="server_handshake.png" alt=""/>
 </div>
@@ -366,7 +366,7 @@ Example</h1>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">sec caf::io::basp::to_sec </td>
+          <td class="memname"><a class="el" href="namespacecaf.html#aad31759ecbee7d4d2133a5618a053a78">sec</a> caf::io::basp::to_sec </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#ga93565d04c32ae7fd8541faa8528137c9">connection_state</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
           <td></td>
@@ -380,7 +380,7 @@ Example</h1>
 </div><div class="memdoc">
 
 <p>Converts the connection state to a system error code if it holds one of the overlapping values. </p>
-<p>Otherwise returns <code>sec::none</code>. </p>
+<p>Otherwise returns <code><a class="el" href="namespacecaf.html#aad31759ecbee7d4d2133a5618a053a78a334c4a4c42fdb79d7ebc3e73b517e6f8" title="No error.">sec::none</a></code>. </p>
 
 </div>
 </div>

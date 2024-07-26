@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>caf</b></li><li class="navelem"><b>telemetry</b></li><li class="navelem"><b>collector</b></li><li class="navelem"><a class="el" href="classcaf_1_1telemetry_1_1collector_1_1prometheus.html">prometheus</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecaf.html">caf</a></li><li class="navelem"><a class="el" href="namespacecaf_1_1telemetry.html">telemetry</a></li><li class="navelem"><b>collector</b></li><li class="navelem"><a class="el" href="classcaf_1_1telemetry_1_1collector_1_1prometheus.html">prometheus</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -110,15 +110,15 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9b659ceab544f1666d2bc41551731a23" id="r_a9b659ceab544f1666d2bc41551731a23"><td class="memItemLeft" align="right" valign="top"><a id="a9b659ceab544f1666d2bc41551731a23" name="a9b659ceab544f1666d2bc41551731a23"></a>
-timespan&#160;</td><td class="memItemRight" valign="bottom"><b>min_scrape_interval</b> () const noexcept</td></tr>
+<a class="el" href="namespacecaf.html#a327e0d330244de57d64ec4216428b1b5">timespan</a>&#160;</td><td class="memItemRight" valign="bottom"><b>min_scrape_interval</b> () const noexcept</td></tr>
 <tr class="memdesc:a9b659ceab544f1666d2bc41551731a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum scrape interval, i.e., the minimum time that needs to pass before <code>collect_from</code> iterates the registry to re-fill the buffer. <br /></td></tr>
 <tr class="separator:a9b659ceab544f1666d2bc41551731a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1580ca789334f992f8ded96ace67ba89" id="r_a1580ca789334f992f8ded96ace67ba89"><td class="memItemLeft" align="right" valign="top"><a id="a1580ca789334f992f8ded96ace67ba89" name="a1580ca789334f992f8ded96ace67ba89"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>min_scrape_interval</b> (timespan value) noexcept</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>min_scrape_interval</b> (<a class="el" href="namespacecaf.html#a327e0d330244de57d64ec4216428b1b5">timespan</a> value) noexcept</td></tr>
 <tr class="memdesc:a1580ca789334f992f8ded96ace67ba89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the minimum scrape interval to <code>value</code>. <br /></td></tr>
 <tr class="separator:a1580ca789334f992f8ded96ace67ba89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af226228cbf4ed1941d0e3d7c2237e2d6" id="r_af226228cbf4ed1941d0e3d7c2237e2d6"><td class="memItemLeft" align="right" valign="top"><a id="af226228cbf4ed1941d0e3d7c2237e2d6" name="af226228cbf4ed1941d0e3d7c2237e2d6"></a>
-timestamp&#160;</td><td class="memItemRight" valign="bottom"><b>last_scrape</b> () const noexcept</td></tr>
+<a class="el" href="namespacecaf.html#a677ccc96e037d16635c8769b98210883">timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><b>last_scrape</b> () const noexcept</td></tr>
 <tr class="memdesc:af226228cbf4ed1941d0e3d7c2237e2d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time point of the last scrape. <br /></td></tr>
 <tr class="separator:af226228cbf4ed1941d0e3d7c2237e2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46d821dece640b7342e7297b72d6732c" id="r_a46d821dece640b7342e7297b72d6732c"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46d821dece640b7342e7297b72d6732c">str</a> () const noexcept</td></tr>
@@ -128,7 +128,7 @@ timestamp&#160;</td><td class="memItemRight" valign="bottom"><b>last_scrape</b> 
 void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr>
 <tr class="memdesc:a3218243625bf39ae4172c7e77957bd2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverts the collector back to its initial state, clearing all buffers. <br /></td></tr>
 <tr class="separator:a3218243625bf39ae4172c7e77957bd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abde1c07c06df51068de55d025b86116a" id="r_abde1c07c06df51068de55d025b86116a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abde1c07c06df51068de55d025b86116a">begin_scrape</a> (timestamp now=make_timestamp())</td></tr>
+<tr class="memitem:abde1c07c06df51068de55d025b86116a" id="r_abde1c07c06df51068de55d025b86116a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abde1c07c06df51068de55d025b86116a">begin_scrape</a> (<a class="el" href="namespacecaf.html#a677ccc96e037d16635c8769b98210883">timestamp</a> now=<a class="el" href="namespacecaf.html#a3974470b33f9b34505395e71be98d48d">make_timestamp</a>())</td></tr>
 <tr class="memdesc:abde1c07c06df51068de55d025b86116a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a new scrape if <code>last_scape() + <a class="el" href="#a9b659ceab544f1666d2bc41551731a23" title="Returns the minimum scrape interval, i.e., the minimum time that needs to pass before collect_from it...">min_scrape_interval()</a> &lt;= now</code>.  <br /></td></tr>
 <tr class="separator:abde1c07c06df51068de55d025b86116a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54b81cc007c85270d20f54c0e560370f" id="r_a54b81cc007c85270d20f54c0e560370f"><td class="memItemLeft" align="right" valign="top"><a id="a54b81cc007c85270d20f54c0e560370f" name="a54b81cc007c85270d20f54c0e560370f"></a>
@@ -149,14 +149,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>append_histogram</b> 
 <tr class="memitem:a01e3d2253b414846d0fb6387b6066ff8" id="r_a01e3d2253b414846d0fb6387b6066ff8"><td class="memItemLeft" align="right" valign="top"><a id="a01e3d2253b414846d0fb6387b6066ff8" name="a01e3d2253b414846d0fb6387b6066ff8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>append_histogram</b> (const <a class="el" href="classcaf_1_1telemetry_1_1metric__family.html">metric_family</a> *family, const <a class="el" href="classcaf_1_1telemetry_1_1metric.html">metric</a> *instance, <a class="el" href="classcaf_1_1span.html">span</a>&lt; const dbl_histogram::bucket_type &gt; buckets, double sum)</td></tr>
 <tr class="separator:a01e3d2253b414846d0fb6387b6066ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac77cfc3103b50ecc1bfbe12b1e65d090" id="r_ac77cfc3103b50ecc1bfbe12b1e65d090"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac77cfc3103b50ecc1bfbe12b1e65d090">collect_from</a> (const <a class="el" href="classcaf_1_1telemetry_1_1metric__registry.html">metric_registry</a> &amp;registry, timestamp now=make_timestamp())</td></tr>
+<tr class="memitem:ac77cfc3103b50ecc1bfbe12b1e65d090" id="r_ac77cfc3103b50ecc1bfbe12b1e65d090"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac77cfc3103b50ecc1bfbe12b1e65d090">collect_from</a> (const <a class="el" href="classcaf_1_1telemetry_1_1metric__registry.html">metric_registry</a> &amp;registry, <a class="el" href="namespacecaf.html#a677ccc96e037d16635c8769b98210883">timestamp</a> now=<a class="el" href="namespacecaf.html#a3974470b33f9b34505395e71be98d48d">make_timestamp</a>())</td></tr>
 <tr class="memdesc:ac77cfc3103b50ecc1bfbe12b1e65d090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies this collector to the registry, filling the character buffer while collecting metrics.  <br /></td></tr>
 <tr class="separator:ac77cfc3103b50ecc1bfbe12b1e65d090"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af712c5b9857496a90ee97caba56d87e3" id="r_af712c5b9857496a90ee97caba56d87e3"><td class="memItemLeft" align="right" valign="top"><a id="af712c5b9857496a90ee97caba56d87e3" name="af712c5b9857496a90ee97caba56d87e3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="classcaf_1_1telemetry_1_1metric__family.html">metric_family</a> *family, const <a class="el" href="classcaf_1_1telemetry_1_1metric.html">metric</a> *instance, const <a class="el" href="classcaf_1_1telemetry_1_1counter.html">dbl_counter</a> *<a class="el" href="classcaf_1_1telemetry_1_1counter.html">counter</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="classcaf_1_1telemetry_1_1metric__family.html">metric_family</a> *family, const <a class="el" href="classcaf_1_1telemetry_1_1metric.html">metric</a> *instance, const <a class="el" href="namespacecaf_1_1telemetry.html#a47fc9bf4fd38b9963548e1db9f0b82d7">dbl_counter</a> *<a class="el" href="classcaf_1_1telemetry_1_1counter.html">counter</a>)</td></tr>
 <tr class="separator:af712c5b9857496a90ee97caba56d87e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb6e74c6d3882b9dca6890d404b2035a" id="r_adb6e74c6d3882b9dca6890d404b2035a"><td class="memItemLeft" align="right" valign="top"><a id="adb6e74c6d3882b9dca6890d404b2035a" name="adb6e74c6d3882b9dca6890d404b2035a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="classcaf_1_1telemetry_1_1metric__family.html">metric_family</a> *family, const <a class="el" href="classcaf_1_1telemetry_1_1metric.html">metric</a> *instance, const <a class="el" href="classcaf_1_1telemetry_1_1counter.html">int_counter</a> *<a class="el" href="classcaf_1_1telemetry_1_1counter.html">counter</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="classcaf_1_1telemetry_1_1metric__family.html">metric_family</a> *family, const <a class="el" href="classcaf_1_1telemetry_1_1metric.html">metric</a> *instance, const <a class="el" href="namespacecaf_1_1telemetry.html#a9ae823728d4bdfdeada518f97fd12dda">int_counter</a> *<a class="el" href="classcaf_1_1telemetry_1_1counter.html">counter</a>)</td></tr>
 <tr class="separator:adb6e74c6d3882b9dca6890d404b2035a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81486d63a31df545a59676fcaf00fdad" id="r_a81486d63a31df545a59676fcaf00fdad"><td class="memItemLeft" align="right" valign="top"><a id="a81486d63a31df545a59676fcaf00fdad" name="a81486d63a31df545a59676fcaf00fdad"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="classcaf_1_1telemetry_1_1metric__family.html">metric_family</a> *family, const <a class="el" href="classcaf_1_1telemetry_1_1metric.html">metric</a> *instance, const <a class="el" href="classcaf_1_1telemetry_1_1dbl__gauge.html">dbl_gauge</a> *gauge)</td></tr>
@@ -165,10 +165,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const
 void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="classcaf_1_1telemetry_1_1metric__family.html">metric_family</a> *family, const <a class="el" href="classcaf_1_1telemetry_1_1metric.html">metric</a> *instance, const <a class="el" href="classcaf_1_1telemetry_1_1int__gauge.html">int_gauge</a> *gauge)</td></tr>
 <tr class="separator:a2f4ae9077d73c3863d0a796fdcbb906c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ecc57c11fe868aa3b4ead8546c7b33b" id="r_a0ecc57c11fe868aa3b4ead8546c7b33b"><td class="memItemLeft" align="right" valign="top"><a id="a0ecc57c11fe868aa3b4ead8546c7b33b" name="a0ecc57c11fe868aa3b4ead8546c7b33b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="classcaf_1_1telemetry_1_1metric__family.html">metric_family</a> *family, const <a class="el" href="classcaf_1_1telemetry_1_1metric.html">metric</a> *instance, const <a class="el" href="classcaf_1_1telemetry_1_1histogram.html">dbl_histogram</a> *val)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="classcaf_1_1telemetry_1_1metric__family.html">metric_family</a> *family, const <a class="el" href="classcaf_1_1telemetry_1_1metric.html">metric</a> *instance, const <a class="el" href="namespacecaf_1_1telemetry.html#a91e2d5c59c1b6663eefca2f3a4a4fac4">dbl_histogram</a> *val)</td></tr>
 <tr class="separator:a0ecc57c11fe868aa3b4ead8546c7b33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a791292e2579ba91f03f63e0af6f744eb" id="r_a791292e2579ba91f03f63e0af6f744eb"><td class="memItemLeft" align="right" valign="top"><a id="a791292e2579ba91f03f63e0af6f744eb" name="a791292e2579ba91f03f63e0af6f744eb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="classcaf_1_1telemetry_1_1metric__family.html">metric_family</a> *family, const <a class="el" href="classcaf_1_1telemetry_1_1metric.html">metric</a> *instance, const <a class="el" href="classcaf_1_1telemetry_1_1histogram.html">int_histogram</a> *val)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="classcaf_1_1telemetry_1_1metric__family.html">metric_family</a> *family, const <a class="el" href="classcaf_1_1telemetry_1_1metric.html">metric</a> *instance, const <a class="el" href="namespacecaf_1_1telemetry.html#a639b7ea3d9d15f1cb50161b41050c142">int_histogram</a> *val)</td></tr>
 <tr class="separator:a791292e2579ba91f03f63e0af6f744eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -205,7 +205,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const
         <tr>
           <td class="memname">bool caf::telemetry::collector::prometheus::begin_scrape </td>
           <td>(</td>
-          <td class="paramtype">timestamp</td>          <td class="paramname"><span class="paramname"><em>now</em></span><span class="paramdefsep"> = </span><span class="paramdefval">make_timestamp()</span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespacecaf.html#a677ccc96e037d16635c8769b98210883">timestamp</a></td>          <td class="paramname"><span class="paramname"><em>now</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespacecaf.html#a3974470b33f9b34505395e71be98d48d">make_timestamp</a>()</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -235,7 +235,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">timestamp</td>          <td class="paramname"><span class="paramname"><em>now</em></span><span class="paramdefsep"> = </span><span class="paramdefval">make_timestamp()</span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="namespacecaf.html#a677ccc96e037d16635c8769b98210883">timestamp</a></td>          <td class="paramname"><span class="paramname"><em>now</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespacecaf.html#a3974470b33f9b34505395e71be98d48d">make_timestamp</a>()</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

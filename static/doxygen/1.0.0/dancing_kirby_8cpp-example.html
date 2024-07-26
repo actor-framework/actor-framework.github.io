@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -104,7 +104,7 @@ $(function(){ initResizable(false); });
 <div class="line"><span class="keyword">using </span>std::endl;</div>
 <div class="line"><span class="keyword">using </span>std::pair;</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using namespace </span>caf;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacecaf.html">caf</a>;</div>
 <div class="line"><span class="keyword">using namespace </span>std::literals;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// ASCII art figures</span></div>
@@ -141,12 +141,12 @@ $(function(){ initResizable(false); });
 <div class="line">  <span class="comment">// print padding</span></div>
 <div class="line">  cout.fill(<span class="charliteral">&#39; &#39;</span>);</div>
 <div class="line">  <span class="comment">// make sure figure is printed</span></div>
-<div class="line">  cout.<a id="a0" name="a0"></a><a class="code hl_function" href="classcaf_1_1actor__ostream.html#ac6d8fcd8deb9af04995664d27b828d82">flush</a>();</div>
+<div class="line">  cout.flush();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// --(rst-delayed-send-begin)--</span></div>
 <div class="line"><span class="comment">// uses a message-based loop to iterate over all animation steps</span></div>
-<div class="line"><a id="_a1" name="_a1"></a><a class="code hl_class" href="classcaf_1_1behavior.html">behavior</a> dancing_kirby(<a id="_a2" name="_a2"></a><a class="code hl_class" href="classcaf_1_1event__based__actor.html">event_based_actor</a>* self) {</div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="code hl_class" href="classcaf_1_1behavior.html">behavior</a> dancing_kirby(<a id="_a1" name="_a1"></a><a class="code hl_class" href="classcaf_1_1event__based__actor.html">event_based_actor</a>* self) {</div>
 <div class="line">  <span class="comment">// let&#39;s get it started</span></div>
 <div class="line">  self-&gt;mail(update_atom_v, <span class="keywordtype">size_t</span>{0}).send(self);</div>
 <div class="line">  <span class="keywordflow">return</span> {</div>
@@ -166,15 +166,16 @@ $(function(){ initResizable(false); });
 <div class="line">}</div>
 <div class="line"><span class="comment">// --(rst-delayed-send-end)--</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> caf_main(<a id="_a3" name="_a3"></a><a class="code hl_class" href="classcaf_1_1actor__system.html">actor_system</a>&amp; system) {</div>
-<div class="line">  system.spawn(dancing_kirby);</div>
+<div class="line"><span class="keywordtype">void</span> caf_main(<a id="_a2" name="_a2"></a><a class="code hl_class" href="classcaf_1_1actor__system.html">actor_system</a>&amp; system) {</div>
+<div class="line">  <a class="code hl_enumvalue" href="namespacecaf.html#a38cc4480fa62093d67ea760129a9e8d0a54b53072540eeeb8f8e9343e71f28176">system</a>.spawn(dancing_kirby);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">CAF_MAIN()</div>
-<div class="ttc" id="aclasscaf_1_1actor__ostream_html_ac6d8fcd8deb9af04995664d27b828d82"><div class="ttname"><a href="classcaf_1_1actor__ostream.html#ac6d8fcd8deb9af04995664d27b828d82">caf::actor_ostream::flush</a></div><div class="ttdeci">actor_ostream &amp; flush()</div><div class="ttdoc">Flushes the buffer allocated for the calling actor.</div><div class="ttdef"><b>Definition</b> actor_ostream.hpp:61</div></div>
 <div class="ttc" id="aclasscaf_1_1actor__system_html"><div class="ttname"><a href="classcaf_1_1actor__system.html">caf::actor_system</a></div><div class="ttdoc">Actor environment including scheduler, registry, and optional components such as a middleman.</div><div class="ttdef"><b>Definition</b> actor_system.hpp:87</div></div>
 <div class="ttc" id="aclasscaf_1_1behavior_html"><div class="ttname"><a href="classcaf_1_1behavior.html">caf::behavior</a></div><div class="ttdoc">Describes the behavior of an actor, i.e., provides a message handler and an optional timeout.</div><div class="ttdef"><b>Definition</b> behavior.hpp:24</div></div>
 <div class="ttc" id="aclasscaf_1_1event__based__actor_html"><div class="ttname"><a href="classcaf_1_1event__based__actor.html">caf::event_based_actor</a></div><div class="ttdoc">A cooperatively scheduled, event-based actor implementation.</div><div class="ttdef"><b>Definition</b> event_based_actor.hpp:31</div></div>
+<div class="ttc" id="anamespacecaf_html"><div class="ttname"><a href="namespacecaf.html">caf</a></div><div class="ttdoc">Root namespace of libcaf.</div><div class="ttdef"><b>Definition</b> abstract_actor.cpp:23</div></div>
+<div class="ttc" id="anamespacecaf_html_a38cc4480fa62093d67ea760129a9e8d0a54b53072540eeeb8f8e9343e71f28176"><div class="ttname"><a href="namespacecaf.html#a38cc4480fa62093d67ea760129a9e8d0a54b53072540eeeb8f8e9343e71f28176">caf::thread_owner::system</a></div><div class="ttdeci">@ system</div><div class="ttdoc">Indicates that the thread runs background activity such as logging for the actor system.</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

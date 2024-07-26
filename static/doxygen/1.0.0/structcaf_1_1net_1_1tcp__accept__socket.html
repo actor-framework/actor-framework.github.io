@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>caf</b></li><li class="navelem"><b>net</b></li><li class="navelem"><a class="el" href="structcaf_1_1net_1_1tcp__accept__socket.html">tcp_accept_socket</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecaf.html">caf</a></li><li class="navelem"><a class="el" href="namespacecaf_1_1net.html">net</a></li><li class="navelem"><a class="el" href="structcaf_1_1net_1_1tcp__accept__socket.html">tcp_accept_socket</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -131,7 +131,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>super</b> = <a class
 Related Symbols</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p>(Note that these are not member symbols.) </p>
 </td></tr>
-<tr class="memitem:a01f652c56347a80f33a85828c1698765" id="r_a01f652c56347a80f33a85828c1698765"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1expected.html">expected</a>&lt; <a class="el" href="structcaf_1_1net_1_1tcp__accept__socket.html">tcp_accept_socket</a> &gt; CAF_NET_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01f652c56347a80f33a85828c1698765">make_tcp_accept_socket</a> (<a class="el" href="classcaf_1_1ipv6__endpoint.html">ip_endpoint</a> node, bool reuse_addr=true)</td></tr>
+<tr class="memitem:a01f652c56347a80f33a85828c1698765" id="r_a01f652c56347a80f33a85828c1698765"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1expected.html">expected</a>&lt; <a class="el" href="structcaf_1_1net_1_1tcp__accept__socket.html">tcp_accept_socket</a> &gt; CAF_NET_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01f652c56347a80f33a85828c1698765">make_tcp_accept_socket</a> (<a class="el" href="namespacecaf.html#a4fcf0ba13f86158ef4b44a53e94352bb">ip_endpoint</a> node, bool reuse_addr=true)</td></tr>
 <tr class="memdesc:a01f652c56347a80f33a85828c1698765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new TCP socket to accept connections on a given port.  <br /></td></tr>
 <tr class="separator:a01f652c56347a80f33a85828c1698765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae36a07a6bc78de835f9f22975f2a51c" id="r_aae36a07a6bc78de835f9f22975f2a51c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1expected.html">expected</a>&lt; <a class="el" href="structcaf_1_1net_1_1tcp__accept__socket.html">tcp_accept_socket</a> &gt; CAF_NET_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae36a07a6bc78de835f9f22975f2a51c">make_tcp_accept_socket</a> (const <a class="el" href="structcaf_1_1uri_1_1authority__type.html">uri::authority_type</a> &amp;node, bool reuse_addr=true)</td></tr>
@@ -233,13 +233,13 @@ Additional Inherited Members</h2></td></tr>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b> (<a class="el" href="structcaf_1_1net_1_1socket.html#aff07f7fc9f24080fb188e17b1a8c3983">socket_id</a> id) noexcept</td></tr>
 <tr class="separator:a8599808b5c6fa93bd55ff5c634b31126 inherit pub_methods_structcaf_1_1net_1_1socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8fcdc7f1ff6d609145a3d22942b9fad inherit pub_methods_structcaf_1_1net_1_1socket" id="r_ab8fcdc7f1ff6d609145a3d22942b9fad"><td class="memItemLeft" align="right" valign="top">
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b> (const <a class="el" href="structcaf_1_1net_1_1socket.html">socket</a> &amp;other) noexcept=default</td></tr>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b> (const <a class="el" href="structcaf_1_1net_1_1socket.html">socket</a> &amp;<a class="el" href="namespacecaf.html#a38cc4480fa62093d67ea760129a9e8d0a795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>) noexcept=default</td></tr>
 <tr class="separator:ab8fcdc7f1ff6d609145a3d22942b9fad inherit pub_methods_structcaf_1_1net_1_1socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4e0c45d9b586cfad23cd5f2fffc18c7 inherit pub_methods_structcaf_1_1net_1_1socket" id="r_af4e0c45d9b586cfad23cd5f2fffc18c7"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="structcaf_1_1net_1_1socket.html">socket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="structcaf_1_1net_1_1socket.html">socket</a> &amp;other) noexcept=default</td></tr>
+<a class="el" href="structcaf_1_1net_1_1socket.html">socket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="structcaf_1_1net_1_1socket.html">socket</a> &amp;<a class="el" href="namespacecaf.html#a38cc4480fa62093d67ea760129a9e8d0a795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>) noexcept=default</td></tr>
 <tr class="separator:af4e0c45d9b586cfad23cd5f2fffc18c7 inherit pub_methods_structcaf_1_1net_1_1socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeb7983631c96265524fb1c80dae6955 inherit pub_methods_structcaf_1_1net_1_1socket" id="r_adeb7983631c96265524fb1c80dae6955"><td class="memItemLeft" align="right" valign="top">
-constexpr <a class="el" href="structcaf_1_1net_1_1socket.html#a8c4a59106f74c00da3537558508d827c">signed_socket_id</a>&#160;</td><td class="memItemRight" valign="bottom"><b>compare</b> (<a class="el" href="structcaf_1_1net_1_1socket.html">socket</a> other) const noexcept</td></tr>
+constexpr <a class="el" href="structcaf_1_1net_1_1socket.html#a8c4a59106f74c00da3537558508d827c">signed_socket_id</a>&#160;</td><td class="memItemRight" valign="bottom"><b>compare</b> (<a class="el" href="structcaf_1_1net_1_1socket.html">socket</a> <a class="el" href="namespacecaf.html#a38cc4480fa62093d67ea760129a9e8d0a795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>) const noexcept</td></tr>
 <tr class="separator:adeb7983631c96265524fb1c80dae6955 inherit pub_methods_structcaf_1_1net_1_1socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7424258976508fb834e860818b98f248 inherit pub_methods_structcaf_1_1net_1_1socket" id="r_a7424258976508fb834e860818b98f248"><td class="memItemLeft" align="right" valign="top">
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>operator bool</b> () const noexcept</td></tr>
@@ -342,7 +342,7 @@ constexpr <a class="el" href="structcaf_1_1net_1_1socket.html">socket</a>&#160;<
         <tr>
           <td class="memname"><a class="el" href="classcaf_1_1expected.html">expected</a>&lt; <a class="el" href="structcaf_1_1net_1_1tcp__accept__socket.html">tcp_accept_socket</a> &gt; CAF_NET_EXPORT make_tcp_accept_socket </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classcaf_1_1ipv6__endpoint.html">ip_endpoint</a></td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespacecaf.html#a4fcf0ba13f86158ef4b44a53e94352bb">ip_endpoint</a></td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

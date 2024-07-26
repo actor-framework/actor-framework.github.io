@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>caf</b></li><li class="navelem"><b>flow</b></li><li class="navelem"><a class="el" href="classcaf_1_1flow_1_1observable.html">observable</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecaf.html">caf</a></li><li class="navelem"><b>flow</b></li><li class="navelem"><a class="el" href="classcaf_1_1flow_1_1observable.html">observable</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -282,11 +282,11 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>to_vector</b> ()</td>
 <tr class="memdesc:a55cd78aad4d1a8cf99248fe56838a740"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits items in buffers of size <code>count</code>. <br /></td></tr>
 <tr class="separator:a55cd78aad4d1a8cf99248fe56838a740"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47ccedfe2e69c61759d937f3aa60fecb" id="r_a47ccedfe2e69c61759d937f3aa60fecb"><td class="memItemLeft" align="right" valign="top"><a id="a47ccedfe2e69c61759d937f3aa60fecb" name="a47ccedfe2e69c61759d937f3aa60fecb"></a>
-<a class="el" href="classcaf_1_1flow_1_1observable.html">observable</a>&lt; <a class="el" href="classcaf_1_1cow__vector.html">cow_vector</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buffer</b> (size_t count, timespan period)</td></tr>
+<a class="el" href="classcaf_1_1flow_1_1observable.html">observable</a>&lt; <a class="el" href="classcaf_1_1cow__vector.html">cow_vector</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buffer</b> (size_t count, <a class="el" href="namespacecaf.html#a327e0d330244de57d64ec4216428b1b5">timespan</a> period)</td></tr>
 <tr class="memdesc:a47ccedfe2e69c61759d937f3aa60fecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits items in buffers of size up to <code>count</code> and forces an item at regular intervals . <br /></td></tr>
 <tr class="separator:a47ccedfe2e69c61759d937f3aa60fecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8061574f1c1cb26161d32ceac572762" id="r_aa8061574f1c1cb26161d32ceac572762"><td class="memItemLeft" align="right" valign="top"><a id="aa8061574f1c1cb26161d32ceac572762" name="aa8061574f1c1cb26161d32ceac572762"></a>
-<a class="el" href="classcaf_1_1flow_1_1observable.html">observable</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sample</b> (timespan period)</td></tr>
+<a class="el" href="classcaf_1_1flow_1_1observable.html">observable</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sample</b> (<a class="el" href="namespacecaf.html#a327e0d330244de57d64ec4216428b1b5">timespan</a> period)</td></tr>
 <tr class="memdesc:aa8061574f1c1cb26161d32ceac572762"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the most recent item of the input observable once per interval. <br /></td></tr>
 <tr class="separator:aa8061574f1c1cb26161d32ceac572762"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa59c90d9630358f418fb319574e96fba" id="r_aa59c90d9630358f418fb319574e96fba"><td class="memTemplParams" colspan="2">template&lt;class Out  = output_type, class... Inputs&gt; </td></tr>
@@ -337,13 +337,13 @@ template&lt;class Fn &gt; </td></tr>
 <tr class="memdesc:ab3381bc5aee9725720543cfbbe7604b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms this <code>observable</code> by applying a function object to it. <br /></td></tr>
 <tr class="separator:ab3381bc5aee9725720543cfbbe7604b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ef42c5757142aa2182c29acb16f8574" id="r_a1ef42c5757142aa2182c29acb16f8574"><td class="memItemLeft" align="right" valign="top"><a id="a1ef42c5757142aa2182c29acb16f8574" name="a1ef42c5757142aa2182c29acb16f8574"></a>
-<a class="el" href="classcaf_1_1flow_1_1observable.html">observable</a>&lt; <a class="el" href="classcaf_1_1async_1_1batch.html">async::batch</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>collect_batches</b> (timespan max_delay, size_t max_items)</td></tr>
+<a class="el" href="classcaf_1_1flow_1_1observable.html">observable</a>&lt; <a class="el" href="classcaf_1_1async_1_1batch.html">async::batch</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>collect_batches</b> (<a class="el" href="namespacecaf.html#a327e0d330244de57d64ec4216428b1b5">timespan</a> max_delay, size_t max_items)</td></tr>
 <tr class="memdesc:a1ef42c5757142aa2182c29acb16f8574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <code>buffer</code>, but wraps the collected items into type-erased batches. <br /></td></tr>
 <tr class="separator:a1ef42c5757142aa2182c29acb16f8574"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a580e53b1fd3f8ef4164cd25b19027b97" id="r_a580e53b1fd3f8ef4164cd25b19027b97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1flow_1_1observable.html">observable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a580e53b1fd3f8ef4164cd25b19027b97">observe_on</a> (<a class="el" href="classcaf_1_1flow_1_1coordinator.html">coordinator</a> *other, size_t buffer_size, size_t min_request_size)</td></tr>
+<tr class="memitem:a580e53b1fd3f8ef4164cd25b19027b97" id="r_a580e53b1fd3f8ef4164cd25b19027b97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1flow_1_1observable.html">observable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a580e53b1fd3f8ef4164cd25b19027b97">observe_on</a> (<a class="el" href="classcaf_1_1flow_1_1coordinator.html">coordinator</a> *<a class="el" href="namespacecaf.html#a38cc4480fa62093d67ea760129a9e8d0a795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>, size_t buffer_size, size_t min_request_size)</td></tr>
 <tr class="memdesc:a580e53b1fd3f8ef4164cd25b19027b97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Observes items from this observable on another <a class="el" href="classcaf_1_1flow_1_1coordinator.html">coordinator</a>.  <br /></td></tr>
 <tr class="separator:a580e53b1fd3f8ef4164cd25b19027b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad26a1c7174b803039ff557d90b696fc9" id="r_ad26a1c7174b803039ff557d90b696fc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1flow_1_1observable.html">observable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad26a1c7174b803039ff557d90b696fc9">observe_on</a> (<a class="el" href="classcaf_1_1flow_1_1coordinator.html">coordinator</a> *other)</td></tr>
+<tr class="memitem:ad26a1c7174b803039ff557d90b696fc9" id="r_ad26a1c7174b803039ff557d90b696fc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1flow_1_1observable.html">observable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad26a1c7174b803039ff557d90b696fc9">observe_on</a> (<a class="el" href="classcaf_1_1flow_1_1coordinator.html">coordinator</a> *<a class="el" href="namespacecaf.html#a38cc4480fa62093d67ea760129a9e8d0a795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>)</td></tr>
 <tr class="memdesc:ad26a1c7174b803039ff557d90b696fc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Observes items from this observable on another <a class="el" href="classcaf_1_1flow_1_1coordinator.html">coordinator</a>.  <br /></td></tr>
 <tr class="separator:ad26a1c7174b803039ff557d90b696fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae99908aca9fff1ad749ce1838ef66e2d" id="r_ae99908aca9fff1ad749ce1838ef66e2d"><td class="memItemLeft" align="right" valign="top"><a id="ae99908aca9fff1ad749ce1838ef66e2d" name="ae99908aca9fff1ad749ce1838ef66e2d"></a>
@@ -359,19 +359,19 @@ template&lt;class Fn &gt; </td></tr>
 <tr class="memdesc:abaf96823ea01857490beb3d24b83420e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a publisher that makes emitted items available asynchronously. <br /></td></tr>
 <tr class="separator:abaf96823ea01857490beb3d24b83420e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeddec50820e4fd34a84b5e710c9a9cd" id="r_afeddec50820e4fd34a84b5e710c9a9cd"><td class="memTemplParams" colspan="2">template&lt;class U  = T&gt; </td></tr>
-<tr class="memitem:afeddec50820e4fd34a84b5e710c9a9cd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1stream.html">stream</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#afeddec50820e4fd34a84b5e710c9a9cd">to_stream</a> (<a class="el" href="classcaf_1_1basic__cow__string.html">cow_string</a> name, timespan max_delay, size_t max_items_per_batch)</td></tr>
+<tr class="memitem:afeddec50820e4fd34a84b5e710c9a9cd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1stream.html">stream</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#afeddec50820e4fd34a84b5e710c9a9cd">to_stream</a> (<a class="el" href="classcaf_1_1basic__cow__string.html">cow_string</a> name, <a class="el" href="namespacecaf.html#a327e0d330244de57d64ec4216428b1b5">timespan</a> max_delay, size_t max_items_per_batch)</td></tr>
 <tr class="memdesc:afeddec50820e4fd34a84b5e710c9a9cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a type-erased stream that makes emitted items available in batches.  <br /></td></tr>
 <tr class="separator:afeddec50820e4fd34a84b5e710c9a9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a334bf287bdc2eaca938a6611c9c39ea0" id="r_a334bf287bdc2eaca938a6611c9c39ea0"><td class="memTemplParams" colspan="2">template&lt;class U  = T&gt; </td></tr>
-<tr class="memitem:a334bf287bdc2eaca938a6611c9c39ea0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1stream.html">stream</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a334bf287bdc2eaca938a6611c9c39ea0">to_stream</a> (std::string name, timespan max_delay, size_t max_items_per_batch)</td></tr>
+<tr class="memitem:a334bf287bdc2eaca938a6611c9c39ea0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1stream.html">stream</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a334bf287bdc2eaca938a6611c9c39ea0">to_stream</a> (std::string name, <a class="el" href="namespacecaf.html#a327e0d330244de57d64ec4216428b1b5">timespan</a> max_delay, size_t max_items_per_batch)</td></tr>
 <tr class="memdesc:a334bf287bdc2eaca938a6611c9c39ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a type-erased stream that makes emitted items available in batches.     <br /></td></tr>
 <tr class="separator:a334bf287bdc2eaca938a6611c9c39ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad15341315a8f7ce6cf9f71a9503e899e" id="r_ad15341315a8f7ce6cf9f71a9503e899e"><td class="memTemplParams" colspan="2">template&lt;class U  = T&gt; </td></tr>
-<tr class="memitem:ad15341315a8f7ce6cf9f71a9503e899e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1typed__stream.html">typed_stream</a>&lt; U &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad15341315a8f7ce6cf9f71a9503e899e">to_typed_stream</a> (<a class="el" href="classcaf_1_1basic__cow__string.html">cow_string</a> name, timespan max_delay, size_t max_items_per_batch)</td></tr>
+<tr class="memitem:ad15341315a8f7ce6cf9f71a9503e899e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1typed__stream.html">typed_stream</a>&lt; U &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad15341315a8f7ce6cf9f71a9503e899e">to_typed_stream</a> (<a class="el" href="classcaf_1_1basic__cow__string.html">cow_string</a> name, <a class="el" href="namespacecaf.html#a327e0d330244de57d64ec4216428b1b5">timespan</a> max_delay, size_t max_items_per_batch)</td></tr>
 <tr class="memdesc:ad15341315a8f7ce6cf9f71a9503e899e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a stream that makes emitted items available in batches.  <br /></td></tr>
 <tr class="separator:ad15341315a8f7ce6cf9f71a9503e899e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ecf6ce1aa83debd120cdbd9bcda6607" id="r_a1ecf6ce1aa83debd120cdbd9bcda6607"><td class="memTemplParams" colspan="2">template&lt;class U  = T&gt; </td></tr>
-<tr class="memitem:a1ecf6ce1aa83debd120cdbd9bcda6607"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1typed__stream.html">typed_stream</a>&lt; U &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a1ecf6ce1aa83debd120cdbd9bcda6607">to_typed_stream</a> (std::string name, timespan max_delay, size_t max_items_per_batch)</td></tr>
+<tr class="memitem:a1ecf6ce1aa83debd120cdbd9bcda6607"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1typed__stream.html">typed_stream</a>&lt; U &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a1ecf6ce1aa83debd120cdbd9bcda6607">to_typed_stream</a> (std::string name, <a class="el" href="namespacecaf.html#a327e0d330244de57d64ec4216428b1b5">timespan</a> max_delay, size_t max_items_per_batch)</td></tr>
 <tr class="memdesc:a1ecf6ce1aa83debd120cdbd9bcda6607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a stream that makes emitted items available in batches.     <br /></td></tr>
 <tr class="separator:a1ecf6ce1aa83debd120cdbd9bcda6607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f6a0ec5a76a5cad8cfd09e822f27953" id="r_a1f6a0ec5a76a5cad8cfd09e822f27953"><td class="memItemLeft" align="right" valign="top"><a id="a1f6a0ec5a76a5cad8cfd09e822f27953" name="a1f6a0ec5a76a5cad8cfd09e822f27953"></a>
@@ -398,7 +398,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!</b> () cons
 <tr class="memitem:a09f51a75bce0dc6261433900273cba56" id="r_a09f51a75bce0dc6261433900273cba56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1flow_1_1coordinator.html">coordinator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09f51a75bce0dc6261433900273cba56">parent</a> () const</td></tr>
 <tr class="separator:a09f51a75bce0dc6261433900273cba56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9634a355cd6e2b80099a539c1f689519" id="r_a9634a355cd6e2b80099a539c1f689519"><td class="memItemLeft" align="right" valign="top"><a id="a9634a355cd6e2b80099a539c1f689519" name="a9634a355cd6e2b80099a539c1f689519"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="classcaf_1_1flow_1_1observable.html">observable</a> &amp;other)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="classcaf_1_1flow_1_1observable.html">observable</a> &amp;<a class="el" href="namespacecaf.html#a38cc4480fa62093d67ea760129a9e8d0a795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>)</td></tr>
 <tr class="separator:a9634a355cd6e2b80099a539c1f689519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a508e8abe4bcf7dedd50cc0ede8c2902e" id="r_a508e8abe4bcf7dedd50cc0ede8c2902e"><td class="memTemplParams" colspan="2"><a id="a508e8abe4bcf7dedd50cc0ede8c2902e" name="a508e8abe4bcf7dedd50cc0ede8c2902e"></a>
 template&lt;class Out , class... Inputs&gt; </td></tr>
@@ -638,7 +638,7 @@ template&lt;class U &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">timespan</td>          <td class="paramname"><span class="paramname"><em>max_delay</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespacecaf.html#a327e0d330244de57d64ec4216428b1b5">timespan</a></td>          <td class="paramname"><span class="paramname"><em>max_delay</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -679,7 +679,7 @@ template&lt;class U &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">timespan</td>          <td class="paramname"><span class="paramname"><em>max_delay</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespacecaf.html#a327e0d330244de57d64ec4216428b1b5">timespan</a></td>          <td class="paramname"><span class="paramname"><em>max_delay</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -720,7 +720,7 @@ template&lt;class U &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">timespan</td>          <td class="paramname"><span class="paramname"><em>max_delay</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespacecaf.html#a327e0d330244de57d64ec4216428b1b5">timespan</a></td>          <td class="paramname"><span class="paramname"><em>max_delay</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -761,7 +761,7 @@ template&lt;class U &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">timespan</td>          <td class="paramname"><span class="paramname"><em>max_delay</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespacecaf.html#a327e0d330244de57d64ec4216428b1b5">timespan</a></td>          <td class="paramname"><span class="paramname"><em>max_delay</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

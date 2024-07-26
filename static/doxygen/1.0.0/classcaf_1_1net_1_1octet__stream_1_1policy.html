@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>caf</b></li><li class="navelem"><b>net</b></li><li class="navelem"><b>octet_stream</b></li><li class="navelem"><a class="el" href="classcaf_1_1net_1_1octet__stream_1_1policy.html">policy</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecaf.html">caf</a></li><li class="navelem"><a class="el" href="namespacecaf_1_1net.html">net</a></li><li class="navelem"><a class="el" href="namespacecaf_1_1net_1_1octet__stream.html">octet_stream</a></li><li class="navelem"><a class="el" href="classcaf_1_1net_1_1octet__stream_1_1policy.html">policy</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -107,15 +107,15 @@ virtual <a class="el" href="structcaf_1_1net_1_1stream__socket.html">stream_sock
 <tr class="memdesc:a25009b44e713e02849c06ad6bcaf80a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the handle for the managed socket. <br /></td></tr>
 <tr class="separator:a25009b44e713e02849c06ad6bcaf80a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bf982b9d89d1be4eb1144bde8f71024" id="r_a8bf982b9d89d1be4eb1144bde8f71024"><td class="memItemLeft" align="right" valign="top"><a id="a8bf982b9d89d1be4eb1144bde8f71024" name="a8bf982b9d89d1be4eb1144bde8f71024"></a>
-virtual ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (<a class="el" href="classcaf_1_1span.html">byte_span</a> buf)=0</td></tr>
+virtual ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (<a class="el" href="namespacecaf.html#a0c31fdff1ef2447a36fd29359ee6fe9a">byte_span</a> buf)=0</td></tr>
 <tr class="memdesc:a8bf982b9d89d1be4eb1144bde8f71024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data from the socket into the buffer. <br /></td></tr>
 <tr class="separator:a8bf982b9d89d1be4eb1144bde8f71024"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b4a4e1a279b51b44f752a9ce05efff2" id="r_a4b4a4e1a279b51b44f752a9ce05efff2"><td class="memItemLeft" align="right" valign="top"><a id="a4b4a4e1a279b51b44f752a9ce05efff2" name="a4b4a4e1a279b51b44f752a9ce05efff2"></a>
-virtual ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (<a class="el" href="classcaf_1_1span.html">const_byte_span</a> buf)=0</td></tr>
+virtual ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (<a class="el" href="namespacecaf.html#a82f884eb90b414fe36586774b685ea9d">const_byte_span</a> buf)=0</td></tr>
 <tr class="memdesc:a4b4a4e1a279b51b44f752a9ce05efff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes data from the buffer to the socket. <br /></td></tr>
 <tr class="separator:a4b4a4e1a279b51b44f752a9ce05efff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5142ab586af238b63251ed8e6024e0f0" id="r_a5142ab586af238b63251ed8e6024e0f0"><td class="memItemLeft" align="right" valign="top"><a id="a5142ab586af238b63251ed8e6024e0f0" name="a5142ab586af238b63251ed8e6024e0f0"></a>
-virtual errc&#160;</td><td class="memItemRight" valign="bottom"><b>last_error</b> (ptrdiff_t)=0</td></tr>
+virtual <a class="el" href="namespacecaf_1_1net_1_1octet__stream.html#a3e29e9bd37212ef5f7ee04fdb2bce80d">errc</a>&#160;</td><td class="memItemRight" valign="bottom"><b>last_error</b> (ptrdiff_t)=0</td></tr>
 <tr class="memdesc:a5142ab586af238b63251ed8e6024e0f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last socket error on this thread. <br /></td></tr>
 <tr class="separator:a5142ab586af238b63251ed8e6024e0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c59bf8f56d8a7e6538fb45ebb9e4fcf" id="r_a5c59bf8f56d8a7e6538fb45ebb9e4fcf"><td class="memItemLeft" align="right" valign="top"><a id="a5c59bf8f56d8a7e6538fb45ebb9e4fcf" name="a5c59bf8f56d8a7e6538fb45ebb9e4fcf"></a>

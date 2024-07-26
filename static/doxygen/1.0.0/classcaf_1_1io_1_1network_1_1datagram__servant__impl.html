@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;0.19</span>
+   <div id="projectname">C++ Actor Framework<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>caf</b></li><li class="navelem"><b>io</b></li><li class="navelem"><b>network</b></li><li class="navelem"><a class="el" href="classcaf_1_1io_1_1network_1_1datagram__servant__impl.html">datagram_servant_impl</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecaf.html">caf</a></li><li class="navelem"><a class="el" href="namespacecaf_1_1io.html">io</a></li><li class="navelem"><a class="el" href="namespacecaf_1_1io_1_1network.html">network</a></li><li class="navelem"><a class="el" href="classcaf_1_1io_1_1network_1_1datagram__servant__impl.html">datagram_servant_impl</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -132,10 +132,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>new_endpoint</b> (<a 
 <tr class="memitem:a1bdb534b5abe46b32040e31bc9385fb3" id="r_a1bdb534b5abe46b32040e31bc9385fb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bdb534b5abe46b32040e31bc9385fb3">ack_writes</a> (bool enable) override</td></tr>
 <tr class="memdesc:a1bdb534b5abe46b32040e31bc9385fb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables write notifications.  <br /></td></tr>
 <tr class="separator:a1bdb534b5abe46b32040e31bc9385fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47a3e85dd765568d0dec4eda07be7530" id="r_a47a3e85dd765568d0dec4eda07be7530"><td class="memItemLeft" align="right" valign="top">byte_buffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47a3e85dd765568d0dec4eda07be7530">wr_buf</a> (<a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a> hdl) override</td></tr>
+<tr class="memitem:a47a3e85dd765568d0dec4eda07be7530" id="r_a47a3e85dd765568d0dec4eda07be7530"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47a3e85dd765568d0dec4eda07be7530">wr_buf</a> (<a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a> hdl) override</td></tr>
 <tr class="memdesc:a47a3e85dd765568d0dec4eda07be7530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new output buffer.  <br /></td></tr>
 <tr class="separator:a47a3e85dd765568d0dec4eda07be7530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf7401a00eb67650c715b7a17de33ca6" id="r_adf7401a00eb67650c715b7a17de33ca6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf7401a00eb67650c715b7a17de33ca6">enqueue_datagram</a> (<a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a> hdl, byte_buffer buf) override</td></tr>
+<tr class="memitem:adf7401a00eb67650c715b7a17de33ca6" id="r_adf7401a00eb67650c715b7a17de33ca6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf7401a00eb67650c715b7a17de33ca6">enqueue_datagram</a> (<a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a> hdl, <a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> buf) override</td></tr>
 <tr class="memdesc:adf7401a00eb67650c715b7a17de33ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue a buffer to be sent as a datagram.  <br /></td></tr>
 <tr class="separator:adf7401a00eb67650c715b7a17de33ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d5a3819ebeb2dc3c03b5d370ca26cdf" id="r_a3d5a3819ebeb2dc3c03b5d370ca26cdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcaf_1_1io_1_1network_1_1receive__buffer.html">network::receive_buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d5a3819ebeb2dc3c03b5d370ca26cdf">rd_buf</a> () override</td></tr>
@@ -182,7 +182,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>remove_from_loop</b> 
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>consume</b> (<a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *, <a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a> hdl, <a class="el" href="classcaf_1_1io_1_1network_1_1receive__buffer.html">network::receive_buffer</a> &amp;buf) override</td></tr>
 <tr class="separator:a41cb5bd48ab208acd0b43e1c4c176471 inherit pub_methods_classcaf_1_1io_1_1datagram__servant"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e5b1dfc056f506ee37e30462185f2fc inherit pub_methods_classcaf_1_1io_1_1datagram__servant" id="r_a8e5b1dfc056f506ee37e30462185f2fc"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>datagram_sent</b> (<a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *, <a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a> hdl, size_t, byte_buffer buffer) override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>datagram_sent</b> (<a class="el" href="classcaf_1_1scheduler.html">scheduler</a> *, <a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a> hdl, size_t, <a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> buffer) override</td></tr>
 <tr class="separator:a8e5b1dfc056f506ee37e30462185f2fc inherit pub_methods_classcaf_1_1io_1_1datagram__servant"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcaf_1_1io_1_1broker__servant"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classcaf_1_1io_1_1broker__servant')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcaf_1_1io_1_1broker__servant.html">caf::io::broker_servant&lt; Base, Handle, SysMsgType &gt;</a></td></tr>
 <tr class="memitem:a594ad22fe5a551d1a98f8489bacba102 inherit pub_methods_classcaf_1_1io_1_1broker__servant" id="r_a594ad22fe5a551d1a98f8489bacba102"><td class="memItemLeft" align="right" valign="top">
@@ -343,7 +343,7 @@ std::optional&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">byte_buffer</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a></td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -539,7 +539,7 @@ std::optional&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">byte_buffer &amp; caf::io::network::datagram_servant_impl::wr_buf </td>
+          <td class="memname"><a class="el" href="namespacecaf.html#aafbd778517abdbed43722d344f77c2bc">byte_buffer</a> &amp; caf::io::network::datagram_servant_impl::wr_buf </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classcaf_1_1io_1_1datagram__handle.html">datagram_handle</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
